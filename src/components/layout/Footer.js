@@ -1,9 +1,9 @@
 import Link from "next/link";
-import { Mail, MessageCircle, Phone } from "lucide-react";
+import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import { Logo } from "@/components/shared/Logo";
 import { mainNavigation } from "@/data/navigation";
 import { verifiedServices } from "@/data/services";
-import { mailHref, site, telHref, whatsappHref } from "@/data/site";
+import { mailHref, mapsHref, site, telHref, whatsappHref } from "@/data/site";
 import { localeMeta, localizePath, locales, pick } from "@/lib/i18n";
 
 const COPYRIGHT_YEAR = 2026;
@@ -77,6 +77,21 @@ export function Footer({ locale, dict }) {
                 </span>
               </a>
             </li>
+            {site.address ? (
+              <li>
+                <a
+                  href={mapsHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${linkClass} inline-flex items-start gap-3`}
+                >
+                  <MapPin aria-hidden="true" className="mt-0.5 size-4 shrink-0 text-gold" />
+                  <span lang="en" dir="ltr">
+                    {site.address}
+                  </span>
+                </a>
+              </li>
+            ) : null}
           </ul>
 
           <div className="mt-8">

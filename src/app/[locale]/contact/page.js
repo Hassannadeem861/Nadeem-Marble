@@ -1,10 +1,10 @@
-import { Info, Mail, MessageCircle, Phone } from "lucide-react";
+import { Info, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import { ContactForm } from "@/components/contact/ContactForm";
 import { FaqSection } from "@/components/proof/FaqSection";
 import { ButtonLink } from "@/components/shared/ButtonLink";
 import { PageHeader } from "@/components/shared/PageHeader";
 import { services } from "@/data/services";
-import { mailHref, site, telHref, whatsappHref } from "@/data/site";
+import { mailHref, mapsEmbedHref, mapsHref, site, telHref, whatsappHref } from "@/data/site";
 import { getDictionary } from "@/lib/dictionaries";
 import { pick } from "@/lib/i18n";
 import { buildMetadata } from "@/lib/seo";
@@ -32,6 +32,7 @@ export default async function ContactPage({ params }) {
     { icon: Phone, label: copy.phoneLabel, value: site.phoneDisplay, href: telHref, latin: true },
     { icon: MessageCircle, label: copy.whatsappLabel, value: dict.common.chatOnWhatsapp, href: whatsappHref(form.messageIntro), text: copy.whatsappText },
     { icon: Mail, label: copy.emailLabel, value: site.email, href: mailHref, latin: true },
+    ...(hasAddress ? [{ icon: MapPin, label: copy.addressLabel, value: site.address, href: mapsHref, text: copy.getDirections, latin: true }] : []),
   ];
 
   return (
@@ -85,7 +86,7 @@ export default async function ContactPage({ params }) {
                 </li>
               ))}
             </ul>
-            {!hasAddress ? (
+            {!site.openingHours ? (
               <p className="mt-6 flex gap-3 text-sm text-muted-foreground">
                 <Info aria-hidden="true" className="mt-0.5 size-4 shrink-0 text-gold-deep" />
                 {copy.detailsPending}
@@ -104,6 +105,23 @@ export default async function ContactPage({ params }) {
           </div>
         </div>
       </section>
+
+      {site.address ? (
+        <section className="pb-16 md:pb-24">
+          <div className="container-page">
+            <h2 className="text-3xl text-charcoal">{copy.mapTitle}</h2>
+            <div className="mt-8 overflow-hidden rounded-sm border border-border">
+              <iframe
+                src={mapsEmbedHref}
+                title={copy.mapIframeTitle}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="aspect-video w-full md:aspect-21/9"
+              />
+            </div>
+          </div>
+        </section>
+      ) : null}
 
       <FaqSection locale={locale} dict={dict} page="contact" />
     </>

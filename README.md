@@ -78,7 +78,7 @@ Nothing below was invented. Each item is hidden or clearly labelled until suppli
 - [ ] **Owner's name** and preferred title (`site.owner` in `src/data/site.js`). The About page currently says "Founder, Nadeem Marbles".
 - [ ] **Confirm the owner portrait.** `public/images/founder-portrait.webp` is the portrait supplied for the project. Confirm the subject approves it and that it is an accurate likeness, or replace it with a real photograph.
 - [ ] **Confirm WhatsApp** is active on +92 316 4593747 (calls go to +92 315 1283438).
-- [ ] **Business address, opening hours and service areas.** Once added to `site.js`, they can be shown on the Contact page and added to structured data (a `LocalBusiness` type needs an address).
+- [ ] **Opening hours and service areas.** Once added to `site.js`, they can be shown on the Contact page. (The business address is already set.)
 - [ ] **Confirm the industries** served (`industries.js`). The page currently asks visitors to confirm availability.
 - [ ] **Real projects.** The six entries in Design Ideas use stock photos. Add real projects (with `illustrative: false`) when photos are available.
 - [ ] **Read the eight blog guides** to make sure the advice matches how Nadeem Marbles works.

@@ -304,7 +304,11 @@ const ur = {
     emailLabel: "ای میل",
     whatsappLabel: "واٹس ایپ",
     whatsappText: "اپنی جگہ کی تصاویر بھیجیں اور واٹس ایپ پر جواب حاصل کریں۔",
-    detailsPending: "کاروباری پتہ اور اوقاتِ کار جلد شامل کیے جائیں گے۔",
+    addressLabel: "پتہ",
+    getDirections: "راستہ دیکھیں",
+    detailsPending: "اوقاتِ کار جلد شامل کیے جائیں گے۔",
+    mapTitle: "ہمیں نقشے پر دیکھیں",
+    mapIframeTitle: "ندیم ماربلز کی جگہ دکھاتا نقشہ",
     form: {
       title: "منصوبے کی انکوائری",
       intro: "* والے خانے لازمی ہیں۔",

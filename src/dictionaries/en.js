@@ -311,7 +311,11 @@ const en = {
     emailLabel: "Email",
     whatsappLabel: "WhatsApp",
     whatsappText: "Send photos of your space and get a reply on WhatsApp.",
-    detailsPending: "Business address and opening hours will be added soon.",
+    addressLabel: "Address",
+    getDirections: "Get directions",
+    detailsPending: "Opening hours will be added soon.",
+    mapTitle: "Find us",
+    mapIframeTitle: "Map showing the Nadeem Marbles location",
     form: {
       title: "Project enquiry",
       intro: "Fields marked * are required.",

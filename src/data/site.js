@@ -17,7 +17,7 @@ export const site = {
 
   // TODO(client): supply before publishing; these stay hidden while null.
   owner: { name: null, role: { en: "Founder", ur: "بانی" } },
-  address: null,
+  address: "2/2 Reta Plot, Shah Faisal Colony, Shah Faisal Town, Karachi, 75230",
   openingHours: null,
   serviceAreas: null,
   foundingYear: null,
@@ -31,3 +31,10 @@ export function whatsappHref(message) {
   const base = `https://wa.me/${site.whatsappNumber}`;
   return message ? `${base}?text=${encodeURIComponent(message)}` : base;
 }
+
+// Stable Google Maps search link built from the address text, rather than a
+// share.google short link (those can expire or be revoked by the owner).
+export const mapsHref = site.address ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(site.address)}` : null;
+
+// No-API-key embed URL for the <iframe> map on the Contact page.
+export const mapsEmbedHref = site.address ? `https://www.google.com/maps?q=${encodeURIComponent(site.address)}&output=embed` : null;

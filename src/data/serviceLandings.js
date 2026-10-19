@@ -196,7 +196,7 @@ export const serviceLandings = {
         },
       },
     ],
-    relatedPosts: ["select-tiles-for-kitchens-and-bathrooms", "choose-marble-for-your-home", "tile-layout-patterns"],
+    relatedPosts: ["select-tiles-for-kitchens-and-bathrooms", "marble-vs-granite-kitchen-countertops", "tile-layout-patterns"],
   },
 
   "marble-flooring": {
@@ -377,7 +377,7 @@ export const serviceLandings = {
         },
       },
     ],
-    relatedPosts: ["floor-tile-sizes-guide", "tile-layout-patterns", "calculate-tiles-and-marble-quantity"],
+    relatedPosts: ["floor-tile-sizes-guide", "commercial-marble-and-tile-flooring-guide", "calculate-tiles-and-marble-quantity"],
   },
 };
 

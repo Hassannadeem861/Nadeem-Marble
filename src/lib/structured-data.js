@@ -21,6 +21,9 @@ export function organizationSchema(locale) {
     email: site.email,
     telephone: site.phone,
     knowsAbout: ["Tile installation", "Marble installation", "2D/3D surface modelling", "Tile pattern and layout design"],
+    // A plain string is valid for schema.org's address property; we only have
+    // one confirmed line of text, not separately confirmed street/city/postal fields.
+    ...(site.address ? { address: site.address } : {}),
     contactPoint: [
       {
         "@type": "ContactPoint",
