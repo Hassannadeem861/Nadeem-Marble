@@ -30,12 +30,12 @@ export async function generateMetadata({ params }) {
   const { locale, slug } = await params;
   const service = getService(slug);
   if (!service) return {};
-  const landing = getServiceLanding(slug);
+  const seo = getServiceLanding(slug)?.seo ?? service.seo;
   return buildMetadata({
     locale,
     path: `/services/${slug}`,
-    title: pick(landing?.seo.title ?? service.title, locale),
-    description: pick(landing?.seo.description ?? service.summary, locale),
+    title: pick(seo?.title ?? service.title, locale),
+    description: pick(seo?.description ?? service.summary, locale),
     noIndex: !isServiceIndexable(service),
   });
 }

@@ -7,10 +7,10 @@
 export const serviceLandings = {
   "bathroom-tile-and-marble-installation": {
     seo: {
-      title: { en: "Bathroom Tiles & Marble Installation", ur: "باتھ روم ٹائلز اور ماربل کی تنصیب" },
+      title: { en: "Bathroom Tiles & Marble Installation in Karachi", ur: "کراچی میں باتھ روم ٹائلز اور ماربل کی تنصیب" },
       description: {
-        en: "Bathroom tile and marble installation planned from site measurements: slip-aware floors, falls to the drain, neat cuts around fittings and clean grout.",
-        ur: "سائٹ کی پیمائش پر مبنی باتھ روم ٹائل اور ماربل کی تنصیب: پھسلن سے محفوظ فرش، نالی کی طرف ڈھلوان، فٹنگز کے گرد صاف کٹنگ اور صاف گراؤٹ۔",
+        en: "Bathroom tile and marble installation in Karachi, planned from site measurements: slip-aware floors, falls to the drain, neat cuts around fittings and clean grout.",
+        ur: "کراچی میں سائٹ کی پیمائش پر مبنی باتھ روم ٹائل اور ماربل کی تنصیب: پھسلن سے محفوظ فرش، نالی کی طرف ڈھلوان، فٹنگز کے گرد صاف کٹنگ اور صاف گراؤٹ۔",
       },
     },
     problems: {
@@ -105,10 +105,10 @@ export const serviceLandings = {
 
   "kitchen-tile-and-marble-installation": {
     seo: {
-      title: { en: "Kitchen Tiles & Marble Installation", ur: "کچن ٹائلز اور ماربل کی تنصیب" },
+      title: { en: "Kitchen Tiles & Marble Installation in Karachi", ur: "کراچی میں کچن ٹائلز اور ماربل کی تنصیب" },
       description: {
-        en: "Kitchen splashback, wall and floor tiling planned around your cabinets: straight lines, balanced cuts at sockets and windows, and easy-clean surfaces.",
-        ur: "کیبنٹس کے مطابق کچن کے اسپلیش بیک، دیوار اور فرش کی ٹائلنگ: سیدھی لائنیں، ساکٹس اور کھڑکیوں کے پاس متوازن کٹنگ اور آسانی سے صاف ہونے والی سطحیں۔",
+        en: "Kitchen splashback, wall and floor tiling in Karachi, planned around your cabinets: straight lines, balanced cuts at sockets and windows, and easy-clean surfaces.",
+        ur: "کراچی میں کیبنٹس کے مطابق کچن کے اسپلیش بیک، دیوار اور فرش کی ٹائلنگ: سیدھی لائنیں، ساکٹس اور کھڑکیوں کے پاس متوازن کٹنگ اور آسانی سے صاف ہونے والی سطحیں۔",
       },
     },
     problems: {
@@ -201,10 +201,10 @@ export const serviceLandings = {
 
   "marble-flooring": {
     seo: {
-      title: { en: "Marble Flooring Installation", ur: "ماربل فلورنگ کی تنصیب" },
+      title: { en: "Marble Flooring Installation in Karachi", ur: "کراچی میں ماربل فلورنگ کی تنصیب" },
       description: {
-        en: "Marble flooring installation for homes: finish selection, vein matching, level fixing and clean joints, planned from site measurements in 2D/3D.",
-        ur: "گھروں کے لیے ماربل فلورنگ کی تنصیب: فنش کا انتخاب، دھاریوں کا ملاپ، ہموار فکسنگ اور صاف جوڑ، سائٹ کی پیمائش پر مبنی 2D/3D منصوبہ بندی کے ساتھ۔",
+        en: "Marble flooring installation for homes in Karachi: finish selection, vein matching, level fixing and clean joints, planned from site measurements in 2D/3D.",
+        ur: "کراچی کے گھروں کے لیے ماربل فلورنگ کی تنصیب: فنش کا انتخاب، دھاریوں کا ملاپ، ہموار فکسنگ اور صاف جوڑ، سائٹ کی پیمائش پر مبنی 2D/3D منصوبہ بندی کے ساتھ۔",
       },
     },
     problems: {
@@ -297,10 +297,10 @@ export const serviceLandings = {
 
   "tile-installation": {
     seo: {
-      title: { en: "Tile Installation & Fixing Services", ur: "ٹائل کی تنصیب اور فکسنگ" },
+      title: { en: "Tile Fixing & Installation in Karachi", ur: "کراچی میں ٹائل فکسنگ اور تنصیب" },
       description: {
-        en: "Floor and wall tile installation with a measured layout, the right adhesive bed for each tile size, balanced cuts and clean grout lines.",
-        ur: "پیمائش شدہ لے آؤٹ، ہر ٹائل کے سائز کے مطابق مسالے، متوازن کٹنگ اور صاف گراؤٹ لائنوں کے ساتھ فرش اور دیوار کی ٹائل کی تنصیب۔",
+        en: "Floor and wall tile fixing in Karachi with a measured layout, the right adhesive bed for each tile size, balanced cuts and clean grout lines.",
+        ur: "کراچی میں پیمائش شدہ لے آؤٹ، ہر ٹائل کے سائز کے مطابق مسالے، متوازن کٹنگ اور صاف گراؤٹ لائنوں کے ساتھ فرش اور دیوار کی ٹائل کی تنصیب۔",
       },
     },
     problems: {

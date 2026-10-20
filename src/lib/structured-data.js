@@ -11,7 +11,7 @@ const WEBSITE_ID = `${site.url}/#website`;
 export function organizationSchema(locale) {
   return {
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": "HomeAndConstructionBusiness",
     "@id": ORGANIZATION_ID,
     name: site.name,
     url: absoluteUrl(localizePath(locale)),
@@ -24,6 +24,17 @@ export function organizationSchema(locale) {
     // A plain string is valid for schema.org's address property; we only have
     // one confirmed line of text, not separately confirmed street/city/postal fields.
     ...(site.address ? { address: site.address } : {}),
+    ...(site.serviceAreas ? { areaServed: site.serviceAreas } : {}),
+    ...(site.openingHours
+      ? {
+          openingHoursSpecification: {
+            "@type": "OpeningHoursSpecification",
+            dayOfWeek: site.openingHours.days,
+            opens: site.openingHours.opens,
+            closes: site.openingHours.closes,
+          },
+        }
+      : {}),
     contactPoint: [
       {
         "@type": "ContactPoint",
@@ -89,5 +100,6 @@ export function serviceSchema(locale, service) {
     serviceType: pick(service.title, "en"),
     url: absoluteUrl(localizePath(locale, `/services/${service.slug}`)),
     provider: { "@id": ORGANIZATION_ID },
+    ...(site.serviceAreas ? { areaServed: site.serviceAreas } : {}),
   };
 }

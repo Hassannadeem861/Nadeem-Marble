@@ -51,6 +51,13 @@ export const services = [
     icon: "Gem",
     image: "floorPolishedMarble",
     title: { en: "Marble Fixing & Installation", ur: "ماربل فکسنگ اور تنصیب" },
+    seo: {
+      title: { en: "Marble Fixing & Installation in Karachi", ur: "کراچی میں ماربل فکسنگ اور تنصیب" },
+      description: {
+        en: "Marble fixing on floors and walls across Karachi, with matched veins, tight joints and a clean finish. Projects in other Pakistani cities too.",
+        ur: "کراچی بھر میں فرش اور دیواروں پر ماربل فکسنگ، ملی ہوئی دھاریوں، تنگ جوڑوں اور صاف فنش کے ساتھ۔ پاکستان کے دیگر شہروں میں بھی کام۔",
+      },
+    },
     summary: {
       en: "Careful fixing of marble on floors and walls, with attention to vein direction, joints and a clean final finish.",
       ur: "فرش اور دیواروں پر ماربل کی احتیاط سے فکسنگ، دھاریوں کی سمت، جوڑوں اور صاف فنشنگ پر خاص توجہ کے ساتھ۔",
@@ -324,6 +331,13 @@ export const services = [
     icon: "Sparkles",
     image: "marbleWhite",
     title: { en: "Marble Polishing & Restoration", ur: "ماربل پالشنگ اور بحالی" },
+    seo: {
+      title: { en: "Marble Polishing & Restoration in Karachi", ur: "کراچی میں ماربل پالشنگ اور بحالی" },
+      description: {
+        en: "Marble floor polishing and restoration across Karachi: cleaning, honing and re-polishing dull or scratched marble back to an even finish.",
+        ur: "کراچی بھر میں ماربل فرش کی پالشنگ اور بحالی: مدھم یا خراش زدہ ماربل کی صفائی، ہوننگ اور دوبارہ پالش سے یکساں فنش۔",
+      },
+    },
     summary: {
       en: "Bringing tired, dull or scratched marble back to a clean, even finish.",
       ur: "پرانے، مدھم یا خراش زدہ ماربل کو دوبارہ صاف اور یکساں فنش میں لانا۔",

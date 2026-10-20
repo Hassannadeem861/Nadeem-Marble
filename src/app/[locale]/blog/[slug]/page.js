@@ -94,7 +94,8 @@ export default async function ArticlePage({ params }) {
   const dict = getDictionary(locale);
   const title = pick(post.title, locale);
   const category = blogCategories.find((item) => item.id === post.category);
-  const more = blogPosts.filter((item) => item.slug !== post.slug).slice(0, 3);
+  const others = blogPosts.filter((item) => item.slug !== post.slug);
+  const more = [...others.filter((item) => item.category === post.category), ...others.filter((item) => item.category !== post.category)].slice(0, 3);
   const relatedServices = (post.relatedServices ?? []).map(getService).filter((service) => service?.verified);
 
   return (

@@ -6,8 +6,8 @@ import { locales } from "@/lib/i18n";
 import { localeAlternates } from "@/lib/seo";
 
 // One entry per locale and indexable page, each listing its hreflang
-// alternates. Pages marked noindex (unconfirmed services, illustrative
-// concepts) are left out. lastModified is only given where a real date exists.
+// alternates. Pages marked noindex (unconfirmed services) are left out.
+// lastModified is only given where a real date exists.
 export default function sitemap() {
   const paths = [
     ...staticRoutes.map((path) => ({ path })),

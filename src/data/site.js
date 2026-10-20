@@ -18,8 +18,17 @@ export const site = {
   // TODO(client): supply before publishing; these stay hidden while null.
   owner: { name: null, role: { en: "Founder", ur: "بانی" } },
   address: "2/2 Reta Plot, Shah Faisal Colony, Shah Faisal Town, Karachi, 75230",
-  openingHours: null,
-  serviceAreas: null,
+  // Confirmed: open 24 hours, Monday through Sunday.
+  openingHours: {
+    days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+    opens: "00:00",
+    closes: "23:59",
+  },
+  // Primary: all of Karachi. Secondary: other cities in Pakistan (no specific cities confirmed).
+  serviceAreas: [
+    { "@type": "City", name: "Karachi" },
+    { "@type": "Country", name: "Pakistan" },
+  ],
   foundingYear: null,
   socialProfiles: [],
 };

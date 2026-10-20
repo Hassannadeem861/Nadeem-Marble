@@ -1,4 +1,4 @@
-import { Info, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
+import { Clock, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import { ContactForm } from "@/components/contact/ContactForm";
 import { FaqSection } from "@/components/proof/FaqSection";
 import { ButtonLink } from "@/components/shared/ButtonLink";
@@ -86,10 +86,10 @@ export default async function ContactPage({ params }) {
                 </li>
               ))}
             </ul>
-            {!site.openingHours ? (
+            {site.openingHours ? (
               <p className="mt-6 flex gap-3 text-sm text-muted-foreground">
-                <Info aria-hidden="true" className="mt-0.5 size-4 shrink-0 text-gold-deep" />
-                {copy.detailsPending}
+                <Clock aria-hidden="true" className="mt-0.5 size-4 shrink-0 text-gold-deep" />
+                {copy.openingHours}
               </p>
             ) : null}
           </div>
@@ -101,6 +101,9 @@ export default async function ContactPage({ params }) {
               serviceOptions={serviceOptions}
               projectTypeOptions={projectTypeOptions}
               contact={{ email: site.email, whatsappNumber: site.whatsappNumber }}
+              canSendDirect={Boolean(
+                process.env.EMAILJS_SERVICE_ID && process.env.EMAILJS_TEMPLATE_ID && process.env.EMAILJS_PUBLIC_KEY && process.env.EMAILJS_PRIVATE_KEY,
+              )}
             />
           </div>
         </div>

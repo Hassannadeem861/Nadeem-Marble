@@ -43,3 +43,6 @@ next-env.d.ts
 # allow the documented example file
 !.env.example
 
+seo-tools/credentials.json
+seo-tools/token.json
+seo-tools/node_modules

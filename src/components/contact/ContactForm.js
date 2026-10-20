@@ -9,12 +9,10 @@ import { NativeSelect, NativeSelectOption } from "@/components/ui/native-select"
 import { Textarea } from "@/components/ui/textarea";
 import { cn } from "@/lib/utils";
 
-// Optional direct delivery through Web3Forms (free tier). Its access key is
-// designed to be public, so it can live in a NEXT_PUBLIC_ variable. Without a
-// key the form prepares the enquiry for WhatsApp or email instead, and never
+// With canSendDirect the enquiry is emailed through /api/contact. Without it
+// the form prepares the enquiry for WhatsApp or email instead, and never
 // claims that anything was sent.
-const WEB3FORMS_KEY = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY;
-const WEB3FORMS_ENDPOINT = "https://api.web3forms.com/submit";
+const msSince = (start) => Math.round(performance.now() - start);
 
 const EMPTY = { name: "", phone: "", email: "", enquiryType: null, projectType: "", location: "", message: "" };
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -59,12 +57,19 @@ const noSubscription = () => () => {};
 const readRequestedService = () => new URLSearchParams(window.location.search).get("service");
 const noRequestedServiceOnServer = () => null;
 
-export function ContactForm({ labels, serviceOptions, projectTypeOptions, contact }) {
+export function ContactForm({ labels, serviceOptions, projectTypeOptions, contact, canSendDirect }) {
   const [draft, setDraft] = useState(EMPTY);
   const [errors, setErrors] = useState({});
   const [status, setStatus] = useState("editing"); // editing | sending | ready | sent | failed
   const summaryRef = useRef(null);
   const statusRef = useRef(null);
+  const honeypotRef = useRef(null);
+  const sendingRef = useRef(false);
+  const mountedAtRef = useRef(0);
+
+  useEffect(() => {
+    mountedAtRef.current = performance.now();
+  }, []);
 
   const requestedService = useSyncExternalStore(noSubscription, readRequestedService, noRequestedServiceOnServer);
   const preselected = serviceOptions.some((option) => option.value === requestedService) ? requestedService : "";
@@ -109,33 +114,43 @@ export function ContactForm({ labels, serviceOptions, projectTypeOptions, contac
       return;
     }
 
-    if (!WEB3FORMS_KEY) {
+    if (!canSendDirect) {
       setStatus("ready");
       return;
     }
 
+    if (sendingRef.current) return;
+    sendingRef.current = true;
     setStatus("sending");
     try {
-      const response = await fetch(WEB3FORMS_ENDPOINT, {
+      const response = await fetch("/api/contact", {
         method: "POST",
-        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          access_key: WEB3FORMS_KEY,
-          subject: labels.subject,
-          from_name: values.name.trim(),
           name: values.name.trim(),
           phone: values.phone.trim(),
           email: values.email.trim(),
           enquiry: enquiryLabel,
-          property_type: projectTypeLabel,
+          propertyType: projectTypeLabel,
           location: values.location.trim(),
           message: values.message.trim(),
+          pageUrl: window.location.href,
+          browserTimezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+          website: honeypotRef.current?.value ?? "",
+          elapsedMs: msSince(mountedAtRef.current),
         }),
       });
       const result = await response.json().catch(() => ({}));
-      setStatus(response.ok && result.success ? "sent" : "failed");
+      if (response.ok && result.ok) {
+        setDraft(EMPTY);
+        setStatus("sent");
+      } else {
+        setStatus("failed");
+      }
     } catch {
       setStatus("failed");
+    } finally {
+      sendingRef.current = false;
     }
   }
 
@@ -216,6 +231,7 @@ export function ContactForm({ labels, serviceOptions, projectTypeOptions, contac
               id="name"
               name="name"
               autoComplete="name"
+              maxLength={100}
               value={values.name}
               onChange={update("name")}
               aria-invalid={Boolean(errors.name)}
@@ -233,6 +249,7 @@ export function ContactForm({ labels, serviceOptions, projectTypeOptions, contac
             dir="ltr"
             autoComplete="tel"
             inputMode="tel"
+            maxLength={30}
             value={values.phone}
             onChange={update("phone")}
             aria-invalid={Boolean(errors.phone)}
@@ -247,6 +264,7 @@ export function ContactForm({ labels, serviceOptions, projectTypeOptions, contac
             type="email"
             dir="ltr"
             autoComplete="email"
+            maxLength={254}
             value={values.email}
             onChange={update("email")}
             aria-invalid={Boolean(errors.email)}
@@ -296,6 +314,7 @@ export function ContactForm({ labels, serviceOptions, projectTypeOptions, contac
             id="location"
             name="location"
             autoComplete="address-level2"
+            maxLength={120}
             value={values.location}
             onChange={update("location")}
             className="h-11"
@@ -307,6 +326,7 @@ export function ContactForm({ labels, serviceOptions, projectTypeOptions, contac
               id="message"
               name="message"
               rows={5}
+              maxLength={3000}
               value={values.message}
               onChange={update("message")}
               aria-describedby={describedBy("message", true)}
@@ -315,15 +335,23 @@ export function ContactForm({ labels, serviceOptions, projectTypeOptions, contac
         </div>
       </div>
 
+      {/* Hidden from people; bots that fill every field reveal themselves. */}
+      <div aria-hidden="true" className="absolute -start-[10000px] h-px w-px overflow-hidden">
+        <label htmlFor="website">Website</label>
+        <input ref={honeypotRef} id="website" name="website" type="text" tabIndex={-1} autoComplete="off" defaultValue="" />
+      </div>
+
       <Button
         type="submit"
         variant="gold"
         size="xl"
         disabled={status === "sending"}
+        aria-busy={status === "sending"}
         className={cn("mt-8 w-full sm:w-auto")}
       >
-        {status === "sending" ? labels.sending : WEB3FORMS_KEY ? labels.submitDirect : labels.submit}
+        {status === "sending" ? labels.sending : canSendDirect ? labels.submitDirect : labels.submit}
       </Button>
+      {canSendDirect ? <p className="mt-4 text-xs text-muted-foreground">{labels.privacyNote}</p> : null}
     </form>
   );
 }

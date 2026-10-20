@@ -70,19 +70,19 @@ const en = {
   },
   meta: {
     home: {
-      title: "Nadeem Marbles | Tile & Marble Design, Modelling and Installation",
+      title: "Nadeem Marbles | Tile & Marble Installation in Karachi",
       description:
-        "Nadeem Marbles plans, models and installs tile and marble surfaces with measured 2D/3D layouts, careful pattern work and clean finishing. Request a quote.",
+        "Nadeem Marbles plans, models and installs tile and marble across Karachi, with measured 2D/3D layouts and clean finishing. Projects in other Pakistani cities too.",
     },
     about: {
-      title: "About Us: Tile & Marble Specialists",
+      title: "About Us: Tile & Marble Specialists in Karachi",
       description:
         "Learn how Nadeem Marbles approaches tile and marble work: measured planning, client-led design, proper fixing and careful finishing.",
     },
     services: {
-      title: "Tile & Marble Services",
+      title: "Tile & Marble Services in Karachi",
       description:
-        "Tile and marble fixing, 2D/3D modelling, surface design and pattern planning by Nadeem Marbles. Explore our services and request a quote.",
+        "Tile and marble fixing, polishing, 2D/3D modelling and pattern planning across Karachi and other cities in Pakistan. Explore our services and request a quote.",
     },
     portfolio: {
       title: "Design Ideas: Tile & Marble Kitchens, Bathrooms and Floors",
@@ -100,9 +100,9 @@ const en = {
         "Practical guides on choosing marble, comparing marble and porcelain, caring for marble floors and selecting tiles for kitchens and bathrooms.",
     },
     contact: {
-      title: "Contact Us for a Tile or Marble Quote",
+      title: "Contact Us for a Tile or Marble Quote in Karachi",
       description:
-        "Call, WhatsApp or email Nadeem Marbles about your tile or marble project, or send your project details through the enquiry form.",
+        "Call, WhatsApp or email Nadeem Marbles in Shah Faisal Town, Karachi about your tile or marble project, or send your details through the enquiry form.",
     },
     credits: {
       title: "Image Credits",
@@ -313,7 +313,7 @@ const en = {
     whatsappText: "Send photos of your space and get a reply on WhatsApp.",
     addressLabel: "Address",
     getDirections: "Get directions",
-    detailsPending: "Opening hours will be added soon.",
+    openingHours: "Open 24 hours, 7 days a week",
     mapTitle: "Find us",
     mapIframeTitle: "Map showing the Nadeem Marbles location",
     form: {
@@ -359,6 +359,7 @@ const en = {
       tryAgain: "Try again",
       messageIntro: "Hello Nadeem Marbles, I would like to enquire about a project.",
       subject: "Project enquiry from the website",
+      privacyNote: "When you send this form, we also record the time, the page, your IP address and its approximate location to handle your enquiry and prevent spam.",
     },
   },
   proof: {
@@ -395,7 +396,7 @@ const en = {
     license: "Licence: {license}",
   },
   footer: {
-    blurb: "Tile and marble design, 2D/3D modelling, pattern planning and proper fixing.",
+    blurb: "Tile and marble design, 2D/3D modelling, pattern planning and proper fixing across Karachi and other cities in Pakistan.",
     company: "Company",
     servicesTitle: "Services",
     contactTitle: "Contact",
