@@ -77,7 +77,7 @@ export default async function AboutPage({ params }) {
                 className="object-cover object-top"
               />
             </div>
-            {/* <figcaption className="mt-4 text-sm text-muted-foreground">{ownerCaption}</figcaption> */}
+            <figcaption className="mt-4 text-sm text-muted-foreground">{ownerCaption}</figcaption>
           </figure>
           <Reveal className="lg:col-span-6 lg:col-start-7">
             <Eyebrow>{about.owner.eyebrow}</Eyebrow>

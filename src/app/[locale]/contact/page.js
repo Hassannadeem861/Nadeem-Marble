@@ -1,4 +1,5 @@
-import { Clock, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
+import Link from "next/link";
+import { ArrowRight, Clock, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import { ContactForm } from "@/components/contact/ContactForm";
 import { FaqSection } from "@/components/proof/FaqSection";
 import { ButtonLink } from "@/components/shared/ButtonLink";
@@ -6,7 +7,7 @@ import { PageHeader } from "@/components/shared/PageHeader";
 import { services } from "@/data/services";
 import { mailHref, mapsEmbedHref, mapsHref, site, telHref, whatsappHref } from "@/data/site";
 import { getDictionary } from "@/lib/dictionaries";
-import { pick } from "@/lib/i18n";
+import { localizePath, pick } from "@/lib/i18n";
 import { buildMetadata } from "@/lib/seo";
 
 export async function generateMetadata({ params }) {
@@ -92,6 +93,13 @@ export default async function ContactPage({ params }) {
                 {copy.openingHours}
               </p>
             ) : null}
+            <Link
+              href={localizePath(locale, "/about")}
+              className="mt-6 inline-flex min-h-10 items-center gap-2 text-sm font-semibold text-charcoal underline decoration-gold underline-offset-4 hover:decoration-2"
+            >
+              {copy.aboutLink}
+              <ArrowRight aria-hidden="true" className="size-4 rtl:rotate-180" />
+            </Link>
           </div>
 
           <div className="lg:col-span-7 lg:col-start-6">

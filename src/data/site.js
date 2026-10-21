@@ -16,7 +16,7 @@ export const site = {
   whatsappDisplay: "+92 316 4593747",
 
   // TODO(client): supply before publishing; these stay hidden while null.
-  owner: { name: null, role: { en: "Founder", ur: "بانی" } },
+  owner: { name: "Muhammad Nadeem", role: { en: "Founder", ur: "بانی" } },
   address: "2/2 Reta Plot, Shah Faisal Colony, Shah Faisal Town, Karachi, 75230",
   // Confirmed: open 24 hours, Monday through Sunday.
   openingHours: {

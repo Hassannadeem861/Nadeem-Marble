@@ -1,15 +1,16 @@
 // In-depth landing-page content for selected service pages, keyed by service
 // slug (see services.js). Pages without an entry use the basic service layout.
 // Everything here describes confirmed work (tile and marble fixing, modelling,
-// design, pattern planning). Prices, timelines and service areas are not
-// stated because they have not been supplied by the business.
+// design, pattern planning, cladding, polishing and restoration, staircases,
+// supply). Prices and timelines are not stated because the business has not
+// supplied them.
 
 export const serviceLandings = {
   "bathroom-tile-and-marble-installation": {
     seo: {
       title: { en: "Bathroom Tiles & Marble Installation in Karachi", ur: "کراچی میں باتھ روم ٹائلز اور ماربل کی تنصیب" },
       description: {
-        en: "Bathroom tile and marble installation in Karachi, planned from site measurements: slip-aware floors, falls to the drain, neat cuts around fittings and clean grout.",
+        en: "Bathroom tile and marble installation in Karachi, planned from site measurements: slip-aware floors, falls to the drain, neat cuts and clean grout.",
         ur: "کراچی میں سائٹ کی پیمائش پر مبنی باتھ روم ٹائل اور ماربل کی تنصیب: پھسلن سے محفوظ فرش، نالی کی طرف ڈھلوان، فٹنگز کے گرد صاف کٹنگ اور صاف گراؤٹ۔",
       },
     },
@@ -107,7 +108,7 @@ export const serviceLandings = {
     seo: {
       title: { en: "Kitchen Tiles & Marble Installation in Karachi", ur: "کراچی میں کچن ٹائلز اور ماربل کی تنصیب" },
       description: {
-        en: "Kitchen splashback, wall and floor tiling in Karachi, planned around your cabinets: straight lines, balanced cuts at sockets and windows, and easy-clean surfaces.",
+        en: "Kitchen splashback, wall and floor tiling in Karachi, planned around your cabinets: straight lines, balanced cuts and easy-clean surfaces.",
         ur: "کراچی میں کیبنٹس کے مطابق کچن کے اسپلیش بیک، دیوار اور فرش کی ٹائلنگ: سیدھی لائنیں، ساکٹس اور کھڑکیوں کے پاس متوازن کٹنگ اور آسانی سے صاف ہونے والی سطحیں۔",
       },
     },
@@ -292,7 +293,7 @@ export const serviceLandings = {
         },
       },
     ],
-    relatedPosts: ["types-of-marble-in-pakistan", "marble-vs-porcelain-tiles", "how-to-maintain-marble-flooring"],
+    relatedPosts: ["types-of-marble-in-pakistan", "commercial-marble-and-tile-flooring-guide", "how-to-maintain-marble-flooring"],
   },
 
   "tile-installation": {
@@ -378,6 +379,388 @@ export const serviceLandings = {
       },
     ],
     relatedPosts: ["floor-tile-sizes-guide", "commercial-marble-and-tile-flooring-guide", "calculate-tiles-and-marble-quantity"],
+  },
+
+  "marble-installation": {
+    seo: {
+      title: { en: "Marble Fixing & Installation in Karachi", ur: "کراچی میں ماربل فکسنگ اور تنصیب" },
+      description: {
+        en: "Marble fixing across Karachi for floors, walls, stairs and sills: pieces matched for tone and vein, set flat, with tight joints and a clean finish.",
+        ur: "کراچی بھر میں فرش، دیواروں، سیڑھیوں اور سِل پر ماربل فکسنگ: رنگ اور دھاریوں کا ملاپ، ہموار سطح، تنگ جوڑ اور صاف فنش۔",
+      },
+    },
+    problems: {
+      en: [
+        "Hollow-sounding or loose pieces where the bed underneath is incomplete",
+        "Edges that sit higher than the next piece and catch the foot",
+        "Veins and shades that jump from one piece to the next",
+        "Wide or uneven joints that collect dirt",
+        "Chipped edges and corners from rough handling",
+        "Light marble discoloured by unsuitable fixing material",
+      ],
+      ur: [
+        "نیچے ادھورے مسالے کی وجہ سے کھوکھلی آواز والے یا ڈھیلے ٹکڑے",
+        "ایسے کنارے جو ساتھ والے ٹکڑے سے اونچے ہوں اور پاؤں میں اٹکیں",
+        "دھاریاں اور رنگ جو ایک ٹکڑے سے دوسرے پر اچانک بدل جائیں",
+        "چوڑے یا ناہموار جوڑ جن میں میل جمع ہو",
+        "لاپروائی سے اٹھانے رکھنے کی وجہ سے ٹوٹے کنارے اور کونے",
+        "غیر موزوں مسالے کی وجہ سے ہلکے رنگ کے ماربل پر داغ",
+      ],
+    },
+    options: [
+      {
+        title: { en: "Floors", ur: "فرش" },
+        text: {
+          en: "Lounges, bedrooms, entrances and corridors, fixed flat and level. Our marble flooring page covers finishes and layouts in more detail.",
+          ur: "ڈرائنگ روم، بیڈ روم، داخلی راستے اور راہداریاں، ہموار اور لیول۔ فنش اور لے آؤٹ کی تفصیل ہمارے ماربل فلورنگ کے صفحے پر ہے۔",
+        },
+      },
+      {
+        title: { en: "Walls and feature walls", ur: "دیواریں اور نمایاں دیواریں" },
+        text: {
+          en: "Wall marble needs a sound backing and a fixing method suited to the size and weight of each piece, especially at height.",
+          ur: "دیوار پر ماربل کے لیے مضبوط بنیاد اور ہر ٹکڑے کے سائز اور وزن کے مطابق فکسنگ کا طریقہ ضروری ہے، خاص طور پر اونچائی پر۔",
+        },
+      },
+      {
+        title: { en: "Stairs, sills and thresholds", ur: "سیڑھیاں، سِل اور دہلیز" },
+        text: {
+          en: "Treads, risers, window sills and door thresholds, measured and cut to fit each opening rather than a standard size.",
+          ur: "پائیدان، رائزر، کھڑکی کی سِل اور دروازے کی دہلیز، معیاری سائز کے بجائے ہر جگہ کی پیمائش کے مطابق کاٹی گئی۔",
+        },
+      },
+      {
+        title: { en: "Kitchens and bathrooms", ur: "کچن اور باتھ روم" },
+        text: {
+          en: "Marble splashbacks, vanity surrounds and bathroom walls, with cuts planned around taps, sockets and fittings.",
+          ur: "ماربل کے اسپلیش بیک، وینٹی کے اطراف اور باتھ روم کی دیواریں، نلکوں، ساکٹس اور فٹنگز کے گرد منصوبہ بند کٹنگ کے ساتھ۔",
+        },
+      },
+    ],
+    considerations: {
+      en: [
+        "Lay the pieces out dry before fixing, so you can agree where the strongest veins and shades go.",
+        "The base must be sound and level before fixing starts; marble shows every dip in the floor beneath it.",
+        "Light-coloured marble can be stained by unsuitable fixing materials, so the bedding material should suit the stone.",
+        "Order around 10% extra from the same batch for cuts, and keep a few spare pieces for future repairs.",
+        "Allow the bed to set before grinding, polishing or heavy furniture goes on the floor.",
+      ],
+      ur: [
+        "فکسنگ سے پہلے ٹکڑوں کو خشک بچھا کر دیکھیں تاکہ طے ہو سکے کہ نمایاں دھاریاں اور رنگ کہاں آئیں گے۔",
+        "فکسنگ شروع ہونے سے پہلے بنیاد مضبوط اور ہموار ہونی چاہیے؛ ماربل نیچے کے فرش کا ہر نشیب ظاہر کر دیتا ہے۔",
+        "ہلکے رنگ کا ماربل غیر موزوں مسالے سے داغدار ہو سکتا ہے، اس لیے بچھانے کا مسالہ پتھر کے مطابق ہونا چاہیے۔",
+        "کٹنگ کے لیے ایک ہی بیچ سے تقریباً 10٪ اضافی منگوائیں، اور مستقبل کی مرمت کے لیے چند ٹکڑے رکھ لیں۔",
+        "گرائنڈنگ، پالش یا بھاری فرنیچر رکھنے سے پہلے مسالے کو جمنے کا وقت دیں۔",
+      ],
+    },
+    faqs: [
+      {
+        q: { en: "What is the difference between marble fixing and marble flooring?", ur: "ماربل فکسنگ اور ماربل فلورنگ میں کیا فرق ہے؟" },
+        a: {
+          en: "Marble fixing covers all the marble we fix: floors, walls, stairs, sills and feature details. Our marble flooring page focuses only on floors: choosing the finish and planning the layout and vein direction room by room.",
+          ur: "ماربل فکسنگ میں وہ تمام ماربل شامل ہے جو ہم لگاتے ہیں: فرش، دیواریں، سیڑھیاں، سِل اور نمایاں تفصیلات۔ ماربل فلورنگ کا صفحہ صرف فرش پر ہے: ہر کمرے کے لیے فنش کا انتخاب، لے آؤٹ اور دھاریوں کی سمت۔",
+        },
+      },
+      {
+        q: { en: "Does marble need polishing after it is fixed?", ur: "کیا لگانے کے بعد ماربل کو پالش کی ضرورت ہوتی ہے؟" },
+        a: {
+          en: "Often, yes. Newly fixed marble can have small height differences at the joints and marks from the work. Grinding and polishing afterwards gives a flat, even surface; how far to take it depends on the stone and the finish you want.",
+          ur: "اکثر، ہاں۔ نئے لگے ماربل میں جوڑوں پر معمولی اونچ نیچ اور کام کے نشان ہو سکتے ہیں۔ بعد میں گرائنڈنگ اور پالش سے سطح ہموار اور یکساں ہو جاتی ہے؛ یہ کتنی کی جائے، اس کا انحصار پتھر اور مطلوبہ فنش پر ہے۔",
+        },
+      },
+      {
+        q: { en: "How much extra marble should I order?", ur: "مجھے کتنا اضافی ماربل منگوانا چاہیے؟" },
+        a: {
+          en: "Usually about 10% for a straight layout and more for diagonal or patterned layouts, plus a few spare pieces from the same batch. Our quantity guide shows how to work it out.",
+          ur: "عموماً سیدھے لے آؤٹ کے لیے تقریباً 10٪ اور ترچھے یا پیٹرن والے لے آؤٹ کے لیے زیادہ، اور ایک ہی بیچ کے چند اضافی ٹکڑے۔ ہماری مقدار والی گائیڈ حساب کا طریقہ بتاتی ہے۔",
+        },
+      },
+    ],
+    relatedPosts: ["types-of-marble-in-pakistan", "choose-marble-for-your-home", "tile-layout-patterns"],
+  },
+
+  "marble-polishing-and-restoration": {
+    seo: {
+      title: { en: "Marble Polishing & Restoration in Karachi", ur: "کراچی میں ماربل پالشنگ اور بحالی" },
+      description: {
+        en: "Marble floor polishing in Karachi: machine grinding, honing, crystallisation and sealing for dull, scratched or uneven marble, depending on its condition.",
+        ur: "کراچی میں ماربل فرش کی پالشنگ: مدھم، خراش زدہ یا ناہموار ماربل کے لیے حالت کے مطابق مشین گرائنڈنگ، ہوننگ، کرسٹلائزیشن اور سیلنگ۔",
+      },
+    },
+    problems: {
+      en: [
+        "A dull, hazy path where people walk most",
+        "Scratches and scuffs from grit and furniture",
+        "Dull etch marks from lemon, vinegar or acidic cleaners",
+        "Tile edges that no longer sit level with each other",
+        "Dirt ground into the surface that cleaning will not lift",
+        "A patchy shine after earlier polishing or wax coatings",
+      ],
+      ur: [
+        "زیادہ چلنے والے راستے پر مدھم اور دھندلی سطح",
+        "مٹی کے ذرات اور فرنیچر سے خراشیں اور رگڑ کے نشان",
+        "لیموں، سرکے یا تیزابی کلینر سے پڑنے والے مدھم نشان",
+        "ٹائلوں کے کنارے جو اب ایک دوسرے کے برابر نہیں رہے",
+        "سطح میں رچی ہوئی میل جو صفائی سے نہیں نکلتی",
+        "پہلے کی پالش یا ویکس کی وجہ سے جگہ جگہ مختلف چمک",
+      ],
+    },
+    options: [
+      {
+        title: { en: "Machine grinding", ur: "مشین گرائنڈنگ" },
+        text: {
+          en: "Coarse diamond pads take a thin layer off the surface so uneven joints are brought level and deep scratches are removed. It is the most thorough stage and is only used where the floor's condition calls for it.",
+          ur: "موٹے ڈائمنڈ پیڈ سطح کی باریک تہہ اتارتے ہیں تاکہ ناہموار جوڑ برابر ہو جائیں اور گہری خراشیں ختم ہوں۔ یہ سب سے گہرا مرحلہ ہے اور صرف وہاں کیا جاتا ہے جہاں فرش کی حالت اس کا تقاضا کرے۔",
+        },
+      },
+      {
+        title: { en: "Honing", ur: "ہوننگ" },
+        text: {
+          en: "Progressively finer pads remove lighter scratches and etch marks and leave a smooth, even surface. Some customers stop here for a soft, low-sheen honed finish, which also gives better grip.",
+          ur: "بتدریج باریک پیڈ ہلکی خراشیں اور مدھم نشان ہٹا کر ہموار اور یکساں سطح چھوڑتے ہیں۔ کچھ لوگ یہیں رک کر ہلکی چمک والا ہونڈ فنش رکھتے ہیں، جو پاؤں کو بہتر گرفت بھی دیتا ہے۔",
+        },
+      },
+      {
+        title: { en: "Crystallisation", ur: "کرسٹلائزیشن" },
+        text: {
+          en: "A polishing compound is worked into the honed surface with the machine to bring back a high gloss. How bright the result is depends on the type of marble and its condition.",
+          ur: "ہون کی گئی سطح پر مشین کے ذریعے پالشنگ مرکب لگا کر تیز چمک واپس لائی جاتی ہے۔ نتیجہ کتنا چمکدار ہوگا، اس کا انحصار ماربل کی قسم اور حالت پر ہے۔",
+        },
+      },
+      {
+        title: { en: "Sealing", ur: "سیلنگ" },
+        text: {
+          en: "A penetrating sealer slows down how quickly oil and water soak into the stone, which helps against staining. It does not stop acids from etching the surface, so spills still need wiping up quickly.",
+          ur: "اندر جذب ہونے والا سیلر تیل اور پانی کے پتھر میں جذب ہونے کی رفتار کم کرتا ہے، جس سے داغوں سے بچاؤ ہوتا ہے۔ یہ تیزاب کے نشان نہیں روکتا، اس لیے گری ہوئی چیز فوراً صاف کرنی چاہیے۔",
+        },
+      },
+    ],
+    considerations: {
+      en: [
+        "We look at the floor first. Which stages it needs depends on the floor's condition, the type of marble and the finish you want.",
+        "Grinding and polishing are wet, noisy work. Furniture needs to be moved and the room kept clear while we work.",
+        "Tell us about wooden skirting, door frames or delicate items near the floor so they can be protected.",
+        "Cracked or badly chipped pieces may need repairing or replacing; polishing improves the surface but cannot rebuild missing stone.",
+        "After sealing, keep the floor dry for the time recommended for the sealer before normal use.",
+      ],
+      ur: [
+        "ہم پہلے فرش دیکھتے ہیں۔ کون سے مراحل درکار ہیں، اس کا انحصار فرش کی حالت، ماربل کی قسم اور مطلوبہ فنش پر ہے۔",
+        "گرائنڈنگ اور پالش میں پانی استعمال ہوتا ہے اور شور ہوتا ہے۔ کام کے دوران فرنیچر ہٹانا اور کمرہ خالی رکھنا ہوگا۔",
+        "فرش کے قریب لکڑی کی اسکرٹنگ، دروازوں کی چوکھٹ یا نازک چیزوں کے بارے میں بتائیں تاکہ انہیں محفوظ رکھا جا سکے۔",
+        "ٹوٹے یا بری طرح چِپ ہوئے ٹکڑوں کو مرمت یا تبدیلی کی ضرورت ہو سکتی ہے؛ پالش سطح بہتر کرتی ہے مگر غائب پتھر واپس نہیں بنا سکتی۔",
+        "سیلنگ کے بعد عام استعمال سے پہلے سیلر کے تجویز کردہ وقت تک فرش کو خشک رکھیں۔",
+      ],
+    },
+    faqs: [
+      {
+        q: { en: "How often does a marble floor need polishing?", ur: "ماربل فرش کو کتنے عرصے بعد پالش کی ضرورت ہوتی ہے؟" },
+        a: {
+          en: "It depends on foot traffic and daily care. Busy entrances lose their shine sooner than bedrooms. Removing grit daily and cleaning with a pH-neutral cleaner makes the shine last longer between polishes.",
+          ur: "یہ آمد و رفت اور روزانہ کی دیکھ بھال پر منحصر ہے۔ مصروف داخلی راستوں کی چمک بیڈ روم سے جلد کم ہوتی ہے۔ روزانہ مٹی ہٹانے اور نیوٹرل (pH) کلینر سے صفائی کرنے سے چمک زیادہ دیر رہتی ہے۔",
+        },
+      },
+      {
+        q: { en: "Can polishing remove every scratch and stain?", ur: "کیا پالش سے ہر خراش اور داغ ختم ہو جاتا ہے؟" },
+        a: {
+          en: "Most dullness and surface scratches can be removed, and grinding deals with deeper scratches and uneven joints. Some deep stains, cracks and chips can only be reduced, depending on the floor's condition. We tell you what to expect after looking at the floor.",
+          ur: "زیادہ تر مدھم پن اور سطحی خراشیں ختم ہو جاتی ہیں، اور گرائنڈنگ گہری خراشوں اور ناہموار جوڑوں کو ٹھیک کرتی ہے۔ کچھ گہرے داغ، دراڑیں اور چِپ فرش کی حالت کے مطابق صرف کم کیے جا سکتے ہیں۔ فرش دیکھنے کے بعد ہم بتا دیتے ہیں کہ کیا توقع رکھیں۔",
+        },
+      },
+      {
+        q: { en: "Is crystallisation the same as polishing?", ur: "کیا کرسٹلائزیشن اور پالش ایک ہی چیز ہیں؟" },
+        a: {
+          en: "Not quite. Grinding and honing work the surface mechanically to make it flat and smooth. Crystallisation then uses a compound with the machine to raise the gloss. It suits most calcium-based marbles, so we check the stone first.",
+          ur: "بالکل نہیں۔ گرائنڈنگ اور ہوننگ سطح کو مشینی طور پر ہموار کرتی ہیں۔ پھر کرسٹلائزیشن میں مشین کے ساتھ مرکب استعمال کر کے چمک بڑھائی جاتی ہے۔ یہ زیادہ تر کیلشیم والے ماربل کے لیے موزوں ہے، اس لیے ہم پہلے پتھر چیک کرتے ہیں۔",
+        },
+      },
+    ],
+    relatedPosts: ["how-to-maintain-marble-flooring", "choose-marble-for-your-home", "marble-vs-porcelain-tiles"],
+  },
+
+  "wall-cladding-and-feature-walls": {
+    problems: {
+      en: [
+        "Veins that stop and start at every joint instead of flowing across the wall",
+        "Small, awkward cut pieces at edges, sockets and switches",
+        "Joints and uneven panels that show under side lighting",
+        "Panels fixed without enough support for their weight",
+      ],
+      ur: [
+        "دھاریاں جو دیوار پر بہنے کے بجائے ہر جوڑ پر رک جائیں",
+        "کناروں، ساکٹس اور سوئچز کے پاس چھوٹے اور بے ڈھنگے کٹے ٹکڑے",
+        "جوڑ اور ناہموار پینل جو سائیڈ لائٹ میں نمایاں ہوں",
+        "پینلز جو اپنے وزن کے مطابق مضبوط سہارے کے بغیر لگے ہوں",
+      ],
+    },
+    options: [
+      {
+        title: { en: "Book-matched marble", ur: "بُک میچ ماربل" },
+        text: {
+          en: "Neighbouring slabs are opened like the pages of a book so the veining mirrors across the joint. It suits TV walls, receptions and the wall behind a vanity.",
+          ur: "ساتھ والے سلیب کتاب کے صفحوں کی طرح کھولے جاتے ہیں تاکہ دھاریاں جوڑ کے دونوں طرف آئینے کی طرح ملیں۔ یہ ٹی وی وال، استقبالیہ اور وینٹی کے پیچھے کی دیوار کے لیے موزوں ہے۔",
+        },
+      },
+      {
+        title: { en: "Large marble-look porcelain", ur: "بڑی ماربل نما پورسلین" },
+        text: {
+          en: "Large porcelain panels with a marble pattern give a similar look with fewer joints, less weight and less upkeep than natural stone.",
+          ur: "ماربل جیسے ڈیزائن والے بڑے پورسلین پینل کم جوڑوں، کم وزن اور کم دیکھ بھال کے ساتھ ملتا جلتا تاثر دیتے ہیں۔",
+        },
+      },
+      {
+        title: { en: "Tiled feature walls", ur: "ٹائل والی نمایاں دیواریں" },
+        text: {
+          en: "Textured, patterned or contrasting tiles used on one wall to add interest without the cost or weight of stone slabs.",
+          ur: "ایک دیوار پر کھردری، ڈیزائن والی یا متضاد رنگ کی ٹائلیں، جو پتھر کے سلیب کے خرچ اور وزن کے بغیر کشش پیدا کرتی ہیں۔",
+        },
+      },
+      {
+        title: { en: "Corners and edges", ur: "کونے اور کنارے" },
+        text: {
+          en: "Mitred corners hide the edge of the stone for a solid look; metal or stone trims are simpler and protect exposed edges.",
+          ur: "ترچھے کٹے کونے پتھر کا کنارہ چھپا کر ٹھوس تاثر دیتے ہیں؛ دھاتی یا پتھر کی ٹرم آسان ہیں اور کھلے کناروں کو محفوظ رکھتی ہیں۔",
+        },
+      },
+    ],
+    considerations: {
+      en: [
+        "Fix the positions of the TV bracket, sockets, switches and lights before the layout is drawn.",
+        "Light shining along a wall shows every joint and dip, so plan the lighting and the panel layout together.",
+        "The wall behind must be sound and strong enough for the weight of the panels you choose.",
+        "Agree which slab goes where before fixing, so the strongest veining lands where you will see it.",
+      ],
+      ur: [
+        "لے آؤٹ بنانے سے پہلے ٹی وی بریکٹ، ساکٹس، سوئچز اور لائٹس کی جگہیں طے کر لیں۔",
+        "دیوار کے ساتھ ساتھ پڑنے والی روشنی ہر جوڑ اور نشیب دکھا دیتی ہے، اس لیے روشنی اور پینلز کا لے آؤٹ ساتھ طے کریں۔",
+        "پیچھے کی دیوار مضبوط اور منتخب پینلز کے وزن کے قابل ہونی چاہیے۔",
+        "فکسنگ سے پہلے طے کریں کہ کون سا سلیب کہاں لگے گا، تاکہ نمایاں دھاریاں سامنے آئیں۔",
+      ],
+    },
+    relatedPosts: ["choose-marble-for-your-home", "marble-vs-granite-kitchen-countertops", "commercial-marble-and-tile-flooring-guide"],
+  },
+
+  "staircases-and-custom-marble-work": {
+    problems: {
+      en: [
+        "Treads that are not level or rock slightly underfoot",
+        "Nosings that differ in thickness or shape from step to step",
+        "Highly polished treads that are slippery, especially when wet",
+        "Joints that do not line up from the top of the stair to the bottom",
+      ],
+      ur: [
+        "پائیدان جو لیول نہ ہوں یا پاؤں کے نیچے ہلکے ہلیں",
+        "ہر سیڑھی پر مختلف موٹائی یا شکل کے کنارے",
+        "بہت زیادہ پالش شدہ پائیدان جو خاص طور پر گیلے ہونے پر پھسلیں",
+        "جوڑ جو سیڑھی کے اوپر سے نیچے تک ایک سیدھ میں نہ ہوں",
+      ],
+    },
+    options: [
+      {
+        title: { en: "Polished or honed treads", ur: "پالش یا ہونڈ پائیدان" },
+        text: {
+          en: "Polished treads look formal; honed treads give better grip. Outdoor and frequently wet steps are safer with a honed or textured finish.",
+          ur: "پالش شدہ پائیدان باوقار لگتے ہیں؛ ہونڈ پائیدان بہتر گرفت دیتے ہیں۔ باہر اور اکثر گیلی رہنے والی سیڑھیوں کے لیے ہونڈ یا کھردرا فنش زیادہ محفوظ ہے۔",
+        },
+      },
+      {
+        title: { en: "Nosing profiles", ur: "کناروں کی پروفائل" },
+        text: {
+          en: "Rounded, half-round or square-with-chamfer nosings change both the look and how the step feels underfoot. Anti-slip grooves can be cut near the edge.",
+          ur: "گول، نیم گول یا ہلکی ڈھلوان والے چوکور کنارے سیڑھی کی شکل اور پاؤں کے احساس دونوں کو بدلتے ہیں۔ کنارے کے قریب پھسلن روکنے والی لکیریں بھی کاٹی جا سکتی ہیں۔",
+        },
+      },
+      {
+        title: { en: "Matching landings and skirting", ur: "لینڈنگ اور اسکرٹنگ کا ملاپ" },
+        text: {
+          en: "Using the same marble on landings and stair skirting makes the staircase read as one piece of work.",
+          ur: "لینڈنگ اور سیڑھی کی اسکرٹنگ پر ایک ہی ماربل لگانے سے پوری سیڑھی ایک مکمل کام لگتی ہے۔",
+        },
+      },
+      {
+        title: { en: "Vanity tops, sills and thresholds", ur: "وینٹی ٹاپ، سِل اور دہلیز" },
+        text: {
+          en: "Made-to-measure pieces cut from the same stone as the floor or walls, so details match the rest of the room.",
+          ur: "فرش یا دیواروں والے پتھر سے ناپ کے مطابق کٹے ٹکڑے، تاکہ تفصیلات باقی کمرے سے ملیں۔",
+        },
+      },
+    ],
+    considerations: {
+      en: [
+        "Every step is measured separately; on site, steps are rarely exactly the same size.",
+        "Choose the tread finish for grip first, especially on outdoor or wet steps.",
+        "Decide the nosing profile before the stone is cut, as it cannot easily be changed later.",
+        "Protect finished stairs while other trades are still working in the building.",
+      ],
+      ur: [
+        "ہر سیڑھی الگ ناپی جاتی ہے؛ سائٹ پر سیڑھیاں شاذ و نادر ہی بالکل ایک سائز کی ہوتی ہیں۔",
+        "پائیدان کا فنش پہلے گرفت کو دیکھ کر چنیں، خاص طور پر باہر یا گیلی سیڑھیوں پر۔",
+        "پتھر کٹنے سے پہلے کنارے کی پروفائل طے کر لیں، کیونکہ بعد میں اسے بدلنا آسان نہیں۔",
+        "جب تک عمارت میں دوسرے کام جاری ہوں، مکمل سیڑھیوں کو محفوظ رکھیں۔",
+      ],
+    },
+    relatedPosts: ["types-of-marble-in-pakistan", "how-to-maintain-marble-flooring", "calculate-tiles-and-marble-quantity"],
+  },
+
+  "tile-and-marble-supply": {
+    problems: {
+      en: [
+        "Running short and finding the next batch is a different shade",
+        "Over-ordering material that cannot be returned",
+        "Tiles or slabs whose size or thickness does not suit the layout",
+        "A finish chosen for looks that is unsuitable for the area, such as polished tiles in a wet room",
+      ],
+      ur: [
+        "مٹیریل کم پڑ جانا اور اگلے بیچ کا رنگ مختلف نکلنا",
+        "ضرورت سے زیادہ مٹیریل منگوا لینا جو واپس نہ ہو سکے",
+        "ٹائلیں یا سلیب جن کا سائز یا موٹائی لے آؤٹ کے مطابق نہ ہو",
+        "صرف خوبصورتی دیکھ کر چنا گیا فنش جو جگہ کے لیے موزوں نہ ہو، جیسے گیلے کمرے میں چمکدار ٹائلیں",
+      ],
+    },
+    options: [
+      {
+        title: { en: "Pakistani marble", ur: "پاکستانی ماربل" },
+        text: {
+          en: "Local stones such as Ziarat White, Botticino, Sunny Grey and Tavera. Our guide to marble types explains how each one looks and where it works.",
+          ur: "مقامی پتھر جیسے زیارت وائٹ، بوٹیچینو، سنی گرے اور ٹویرا۔ ماربل کی اقسام والی ہماری گائیڈ بتاتی ہے کہ ہر ایک کیسا دکھتا ہے اور کہاں موزوں ہے۔",
+        },
+      },
+      {
+        title: { en: "Porcelain and ceramic tiles", ur: "پورسلین اور سیرامک ٹائلیں" },
+        text: {
+          en: "Floor and wall tiles in sizes and finishes suited to each room, including matt and textured options for wet areas.",
+          ur: "ہر کمرے کے مطابق سائز اور فنش میں فرش اور دیوار کی ٹائلیں، بشمول گیلی جگہوں کے لیے میٹ اور کھردرے انتخاب۔",
+        },
+      },
+      {
+        title: { en: "Marble-look porcelain", ur: "ماربل نما پورسلین" },
+        text: {
+          en: "A marble appearance with lower maintenance, useful where natural stone would stain or etch too easily.",
+          ur: "کم دیکھ بھال کے ساتھ ماربل جیسا تاثر، ان جگہوں کے لیے مفید جہاں قدرتی پتھر آسانی سے داغدار ہو جائے۔",
+        },
+      },
+      {
+        title: { en: "Advice on material you buy yourself", ur: "خود خریدے گئے مٹیریل پر مشورہ" },
+        text: {
+          en: "If you prefer to buy your own tiles or marble, we can advise on size, finish and quantity before you order.",
+          ur: "اگر آپ خود ٹائلیں یا ماربل خریدنا چاہیں تو آرڈر سے پہلے ہم سائز، فنش اور مقدار پر مشورہ دے سکتے ہیں۔",
+        },
+      },
+    ],
+    considerations: {
+      en: [
+        "Order everything for one area from the same batch, and check the shade and size codes on each box.",
+        "Add a wastage allowance for cuts, more for diagonal and patterned layouts.",
+        "Keep a few spare tiles or pieces after the job for future repairs.",
+        "Store material flat, dry and protected on site until it is fixed.",
+      ],
+      ur: [
+        "ایک جگہ کا سارا مٹیریل ایک ہی بیچ سے منگوائیں، اور ہر ڈبے پر رنگ اور سائز کا کوڈ چیک کریں۔",
+        "کٹنگ کے لیے ضائع ہونے کی گنجائش شامل کریں، ترچھے اور پیٹرن والے لے آؤٹ کے لیے زیادہ۔",
+        "کام کے بعد مستقبل کی مرمت کے لیے چند اضافی ٹائلیں یا ٹکڑے رکھ لیں۔",
+        "لگنے تک مٹیریل کو سائٹ پر سیدھا، خشک اور محفوظ رکھیں۔",
+      ],
+    },
+    relatedPosts: ["calculate-tiles-and-marble-quantity", "types-of-marble-in-pakistan", "marble-vs-granite-kitchen-countertops"],
   },
 };
 

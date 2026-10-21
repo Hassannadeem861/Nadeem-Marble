@@ -25,8 +25,8 @@ const price = {
 const areas = {
   q: { en: "Which areas do you work in?", ur: "آپ کن علاقوں میں کام کرتے ہیں؟" },
   a: {
-    en: "Please contact us with your project location and we will confirm whether we can take it on.",
-    ur: "براہِ کرم اپنے منصوبے کا مقام بتا کر ہم سے رابطہ کریں، ہم تصدیق کر دیں گے کہ ہم یہ کام کر سکتے ہیں یا نہیں۔",
+    en: "We work across all of Karachi, and also take on projects in other cities in Pakistan. Tell us where your project is and we will discuss the details with you.",
+    ur: "ہم پورے کراچی میں کام کرتے ہیں، اور پاکستان کے دیگر شہروں میں بھی منصوبے لیتے ہیں۔ اپنے منصوبے کا مقام بتائیں، ہم آپ سے تفصیلات پر بات کریں گے۔",
   },
 };
 

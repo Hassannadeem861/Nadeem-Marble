@@ -13,6 +13,7 @@ import { Reveal } from "@/components/shared/Reveal";
 import { SectionHeading } from "@/components/shared/SectionHeading";
 import { blogCategories, blogPosts, getPost } from "@/data/blogPosts";
 import { getImage } from "@/data/images";
+import { site } from "@/data/site";
 import { getDictionary } from "@/lib/dictionaries";
 import { format, formatDate } from "@/lib/format";
 import { localizePath, pick } from "@/lib/i18n";
@@ -28,10 +29,13 @@ export async function generateMetadata({ params }) {
   const post = getPost(slug);
   if (!post) return {};
   const cover = getImage(post.cover);
+  const title = pick(post.seoTitle ?? post.title, locale);
   return buildMetadata({
     locale,
     path: `/blog/${slug}`,
-    title: pick(post.title, locale),
+    title,
+    // Long titles drop the brand suffix so search results do not cut them off.
+    absoluteTitle: `${title} | ${site.name}`.length > 65,
     description: pick(post.excerpt, locale),
     type: "article",
     publishedTime: post.published,

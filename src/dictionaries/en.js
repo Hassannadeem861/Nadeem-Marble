@@ -72,7 +72,7 @@ const en = {
     home: {
       title: "Nadeem Marbles | Tile & Marble Installation in Karachi",
       description:
-        "Nadeem Marbles plans, models and installs tile and marble across Karachi, with measured 2D/3D layouts and clean finishing. Projects in other Pakistani cities too.",
+        "Nadeem Marbles plans, models and installs tile and marble across Karachi, with measured 2D/3D layouts and clean finishing. Other Pakistani cities too.",
     },
     about: {
       title: "About Us: Tile & Marble Specialists in Karachi",
@@ -85,7 +85,7 @@ const en = {
         "Tile and marble fixing, polishing, 2D/3D modelling and pattern planning across Karachi and other cities in Pakistan. Explore our services and request a quote.",
     },
     portfolio: {
-      title: "Design Ideas: Tile & Marble Kitchens, Bathrooms and Floors",
+      title: "Tile & Marble Design Ideas",
       description:
         "Tile and marble design ideas for kitchens, bathrooms, floors, staircases and feature walls, with the approach and materials for each.",
     },
@@ -112,21 +112,22 @@ const en = {
   home: {
     hero: {
       eyebrow: "Tiles | Marble | Quality Work",
-      title: "Tile and marble surfaces, measured, designed and fixed with care.",
+      title: "Tile and marble fixing in Karachi, measured and planned before work starts.",
       text: "From 2D/3D layouts based on your site measurements to the final clean joint, Nadeem Marbles plans and installs floors and walls that look right and last.",
     },
     intro: {
       eyebrow: "What we do",
-      title: "Four disciplines behind every finished surface.",
+      title: "Measuring, design, pattern planning and fixing, under one team.",
       text: "A beautiful floor or wall is the result of decisions made long before installation. Nadeem Marbles brings modelling, design, pattern planning and proper fixing together, so each step supports the next.",
+      aboutLink: "More about Nadeem Marbles and its founder",
     },
     services: {
       eyebrow: "Services",
-      title: "Tile and marble work, planned from start to finish.",
+      title: "Our tile and marble services.",
     },
     marble: {
       eyebrow: "Marble",
-      title: "Natural stone deserves a considered hand.",
+      title: "Working with natural marble.",
       p1: "No two pieces of marble are the same. That is its appeal, and its challenge. Good marble work means laying pieces out before fixing, matching tone and veining across the room, and placing the strongest patterns where they will be seen.",
       p2: "We help you think through where marble belongs, which finish suits the space, and how the stone will be cared for over time.",
       finishesTitle: "Common finishes",
@@ -158,7 +159,7 @@ const en = {
     },
     sectors: {
       eyebrow: "Industries",
-      title: "For homes and for business.",
+      title: "Homes, offices, shops and hotels.",
     },
     projects: {
       eyebrow: "Design ideas",
@@ -167,7 +168,7 @@ const en = {
     },
     process: {
       eyebrow: "Our process",
-      title: "A clear path from first call to finished surface.",
+      title: "How a project runs, step by step.",
     },
     commitments: {
       eyebrow: "How we work",
@@ -181,7 +182,7 @@ const en = {
   },
   cta: {
     eyebrow: "Start your project",
-    title: "Tell us about your space.",
+    title: "Get a quote for your project.",
     text: "Share a few details or photos of your floors and walls and we will get back to you to discuss measurements, design and a quote.",
   },
   about: {
@@ -192,7 +193,7 @@ const en = {
     },
     story: {
       eyebrow: "Who we are",
-      title: "Quality work is a standard, not a slogan.",
+      title: "Who we are and how we work.",
       paragraphs: [
         "Nadeem Marbles is a tiles and marble company focused on doing the work properly, from the first measurement to the final clean. Our name carries a simple promise: tiles, marble and quality work.",
         "Every project is different, so we start by understanding the space and what you need from it. We then measure, model and plan the layout before any material is cut, so the finished surface is the one you agreed on.",
@@ -202,7 +203,7 @@ const en = {
       eyebrow: "Leadership",
       title: "Meet the founder",
       paragraphs: [
-        "Nadeem Marbles is led by its founder, who sets the standards for planning, design and workmanship across the team.",
+        "Nadeem Marbles is led by its founder, Muhammad Nadeem, who sets the standards for planning, design and workmanship across the team.",
         "When you contact Nadeem Marbles, you speak directly with the business about your project.",
       ],
     },
@@ -216,7 +217,7 @@ const en = {
     },
     craft: {
       eyebrow: "Craft",
-      title: "The details that make a surface.",
+      title: "Details we check on every job.",
       text: "Straight lines, consistent joints, balanced cuts and clean edges. These details are what separate a surface that looks finished from one that merely looks installed.",
     },
   },
@@ -253,6 +254,7 @@ const en = {
     resultsCount: "{n} design ideas shown",
     openGallery: "Open gallery image {i}: {alt}",
     approachTitle: "Our approach",
+    thinkingTitle: "The design thinking",
     servicesTitle: "Services involved",
     materialsTitle: "Materials considered",
     galleryTitle: "Gallery",
@@ -307,6 +309,7 @@ const en = {
       text: "Call or WhatsApp for the quickest reply, or send your project details using the form.",
     },
     detailsTitle: "Contact details",
+    aboutLink: "Who you will be working with: about Nadeem Marbles",
     phoneLabel: "Phone",
     emailLabel: "Email",
     whatsappLabel: "WhatsApp",
@@ -366,7 +369,7 @@ const en = {
     statsHeading: "Nadeem Marbles in numbers",
     whyChoose: {
       eyebrow: "Why choose us",
-      title: "Careful planning, clean workmanship.",
+      title: "Reasons to work with us.",
       text: "What you can expect when Nadeem Marbles works on your floors and walls.",
     },
     testimonials: {

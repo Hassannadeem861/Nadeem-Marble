@@ -51,16 +51,9 @@ export const services = [
     icon: "Gem",
     image: "floorPolishedMarble",
     title: { en: "Marble Fixing & Installation", ur: "ماربل فکسنگ اور تنصیب" },
-    seo: {
-      title: { en: "Marble Fixing & Installation in Karachi", ur: "کراچی میں ماربل فکسنگ اور تنصیب" },
-      description: {
-        en: "Marble fixing on floors and walls across Karachi, with matched veins, tight joints and a clean finish. Projects in other Pakistani cities too.",
-        ur: "کراچی بھر میں فرش اور دیواروں پر ماربل فکسنگ، ملی ہوئی دھاریوں، تنگ جوڑوں اور صاف فنش کے ساتھ۔ پاکستان کے دیگر شہروں میں بھی کام۔",
-      },
-    },
     summary: {
-      en: "Careful fixing of marble on floors and walls, with attention to vein direction, joints and a clean final finish.",
-      ur: "فرش اور دیواروں پر ماربل کی احتیاط سے فکسنگ، دھاریوں کی سمت، جوڑوں اور صاف فنشنگ پر خاص توجہ کے ساتھ۔",
+      en: "Marble fixed on floors, walls, stairs and sills, with each piece matched for tone and vein, set flat and finished with tight, even joints.",
+      ur: "فرش، دیواروں، سیڑھیوں اور سِل پر ماربل کی فکسنگ، ہر ٹکڑا رنگ اور دھاریوں کے لحاظ سے ملا کر، ہموار لگا کر اور تنگ، یکساں جوڑوں کے ساتھ۔",
     },
     body: {
       en: [
@@ -96,9 +89,10 @@ export const services = [
     image: "marbleGrey",
     title: { en: "2D/3D Modelling & Site Measurement", ur: "2D/3D ماڈلنگ اور سائٹ کی پیمائش" },
     summary: {
-      en: "Accurate 2D and 3D models of your tile and marble areas, based on measurements taken at your site.",
-      ur: "آپ کی سائٹ پر لی گئی پیمائش کی بنیاد پر ٹائل اور ماربل والے حصوں کے درست 2D اور 3D ماڈل۔",
+      en: "We measure your site and draw the floors and walls in 2D and 3D, so you can check the layout, the cuts and the quantities before any material is bought.",
+      ur: "ہم آپ کی سائٹ کی پیمائش کر کے فرش اور دیواروں کو 2D اور 3D میں بناتے ہیں، تاکہ مٹیریل خریدنے سے پہلے آپ لے آؤٹ، کٹنگ اور مقدار دیکھ سکیں۔",
     },
+    relatedPosts: ["calculate-tiles-and-marble-quantity", "tile-layout-patterns", "floor-tile-sizes-guide"],
     body: {
       en: [
         "Before a single tile is cut, it helps to see the finished surface. We measure the actual site, then model the floors and walls in 2D and 3D so you can review the layout, the pattern and where cuts will fall.",
@@ -131,9 +125,10 @@ export const services = [
     image: "kitchenGoldVein",
     title: { en: "Surface Design Consultation", ur: "سطح کے ڈیزائن کی مشاورت" },
     summary: {
-      en: "Modern, considered tile and marble designs shaped around how you use the space and the look you want.",
-      ur: "جدید اور سوچے سمجھے ٹائل اور ماربل ڈیزائن، جو آپ کی جگہ کے استعمال اور پسند کے مطابق بنائے جاتے ہیں۔",
+      en: "Help deciding which tiles and marble to use, and where: materials, sizes and finishes matched to how the room is used, cleaned and lit.",
+      ur: "یہ طے کرنے میں مدد کہ کون سی ٹائلیں اور ماربل کہاں لگیں: مٹیریل، سائز اور فنش، کمرے کے استعمال، صفائی اور روشنی کے مطابق۔",
     },
+    relatedPosts: ["choose-marble-for-your-home", "marble-vs-porcelain-tiles", "select-tiles-for-kitchens-and-bathrooms"],
     body: {
       en: [
         "Design starts with your needs: who uses the room, how much wear it gets, how it is cleaned and the feeling you want it to have. From there we suggest tile and marble combinations, formats and finishes that suit the space.",
@@ -166,9 +161,10 @@ export const services = [
     image: "tilePattern",
     title: { en: "Pattern & Layout Planning", ur: "ڈیزائن پیٹرن اور لے آؤٹ کی منصوبہ بندی" },
     summary: {
-      en: "Decorative patterns and practical layouts planned properly, so borders, centres and cuts sit exactly where they should.",
-      ur: "آرائشی پیٹرن اور عملی لے آؤٹ کی درست منصوبہ بندی، تاکہ بارڈر، مرکز اور کٹنگ بالکل صحیح جگہ پر آئیں۔",
+      en: "Herringbone, borders, medallions and other patterns set out from the room's centre lines, so cuts are balanced and nothing ends in a thin sliver.",
+      ur: "ہیرنگ بون، بارڈر، میڈلین اور دیگر پیٹرن کمرے کی مرکزی لائنوں سے ترتیب دیے جاتے ہیں، تاکہ کٹنگ متوازن رہے اور کوئی ٹائل باریک پٹی پر ختم نہ ہو۔",
     },
+    relatedPosts: ["tile-layout-patterns", "floor-tile-sizes-guide", "select-tiles-for-kitchens-and-bathrooms"],
     body: {
       en: [
         "Patterns such as herringbone, chevron, borders, medallions or mixed-format layouts only look right when they are planned from the room's true centre lines and focal points.",
@@ -331,30 +327,23 @@ export const services = [
     icon: "Sparkles",
     image: "marbleWhite",
     title: { en: "Marble Polishing & Restoration", ur: "ماربل پالشنگ اور بحالی" },
-    seo: {
-      title: { en: "Marble Polishing & Restoration in Karachi", ur: "کراچی میں ماربل پالشنگ اور بحالی" },
-      description: {
-        en: "Marble floor polishing and restoration across Karachi: cleaning, honing and re-polishing dull or scratched marble back to an even finish.",
-        ur: "کراچی بھر میں ماربل فرش کی پالشنگ اور بحالی: مدھم یا خراش زدہ ماربل کی صفائی، ہوننگ اور دوبارہ پالش سے یکساں فنش۔",
-      },
-    },
     summary: {
-      en: "Bringing tired, dull or scratched marble back to a clean, even finish.",
-      ur: "پرانے، مدھم یا خراش زدہ ماربل کو دوبارہ صاف اور یکساں فنش میں لانا۔",
+      en: "Machine grinding, honing, crystallisation and sealing to bring dull, scratched or uneven marble floors back to a clean, even finish.",
+      ur: "مشین گرائنڈنگ، ہوننگ، کرسٹلائزیشن اور سیلنگ کے ذریعے مدھم، خراش زدہ یا ناہموار ماربل فرش کو دوبارہ صاف اور یکساں فنش دینا۔",
     },
     body: {
       en: [
-        "Marble loses its shine through foot traffic, grit and acidic spills. Depending on the condition, it can often be cleaned, honed and re-polished rather than replaced.",
-        "The right approach depends on the stone and the damage, so an inspection comes first.",
+        "Marble loses its shine slowly. Grit carried in on shoes acts like sandpaper in the walking routes, lemon, vinegar and many household cleaners etch dull marks into the surface, and over the years some tiles settle so their edges no longer sit level with the next one. Replacing the floor is rarely necessary. In most cases the existing marble can be brought back by working the surface itself.",
+        "Restoration is done in stages, and not every floor needs all of them. We look at the floor first, then agree which stages it needs, depending on the floor's condition, the type of marble and whether you want a high gloss or a softer honed finish.",
       ],
       ur: [
-        "پیدل آمد و رفت، مٹی کے ذرات اور تیزابی چیزوں کے گرنے سے ماربل کی چمک کم ہو جاتی ہے۔ حالت کے مطابق اسے اکثر بدلنے کے بجائے صاف، ہون اور دوبارہ پالش کیا جا سکتا ہے۔",
-        "درست طریقہ پتھر اور نقصان کی نوعیت پر منحصر ہے، اس لیے پہلے معائنہ کیا جاتا ہے۔",
+        "ماربل کی چمک آہستہ آہستہ کم ہوتی ہے۔ جوتوں کے ساتھ آنے والی مٹی چلنے کے راستوں میں ریگ مال کی طرح کام کرتی ہے، لیموں، سرکہ اور گھریلو صفائی کی کئی اشیا سطح پر مدھم نشان چھوڑ دیتی ہیں، اور برسوں میں کچھ ٹائلیں بیٹھ جاتی ہیں جس سے ان کے کنارے ساتھ والی ٹائل کے برابر نہیں رہتے۔ فرش بدلنے کی ضرورت کم ہی پڑتی ہے۔ زیادہ تر صورتوں میں موجودہ ماربل کی سطح پر کام کر کے اسے بحال کیا جا سکتا ہے۔",
+        "بحالی مرحلہ وار ہوتی ہے، اور ہر فرش کو تمام مراحل کی ضرورت نہیں ہوتی۔ ہم پہلے فرش دیکھتے ہیں، پھر فرش کی حالت، ماربل کی قسم اور اس بات کے مطابق کہ آپ تیز چمک چاہتے ہیں یا ہلکا ہونڈ فنش، مراحل طے کرتے ہیں۔",
       ],
     },
     includes: {
-      en: ["Condition inspection", "Deep cleaning", "Honing and re-polishing", "Advice on sealing and care"],
-      ur: ["حالت کا معائنہ", "گہری صفائی", "ہوننگ اور دوبارہ پالش", "سیلنگ اور دیکھ بھال کے بارے میں مشورہ"],
+      en: ["Inspection of the floor's condition", "Machine grinding to level uneven joints and remove deep scratches", "Honing to an even, smooth surface", "Crystallisation to raise the gloss", "Sealing and care advice"],
+      ur: ["فرش کی حالت کا معائنہ", "ناہموار جوڑ برابر کرنے اور گہری خراشیں ہٹانے کے لیے مشین گرائنڈنگ", "یکساں اور ہموار سطح کے لیے ہوننگ", "چمک بڑھانے کے لیے کرسٹلائزیشن", "سیلنگ اور دیکھ بھال کا مشورہ"],
     },
   },
   {

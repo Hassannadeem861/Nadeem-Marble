@@ -315,6 +315,7 @@ export const guidePosts = [
     cover: "kitchenDarkIsland",
     relatedServices: ["kitchen-tile-and-marble-installation", "marble-installation"],
     title: { en: "Marble vs Granite for Kitchen Countertops: Which Should You Choose?", ur: "کچن کاؤنٹر کے لیے ماربل یا گرینائٹ: کون سا بہتر ہے؟" },
+    seoTitle: { en: "Marble vs Granite Kitchen Countertops: Which to Choose?", ur: "کچن کاؤنٹر کے لیے ماربل یا گرینائٹ: کون سا بہتر ہے؟" },
     excerpt: {
       en: "Both are natural stone, but they behave very differently on a kitchen worktop. How marble and granite compare on hardness, heat, staining and upkeep.",
       ur: "دونوں قدرتی پتھر ہیں، مگر کچن کے ورک ٹاپ پر ان کا رویہ بہت مختلف ہے۔ سختی، حرارت، داغ اور دیکھ بھال کے لحاظ سے ماربل اور گرینائٹ کا موازنہ۔",

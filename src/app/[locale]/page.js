@@ -1,3 +1,5 @@
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import { ArticleCard } from "@/components/cards/ArticleCard";
 import { ProjectCard } from "@/components/cards/ProjectCard";
 import { ServiceCard } from "@/components/cards/ServiceCard";
@@ -34,6 +36,7 @@ export default async function HomePage({ params }) {
   const { locale } = await params;
   const dict = getDictionary(locale);
   const home = dict.home;
+  const latestPosts = [...blogPosts].sort((a, b) => (b.updated ?? b.published).localeCompare(a.updated ?? a.published)).slice(0, 3);
 
   return (
     <>
@@ -49,7 +52,16 @@ export default async function HomePage({ params }) {
             <div className="lg:col-span-6">
               <SectionHeading id="intro-heading" eyebrow={home.intro.eyebrow} title={home.intro.title} />
             </div>
-            <p className="text-lg leading-relaxed text-muted-foreground lg:col-span-5 lg:col-start-8 lg:self-end">{home.intro.text}</p>
+            <div className="lg:col-span-5 lg:col-start-8 lg:self-end">
+              <p className="text-lg leading-relaxed text-muted-foreground">{home.intro.text}</p>
+              <Link
+                href={localizePath(locale, "/about")}
+                className="mt-5 inline-flex min-h-10 items-center gap-2 font-semibold text-charcoal underline decoration-gold underline-offset-4 hover:decoration-2"
+              >
+                {home.intro.aboutLink}
+                <ArrowRight aria-hidden="true" className="size-4 rtl:rotate-180" />
+              </Link>
+            </div>
           </div>
           <div className="mt-14">
             <PillarsGrid locale={locale} />
@@ -111,7 +123,7 @@ export default async function HomePage({ params }) {
             linkLabel={dict.common.viewAll}
           />
           <Reveal stagger className="mt-12 grid gap-x-8 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
-            {blogPosts.slice(0, 3).map((post) => (
+            {latestPosts.map((post) => (
               <ArticleCard key={post.slug} post={post} locale={locale} dict={dict} />
             ))}
           </Reveal>

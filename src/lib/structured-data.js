@@ -25,6 +25,7 @@ export function organizationSchema(locale) {
     // one confirmed line of text, not separately confirmed street/city/postal fields.
     ...(site.address ? { address: site.address } : {}),
     ...(site.serviceAreas ? { areaServed: site.serviceAreas } : {}),
+    ...(site.owner.name ? { founder: { "@type": "Person", name: site.owner.name, jobTitle: site.owner.role.en } } : {}),
     ...(site.openingHours
       ? {
           openingHoursSpecification: {

@@ -51,7 +51,8 @@ export default async function ProjectPage({ params }) {
     .filter(Boolean)
     .map((category) => pick(category.label, locale));
   const relatedServices = project.services.map(getService).filter(Boolean);
-  const more = projects.filter((item) => item.slug !== project.slug).slice(0, 3);
+  const position = projects.indexOf(project);
+  const more = Array.from({ length: Math.min(3, projects.length - 1) }, (_, step) => projects[(position + 1 + step) % projects.length]);
 
   return (
     <>
@@ -92,6 +93,16 @@ export default async function ProjectPage({ params }) {
                 next: dict.common.nextImage,
               }}
             />
+            {project.thinking ? (
+              <div className="mt-12">
+                <h2 className="text-2xl text-charcoal">{copy.thinkingTitle}</h2>
+                <div className="prose-article mt-5 text-muted-foreground">
+                  {pick(project.thinking, locale).map((paragraph) => (
+                    <p key={paragraph}>{paragraph}</p>
+                  ))}
+                </div>
+              </div>
+            ) : null}
           </div>
 
           <div className="space-y-10 lg:col-span-4">

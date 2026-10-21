@@ -1,6 +1,6 @@
-// Sectors Nadeem Marbles can plan surfaces for. These describe typical surface
-// requirements only; they make no claim about past projects in each sector.
-// TODO(client): confirm which sectors the business actively serves.
+// Sectors Nadeem Marbles serves (confirmed by the business, October 2026).
+// Entries describe typical surface requirements only; they name no clients,
+// past projects or figures.
 
 export const industries = [
   {
@@ -30,6 +30,7 @@ export const industries = [
   {
     slug: "commercial-offices",
     image: "lobbyReception",
+    relatedServices: ["marble-flooring", "wall-cladding-and-feature-walls", "tile-installation"],
     title: { en: "Commercial Offices", ur: "کمرشل دفاتر" },
     summary: {
       en: "Receptions, lobbies, corridors and washrooms that need to look professional while handling daily foot traffic.",
@@ -53,6 +54,7 @@ export const industries = [
   {
     slug: "retail-and-showrooms",
     image: "floorPolishedMarble",
+    relatedServices: ["tile-installation", "marble-polishing-and-restoration", "surface-design"],
     title: { en: "Retail & Showrooms", ur: "ریٹیل اور شو رومز" },
     summary: {
       en: "Shop floors, display areas and counters where the surface is part of how the brand is seen.",
@@ -76,6 +78,7 @@ export const industries = [
   {
     slug: "hospitality",
     image: "hospitalityCorridor",
+    relatedServices: ["wall-cladding-and-feature-walls", "marble-installation", "marble-polishing-and-restoration"],
     title: { en: "Hospitality", ur: "مہمان نوازی" },
     summary: {
       en: "Hotels, restaurants and event spaces where atmosphere, durability and quick maintenance all have to work together.",
@@ -99,6 +102,7 @@ export const industries = [
   {
     slug: "property-development",
     image: "kitchenOpenPlan",
+    relatedServices: ["2d-3d-surface-modelling", "tile-and-marble-supply", "tile-installation"],
     title: { en: "Property Development", ur: "پراپرٹی ڈویلپمنٹ" },
     summary: {
       en: "Apartments and housing projects that need consistent surfaces delivered across many units.",
@@ -122,10 +126,11 @@ export const industries = [
   {
     slug: "institutional",
     image: "institutionalArches",
+    relatedServices: ["staircases-and-custom-marble-work", "tile-installation", "pattern-and-layout-planning"],
     title: { en: "Institutional & Community Buildings", ur: "ادارہ جاتی اور کمیونٹی عمارتیں" },
     summary: {
-      en: "Schools, clinics, offices and places of gathering where surfaces must be durable, safe and dignified.",
-      ur: "اسکول، کلینک، دفاتر اور اجتماع کی جگہیں جہاں سطحیں پائیدار، محفوظ اور باوقار ہونی چاہییں۔",
+      en: "Schools, colleges, clinics and places of gathering where surfaces must be durable, safe and dignified.",
+      ur: "اسکول، کالج، کلینک اور اجتماع کی جگہیں جہاں سطحیں پائیدار، محفوظ اور باوقار ہونی چاہییں۔",
     },
     needs: {
       en: [

@@ -61,9 +61,12 @@ export default async function ServicePage({ params }) {
   const dict = getDictionary(locale);
   const title = pick(service.title, locale);
   const landing = getServiceLanding(service.slug);
-  const guides = (landing?.relatedPosts ?? []).map(getPost).filter(Boolean);
+  const guides = (landing?.relatedPosts ?? service.relatedPosts ?? []).map(getPost).filter(Boolean);
   const related = projects.filter((project) => project.services.includes(service.slug)).slice(0, 3);
-  const others = services.filter((item) => item.slug !== service.slug && item.verified).slice(0, 4);
+  // The next four services in order, wrapping around, so every service is linked equally often.
+  const verified = services.filter((item) => item.verified);
+  const position = verified.findIndex((item) => item.slug === service.slug);
+  const others = Array.from({ length: Math.min(4, verified.length - 1) }, (_, step) => verified[(position + 1 + step) % verified.length]);
 
   return (
     <>
