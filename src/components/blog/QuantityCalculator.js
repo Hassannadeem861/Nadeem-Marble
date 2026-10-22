@@ -15,8 +15,10 @@ const TILE_SIZES = [
   { id: "24x48", label: "24x48 in (60x120 cm)", sqft: 8, sqm: 0.72 },
 ];
 const WASTAGE = [5, 10, 15, 20];
+const SQFT_PER_SQM = 10.7639;
 
 const number = new Intl.NumberFormat("en-US", { maximumFractionDigits: 1 });
+const money = new Intl.NumberFormat("en-US", { maximumFractionDigits: 0 });
 
 /** Estimates tiles or marble pieces for a rectangular floor. All maths runs in the browser. */
 export function QuantityCalculator({ labels }) {
@@ -26,12 +28,20 @@ export function QuantityCalculator({ labels }) {
   const [width, setWidth] = useState("15");
   const [sizeId, setSizeId] = useState("24x24");
   const [wastage, setWastage] = useState(10);
+  const [price, setPrice] = useState("");
 
   const size = TILE_SIZES.find((item) => item.id === sizeId);
   const area = Math.max(0, Number(length) || 0) * Math.max(0, Number(width) || 0);
   const tileArea = unit === "ft" ? size.sqft : size.sqm;
   const tiles = area > 0 ? Math.ceil((area / tileArea) * (1 + wastage / 100)) : 0;
   const areaUnit = unit === "ft" ? labels.sqft : labels.sqm;
+
+  // The price is always per square foot, so metric areas are converted first.
+  const toSqft = (value) => (unit === "ft" ? value : value * SQFT_PER_SQM);
+  const rate = price.trim() === "" ? NaN : Number(price);
+  const showCost = Number.isFinite(rate) && rate > 0 && area > 0;
+  const areaCost = toSqft(area) * rate;
+  const orderCost = toSqft(tiles * tileArea) * rate;
 
   return (
     <aside aria-labelledby={`${id}-title`} className="my-10 rounded-sm border border-border bg-white p-6 md:p-8">
@@ -119,6 +129,27 @@ export function QuantityCalculator({ labels }) {
             {labels.wastageHint}
           </p>
         </div>
+        <div className="flex flex-col gap-2">
+          <label htmlFor={`${id}-price`} className="text-sm font-semibold text-charcoal">
+            {labels.price}
+          </label>
+          <Input
+            id={`${id}-price`}
+            type="number"
+            inputMode="decimal"
+            min="0"
+            step="any"
+            dir="ltr"
+            value={price}
+            onChange={(event) => setPrice(event.target.value)}
+            aria-describedby={`${id}-price-hint`}
+            aria-invalid={price.trim() !== "" && !(rate > 0)}
+            className="h-11"
+          />
+          <p id={`${id}-price-hint`} className="text-xs text-muted-foreground">
+            {labels.priceHint}
+          </p>
+        </div>
       </div>
 
       <dl aria-live="polite" className="mt-6 grid gap-4 rounded-sm bg-stone/70 p-5 sm:grid-cols-2">
@@ -134,7 +165,23 @@ export function QuantityCalculator({ labels }) {
             <span lang="en" dir="ltr">{tiles}</span>
           </dd>
         </div>
+        {showCost
+          ? [
+              [labels.areaCost, areaCost],
+              [labels.orderCost, orderCost],
+            ].map(([label, value]) => (
+              <div key={label}>
+                <dt className="text-xs font-semibold text-muted-foreground">{label}</dt>
+                <dd className="mt-1 font-display text-3xl text-charcoal">
+                  <span lang="en" dir="ltr">
+                    <span className="text-base">Rs.</span> {money.format(value)}
+                  </span>
+                </dd>
+              </div>
+            ))
+          : null}
       </dl>
+      {showCost ? <p className="mt-4 text-xs leading-relaxed text-muted-foreground">{labels.costNote}</p> : null}
       <p className="mt-4 text-xs leading-relaxed text-muted-foreground">{labels.note}</p>
     </aside>
   );
