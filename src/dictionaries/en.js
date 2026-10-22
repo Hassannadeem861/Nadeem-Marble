@@ -102,7 +102,7 @@ const en = {
     contact: {
       title: "Contact Us for a Tile or Marble Quote in Karachi",
       description:
-        "Call, WhatsApp or email Nadeem Marbles in Shah Faisal Town, Karachi about your tile or marble project, or send your details through the enquiry form.",
+        "Call, WhatsApp or email Nadeem Marbles in Shah Faisal Colony, Karachi about your tile or marble project, or send your details through the enquiry form.",
     },
     credits: {
       title: "Image Credits",
@@ -113,12 +113,12 @@ const en = {
     hero: {
       eyebrow: "Tiles | Marble | Quality Work",
       title: "Tile and marble fixing in Karachi, measured and planned before work starts.",
-      text: "From 2D/3D layouts based on your site measurements to the final clean joint, Nadeem Marbles plans and installs floors and walls that look right and last.",
+      text: "We measure your site, draw the layout in 2D/3D so you can see where every joint and cut will fall, then fix the tiles or marble and grout the last joint.",
     },
     intro: {
       eyebrow: "What we do",
       title: "Measuring, design, pattern planning and fixing, under one team.",
-      text: "A beautiful floor or wall is the result of decisions made long before installation. Nadeem Marbles brings modelling, design, pattern planning and proper fixing together, so each step supports the next.",
+      text: "Most problems with a tiled floor, such as thin cut pieces at the walls, joints that wander or too little material, start before fixing begins. Because the same team measures, designs, plans the pattern and fixes, those decisions are settled on the drawing, not on the day.",
       aboutLink: "More about Nadeem Marbles and its founder",
     },
     services: {
@@ -189,13 +189,13 @@ const en = {
     hero: {
       eyebrow: "About us",
       title: "A tile and marble business built on planning and proper workmanship.",
-      text: "Nadeem Marbles works with tiles and marble, bringing together measured modelling, thoughtful design, careful pattern work and proper fixing.",
+      text: "Nadeem Marbles is a tile and marble business in Shah Faisal Colony, Karachi. We measure, model, design and fix floors and walls for homes and businesses.",
     },
     story: {
       eyebrow: "Who we are",
       title: "Who we are and how we work.",
       paragraphs: [
-        "Nadeem Marbles is a tiles and marble company focused on doing the work properly, from the first measurement to the final clean. Our name carries a simple promise: tiles, marble and quality work.",
+        "We handle a job from the first site measurement to the final clean, so one team is answerable for the whole surface. Our tagline says what we do: tiles, marble and quality work.",
         "Every project is different, so we start by understanding the space and what you need from it. We then measure, model and plan the layout before any material is cut, so the finished surface is the one you agreed on.",
       ],
     },
@@ -234,7 +234,8 @@ const en = {
     includesTitle: "What this includes",
     processTitle: "How it works",
     relatedProjects: "Related design ideas",
-    otherServices: "Other services",
+    allServicesTitle: "All services",
+    currentPage: "You are here",
     enquireTitle: "Discuss this service",
     enquireText: "Tell us about your space and we will get back to you.",
     problemsTitle: "Problems this solves",
@@ -282,6 +283,8 @@ const en = {
     allCategories: "All topics",
     noResults: "No guides match your search.",
     moreArticles: "More guides",
+    planningGuidesTitle: "Planning guides",
+    choosingCareGuidesTitle: "Choosing & care guides",
     backToBlog: "Back to all guides",
     relatedServices: "Related services",
     calculator: {

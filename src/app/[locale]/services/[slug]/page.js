@@ -14,6 +14,7 @@ import { Eyebrow, SectionHeading } from "@/components/shared/SectionHeading";
 import { ArticleCard } from "@/components/cards/ArticleCard";
 import { ProcessSteps } from "@/components/shared/ProcessSteps";
 import { getPost } from "@/data/blogPosts";
+import { serviceMenuGroups } from "@/data/navigation";
 import { projects } from "@/data/projects";
 import { getServiceLanding } from "@/data/serviceLandings";
 import { getService, isServiceIndexable, services } from "@/data/services";
@@ -63,10 +64,14 @@ export default async function ServicePage({ params }) {
   const landing = getServiceLanding(service.slug);
   const guides = (landing?.relatedPosts ?? service.relatedPosts ?? []).map(getPost).filter(Boolean);
   const related = projects.filter((project) => project.services.includes(service.slug)).slice(0, 3);
-  // The next four services in order, wrapping around, so every service is linked equally often.
-  const verified = services.filter((item) => item.verified);
-  const position = verified.findIndex((item) => item.slug === service.slug);
-  const others = Array.from({ length: Math.min(4, verified.length - 1) }, (_, step) => verified[(position + 1 + step) % verified.length]);
+  // Design & planning pages list each other; every other service lists the remaining services. Current page first.
+  const designGroup = serviceMenuGroups.find((group) => group.title.en === "Design & planning");
+  const isDesign = designGroup.items.some((item) => item.slug === service.slug);
+  const categoryItems = (isDesign ? designGroup.items : serviceMenuGroups.filter((group) => group !== designGroup).flatMap((group) => group.items))
+    .map((item) => ({ ...item, service: getService(item.slug) }))
+    .filter((item) => item.service?.verified);
+  const categoryList = [...categoryItems.filter((item) => item.slug === service.slug), ...categoryItems.filter((item) => item.slug !== service.slug)];
+  const categoryTitle = isDesign ? pick(designGroup.title, locale) : dict.services.allServicesTitle;
 
   return (
     <>
@@ -180,27 +185,37 @@ export default async function ServicePage({ params }) {
         </section>
       ) : null}
 
-      <section aria-labelledby="other-services-heading" className="bg-stone/60 py-16 md:py-24">
-        <div className="container-page">
-          <SectionHeading id="other-services-heading" title={dict.services.otherServices} />
-          <ul className="mt-10 grid border-t border-charcoal/15 md:grid-cols-2">
-            {others.map((item) => (
-              <li key={item.slug} className="border-b border-charcoal/15 md:odd:border-e md:odd:pe-8 md:even:ps-8">
-                <Link
-                  href={localizePath(locale, `/services/${item.slug}`)}
-                  className="group flex min-h-16 items-center justify-between gap-4 py-5 text-xl text-charcoal font-display"
-                >
-                  {pick(item.title, locale)}
-                  <ArrowRight aria-hidden="true" className="size-5 shrink-0 text-gold-deep transition-transform group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1" />
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
-
       <FaqSection locale={locale} dict={dict} page="services" items={landing?.faqs} />
       <CtaBand locale={locale} dict={dict} />
+
+      <nav aria-labelledby="category-services-heading" className="bg-stone/60 py-16 md:py-24">
+        <div className="container-page">
+          <SectionHeading id="category-services-heading" title={categoryTitle} />
+          <ul className="mt-10 grid border-t border-charcoal/15 md:grid-cols-2">
+            {categoryList.map((item) => {
+              const current = item.slug === service.slug;
+              return (
+                <li key={item.slug} className="border-b border-charcoal/15 md:odd:border-e md:odd:pe-8 md:even:ps-8">
+                  <Link
+                    href={localizePath(locale, `/services/${item.slug}`)}
+                    aria-current={current ? "page" : undefined}
+                    className="group flex min-h-16 items-center justify-between gap-4 py-5"
+                  >
+                    <span className="min-w-0">
+                      <span className="block font-display text-xl text-charcoal">{pick(item.service.title, locale)}</span>
+                      <span className="mt-1 block text-sm text-muted-foreground">
+                        {current ? <span className="font-semibold text-gold-deep">{dict.services.currentPage} · </span> : null}
+                        {pick(item.text, locale)}
+                      </span>
+                    </span>
+                    <ArrowRight aria-hidden="true" className="size-5 shrink-0 text-gold-deep transition-transform group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1" />
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      </nav>
     </>
   );
 }

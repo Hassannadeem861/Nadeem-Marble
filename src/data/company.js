@@ -24,16 +24,16 @@ export const pillars = [
     icon: "Grid3x3",
     title: { en: "Pattern", ur: "پیٹرن" },
     text: {
-      en: "Beautiful patterns, with layouts planned properly before work begins.",
-      ur: "خوبصورت پیٹرن، اور کام شروع ہونے سے پہلے لے آؤٹ کی درست منصوبہ بندی۔",
+      en: "Herringbone, borders and other patterns set out on the drawing before the first tile is fixed.",
+      ur: "ہیرنگ بون، بارڈر اور دیگر پیٹرن پہلی ٹائل لگنے سے پہلے ڈرائنگ پر ترتیب دیے جاتے ہیں۔",
     },
   },
   {
     icon: "Hammer",
     title: { en: "Proper Fixing", ur: "درست فکسنگ" },
     text: {
-      en: "Proper fixing and finishing of tiles and marble, with quality work as the standard.",
-      ur: "ٹائلز اور ماربل کی درست فکسنگ اور فنشنگ، معیاری کام ہمارا معیار ہے۔",
+      en: "Tiles and marble fixed level, with straight lines, even joints and clean edges.",
+      ur: "ٹائلز اور ماربل لیول لگائے جاتے ہیں، سیدھی لائنوں، یکساں جوڑوں اور صاف کناروں کے ساتھ۔",
     },
   },
 ];
@@ -92,8 +92,8 @@ export const commitments = [
     icon: "Clock",
     title: { en: "Quality work, on time", ur: "معیاری کام، وقت پر" },
     text: {
-      en: "We expect every team member to complete their work on time and to a high standard.",
-      ur: "ہم اپنی ٹیم کے ہر رکن سے توقع رکھتے ہیں کہ وہ اپنا کام وقت پر اور اعلیٰ معیار کے ساتھ مکمل کرے۔",
+      en: "Each stage is meant to finish on the day agreed with you, without rushing the finish to get there.",
+      ur: "ہر مرحلہ آپ کے ساتھ طے شدہ دن پر مکمل کرنا مقصد ہوتا ہے، مگر جلدی میں فنشنگ خراب کیے بغیر۔",
     },
   },
   {

@@ -4,12 +4,10 @@ import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { QuantityCalculator } from "@/components/blog/QuantityCalculator";
 import { getService } from "@/data/services";
-import { ArticleCard } from "@/components/cards/ArticleCard";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { CtaBand } from "@/components/shared/CtaBand";
 import { RegistryImage } from "@/components/shared/RegistryImage";
-import { Reveal } from "@/components/shared/Reveal";
 import { SectionHeading } from "@/components/shared/SectionHeading";
 import { blogCategories, blogPosts, getPost } from "@/data/blogPosts";
 import { getImage } from "@/data/images";
@@ -98,8 +96,10 @@ export default async function ArticlePage({ params }) {
   const dict = getDictionary(locale);
   const title = pick(post.title, locale);
   const category = blogCategories.find((item) => item.id === post.category);
-  const others = blogPosts.filter((item) => item.slug !== post.slug);
-  const more = [...others.filter((item) => item.category === post.category), ...others.filter((item) => item.category !== post.category)].slice(0, 3);
+  // Planning guides list each other; every other guide lists the remaining guides. Current post first.
+  const isPlanning = post.category === "planning";
+  const groupPosts = blogPosts.filter((item) => (item.category === "planning") === isPlanning);
+  const guideList = [post, ...groupPosts.filter((item) => item.slug !== post.slug)];
   const relatedServices = (post.relatedServices ?? []).map(getService).filter((service) => service?.verified);
 
   return (
@@ -172,19 +172,37 @@ export default async function ArticlePage({ params }) {
         </div>
       </article>
 
-      <section aria-labelledby="more-heading" className="border-t border-border bg-stone/60 py-16 md:py-24">
-        <div className="container-page">
-          <SectionHeading id="more-heading" title={dict.blog.moreArticles} />
-          <Reveal stagger className="mt-10 grid gap-x-8 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
-            {more.map((item) => (
-              <ArticleCard key={item.slug} post={item} locale={locale} dict={dict} />
-            ))}
-          </Reveal>
-        </div>
-      </section>
-
       <FaqSection locale={locale} dict={dict} page="blog" />
       <CtaBand locale={locale} dict={dict} />
+
+      <nav aria-labelledby="category-guides-heading" className="bg-stone/60 py-16 md:py-24">
+        <div className="container-page">
+          <SectionHeading id="category-guides-heading" title={isPlanning ? dict.blog.planningGuidesTitle : dict.blog.choosingCareGuidesTitle} />
+          <ul className="mt-10 grid border-t border-charcoal/15 md:grid-cols-2">
+            {guideList.map((item) => {
+              const current = item.slug === post.slug;
+              return (
+                <li key={item.slug} className="border-b border-charcoal/15 md:odd:border-e md:odd:pe-8 md:even:ps-8">
+                  <Link
+                    href={localizePath(locale, `/blog/${item.slug}`)}
+                    aria-current={current ? "page" : undefined}
+                    className="group flex min-h-16 items-center justify-between gap-4 py-5"
+                  >
+                    <span className="min-w-0">
+                      <span className="block font-display text-xl text-charcoal">{pick(item.title, locale)}</span>
+                      <span className="mt-1 line-clamp-2 text-sm text-muted-foreground">
+                        {current ? <span className="font-semibold text-gold-deep">{dict.services.currentPage} · </span> : null}
+                        {pick(item.excerpt, locale)}
+                      </span>
+                    </span>
+                    <ArrowRight aria-hidden="true" className="size-5 shrink-0 text-gold-deep transition-transform group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1" />
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      </nav>
     </>
   );
 }

@@ -762,6 +762,185 @@ export const serviceLandings = {
     },
     relatedPosts: ["calculate-tiles-and-marble-quantity", "types-of-marble-in-pakistan", "marble-vs-granite-kitchen-countertops"],
   },
+
+  "2d-3d-surface-modelling": {
+    problems: {
+      en: [
+        "Thin slivers of tile at walls and doorways that nobody planned for",
+        "Running short of material, or paying for far too much",
+        "A pattern that ends off-centre at the entrance",
+        "Rooms that turn out not to be square once fixing has started",
+      ],
+      ur: [
+        "دیواروں اور دروازوں کے پاس ٹائل کی باریک پٹیاں جن کا پہلے سے کسی نے نہیں سوچا",
+        "مٹیریل کم پڑ جانا، یا ضرورت سے کہیں زیادہ خرید لینا",
+        "داخلی دروازے پر مرکز سے ہٹا ہوا پیٹرن",
+        "کمرے جو فکسنگ شروع ہونے کے بعد پتا چلے کہ سیدھے نہیں ہیں",
+      ],
+    },
+    options: [
+      {
+        title: { en: "Measured floor plan", ur: "پیمائش شدہ نقشہ" },
+        text: {
+          en: "Walls, openings, steps and fixed fittings measured on site and drawn to scale, including rooms that are slightly out of square.",
+          ur: "دیواریں، کھلی جگہیں، سیڑھیاں اور لگی ہوئی فٹنگز سائٹ پر ناپ کر پیمانے پر بنائی جاتی ہیں، بشمول وہ کمرے جو تھوڑے ٹیڑھے ہوں۔",
+        },
+      },
+      {
+        title: { en: "2D layout drawing", ur: "2D لے آؤٹ ڈرائنگ" },
+        text: {
+          en: "The tile or slab grid drawn over the plan, showing where the layout starts and where every joint and cut falls.",
+          ur: "نقشے پر ٹائل یا سلیب کی ترتیب، جو دکھاتی ہے کہ لے آؤٹ کہاں سے شروع ہوگا اور ہر جوڑ اور کٹنگ کہاں آئے گی۔",
+        },
+      },
+      {
+        title: { en: "3D views", ur: "3D مناظر" },
+        text: {
+          en: "The planned floor and walls shown in 3D with the chosen tile or marble, so you can judge the look before buying.",
+          ur: "منتخب ٹائل یا ماربل کے ساتھ منصوبہ بند فرش اور دیواریں 3D میں، تاکہ خریدنے سے پہلے آپ تاثر دیکھ سکیں۔",
+        },
+      },
+      {
+        title: { en: "Clearer quantities", ur: "واضح مقدار" },
+        text: {
+          en: "Because the cuts are drawn, the number of tiles or slabs can be read from the layout instead of guessed.",
+          ur: "چونکہ کٹنگ ڈرائنگ پر ہوتی ہے، اس لیے ٹائلوں یا سلیب کی تعداد اندازے کے بجائے لے آؤٹ سے نکالی جا سکتی ہے۔",
+        },
+      },
+    ],
+    considerations: {
+      en: [
+        "Tell us the tile or slab size you are considering; the layout depends on it.",
+        "Mention doors, cabinets or fittings that are not installed yet, so they are drawn in the right place.",
+        "Changes cost nothing on a drawing and a lot once material is cut, so agree the layout before buying.",
+      ],
+      ur: [
+        "زیرِ غور ٹائل یا سلیب کا سائز بتائیں؛ لے آؤٹ اسی پر منحصر ہے۔",
+        "جو دروازے، کیبنٹس یا فٹنگز ابھی نہیں لگیں ان کا بتائیں تاکہ وہ درست جگہ پر بنائی جائیں۔",
+        "ڈرائنگ پر تبدیلی کا کوئی خرچ نہیں، مگر مٹیریل کٹنے کے بعد بہت مہنگی پڑتی ہے، اس لیے خریدنے سے پہلے لے آؤٹ طے کر لیں۔",
+      ],
+    },
+  },
+
+  "surface-design": {
+    problems: {
+      en: [
+        "A tile that looked good in the shop but is slippery or hard to clean at home",
+        "Too many patterns and colours competing in one space",
+        "Floors that clash with the cabinets, furniture or lighting",
+        "One finish used everywhere, even where it does not suit the room",
+      ],
+      ur: [
+        "دکان میں اچھی لگنے والی ٹائل جو گھر میں پھسلنے والی یا مشکل سے صاف ہونے والی نکلے",
+        "ایک ہی جگہ میں بہت سے پیٹرن اور رنگوں کا ٹکراؤ",
+        "فرش جو کیبنٹس، فرنیچر یا روشنی سے میل نہ کھائے",
+        "ہر جگہ ایک ہی فنش، چاہے وہ کمرے کے لیے موزوں نہ ہو",
+      ],
+    },
+    options: [
+      {
+        title: { en: "Material, room by room", ur: "ہر کمرے کے لیے مٹیریل" },
+        text: {
+          en: "Marble where its veining will be seen and cared for, porcelain or ceramic where water, grease or heavy use make stone harder to live with.",
+          ur: "جہاں دھاریاں نظر آئیں اور دیکھ بھال ہو سکے وہاں ماربل، اور جہاں پانی، چکنائی یا زیادہ استعمال پتھر کو مشکل بنائے وہاں پورسلین یا سیرامک۔",
+        },
+      },
+      {
+        title: { en: "Finish", ur: "فنش" },
+        text: {
+          en: "Polished for shine in dry living areas, honed or matt for grip in bathrooms, kitchens and entrances.",
+          ur: "خشک رہائشی جگہوں میں چمک کے لیے پالش، اور باتھ روم، کچن اور داخلی راستوں میں گرفت کے لیے ہونڈ یا میٹ۔",
+        },
+      },
+      {
+        title: { en: "Size and format", ur: "سائز اور شکل" },
+        text: {
+          en: "Larger tiles mean fewer joints but need a flatter base; smaller ones follow slopes and suit wet areas.",
+          ur: "بڑی ٹائلوں میں جوڑ کم ہوتے ہیں مگر زیادہ ہموار بنیاد چاہیے؛ چھوٹی ٹائلیں ڈھلوان اپناتی ہیں اور گیلی جگہوں کے لیے موزوں ہیں۔",
+        },
+      },
+      {
+        title: { en: "Colour across connected rooms", ur: "جڑے کمروں میں رنگ" },
+        text: {
+          en: "Keeping one tone through open areas makes a home feel larger; contrast is saved for a feature wall or border.",
+          ur: "کھلی جگہوں میں ایک ہی رنگ رکھنے سے گھر کشادہ لگتا ہے؛ تضاد کسی نمایاں دیوار یا بارڈر کے لیے رکھا جاتا ہے۔",
+        },
+      },
+    ],
+    considerations: {
+      en: [
+        "Share photos of the space and of tiles or marble you like.",
+        "Think about who uses each room and how it will be cleaned.",
+        "Look at samples under the room's own lighting, not only in the shop.",
+        "Tell us your budget early so the options we suggest fit it.",
+      ],
+      ur: [
+        "جگہ کی اور پسندیدہ ٹائلوں یا ماربل کی تصاویر شیئر کریں۔",
+        "سوچیں کہ ہر کمرہ کون استعمال کرتا ہے اور اس کی صفائی کیسے ہوگی۔",
+        "نمونے صرف دکان میں نہیں بلکہ کمرے کی اپنی روشنی میں دیکھیں۔",
+        "اپنا بجٹ شروع میں بتائیں تاکہ تجاویز اسی کے مطابق ہوں۔",
+      ],
+    },
+  },
+
+  "pattern-and-layout-planning": {
+    problems: {
+      en: [
+        "Herringbone or borders that drift off line across the room",
+        "Half tiles at the doorway, the most visible spot in the room",
+        "A medallion that is not centred in the room or under the light",
+        "Patterns that clash where two rooms or materials meet",
+      ],
+      ur: [
+        "ہیرنگ بون یا بارڈر جو کمرے میں ٹیڑھے ہوتے جائیں",
+        "دروازے پر آدھی ٹائلیں، جو کمرے کی سب سے نمایاں جگہ ہے",
+        "میڈلین جو کمرے کے مرکز میں یا لائٹ کے نیچے نہ ہو",
+        "پیٹرن جو دو کمروں یا مٹیریل کے ملنے کی جگہ پر ٹکرائیں",
+      ],
+    },
+    options: [
+      {
+        title: { en: "Herringbone and chevron", ur: "ہیرنگ بون اور شیورون" },
+        text: {
+          en: "Zigzag layouts with rectangular tiles or marble strips, set out from a centre line so the pattern runs straight down the room.",
+          ur: "مستطیل ٹائلوں یا ماربل پٹیوں کے ٹیڑھے میڑھے لے آؤٹ، جو مرکزی لائن سے ترتیب دیے جاتے ہیں تاکہ پیٹرن کمرے میں سیدھا چلے۔",
+        },
+      },
+      {
+        title: { en: "Borders and frames", ur: "بارڈر اور فریم" },
+        text: {
+          en: "A contrasting band around the room or a rug-like frame in a hall, sized so it sits evenly from every wall.",
+          ur: "کمرے کے گرد متضاد پٹی یا ہال میں قالین نما فریم، اس طرح ناپا ہوا کہ ہر دیوار سے برابر فاصلے پر آئے۔",
+        },
+      },
+      {
+        title: { en: "Medallions and inlays", ur: "میڈلین اور انلے" },
+        text: {
+          en: "A central design placed in line with the entrance, the light or the furniture, decided before the surrounding floor is laid.",
+          ur: "مرکزی ڈیزائن جو داخلی دروازے، لائٹ یا فرنیچر کی سیدھ میں رکھا جائے، اور اردگرد کا فرش لگنے سے پہلے طے ہو۔",
+        },
+      },
+      {
+        title: { en: "Mixed-size layouts", ur: "مختلف سائز کے لے آؤٹ" },
+        text: {
+          en: "Repeating sets of several tile sizes, such as the Versailles pattern, which need the set worked out before ordering.",
+          ur: "کئی سائز کی ٹائلوں کے دہرائے جانے والے سیٹ، جیسے ورسائی پیٹرن، جن کا سیٹ آرڈر سے پہلے طے کرنا ضروری ہے۔",
+        },
+      },
+    ],
+    considerations: {
+      en: [
+        "Patterned floors use more material than straight layouts, so order extra.",
+        "Decide which view matters most, usually the entrance or the main seating area.",
+        "Agree how the pattern stops at doorways and where it meets other floors.",
+      ],
+      ur: [
+        "پیٹرن والے فرش سیدھے لے آؤٹ سے زیادہ مٹیریل لیتے ہیں، اس لیے اضافی منگوائیں۔",
+        "طے کریں کہ کون سا منظر سب سے اہم ہے، عموماً داخلی دروازہ یا بیٹھنے کی مرکزی جگہ۔",
+        "طے کریں کہ دروازوں پر پیٹرن کیسے ختم ہوگا اور دوسرے فرش سے کہاں ملے گا۔",
+      ],
+    },
+  },
 };
 
 export function getServiceLanding(slug) {

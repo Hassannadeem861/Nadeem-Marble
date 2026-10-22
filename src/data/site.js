@@ -17,7 +17,7 @@ export const site = {
 
   // TODO(client): supply before publishing; these stay hidden while null.
   owner: { name: "Muhammad Nadeem", role: { en: "Founder", ur: "بانی" } },
-  address: "2/2 Reta Plot, Shah Faisal Colony, Shah Faisal Town, Karachi, 75230",
+  address: "Reta Plot, Shah Faisal Colony, Sector 23, Karachi 75230",
   // Confirmed: open 24 hours, Monday through Sunday.
   openingHours: {
     days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
@@ -41,9 +41,11 @@ export function whatsappHref(message) {
   return message ? `${base}?text=${encodeURIComponent(message)}` : base;
 }
 
-// Stable Google Maps search link built from the address text, rather than a
-// share.google short link (those can expire or be revoked by the owner).
-export const mapsHref = site.address ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(site.address)}` : null;
+// Stable Google Maps search links built from the business name and address,
+// rather than a share.google short link (those can expire or be revoked).
+// Including the name lets Maps open the Google Business listing when it exists.
+const mapsQuery = site.address ? encodeURIComponent(`${site.name}, ${site.address}`) : null;
+export const mapsHref = mapsQuery ? `https://www.google.com/maps/search/?api=1&query=${mapsQuery}` : null;
 
 // No-API-key embed URL for the <iframe> map on the Contact page.
-export const mapsEmbedHref = site.address ? `https://www.google.com/maps?q=${encodeURIComponent(site.address)}&output=embed` : null;
+export const mapsEmbedHref = mapsQuery ? `https://www.google.com/maps?q=${mapsQuery}&output=embed` : null;

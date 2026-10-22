@@ -167,12 +167,12 @@ export const services = [
     relatedPosts: ["tile-layout-patterns", "floor-tile-sizes-guide", "select-tiles-for-kitchens-and-bathrooms"],
     body: {
       en: [
-        "Patterns such as herringbone, chevron, borders, medallions or mixed-format layouts only look right when they are planned from the room's true centre lines and focal points.",
-        "We plan where the pattern starts, how it meets doorways and walls, and how cut pieces are balanced on each side, so the finished floor or wall looks intentional from every angle.",
+        "Herringbone, chevron, borders, medallions and mixed-size layouts all depend on where they start. Started from the wrong wall, a herringbone drifts off line across the room and a medallion ends up off-centre.",
+        "We find the room's real centre lines and the spot people see first, usually the entrance, then plan where the pattern starts, how it meets doors and walls, and how cut pieces are balanced on each side.",
       ],
       ur: [
-        "ہیرنگ بون، شیورون، بارڈر، میڈلین یا مختلف سائز کی ٹائلوں کے لے آؤٹ جیسے پیٹرن تبھی اچھے لگتے ہیں جب کمرے کی اصل مرکزی لائنوں اور نمایاں حصوں سے منصوبہ بندی کی جائے۔",
-        "ہم طے کرتے ہیں کہ پیٹرن کہاں سے شروع ہو، دروازوں اور دیواروں سے کیسے ملے، اور ہر طرف کٹی ہوئی ٹائلوں کا توازن کیسے رہے، تاکہ مکمل فرش یا دیوار ہر زاویے سے سوچی سمجھی نظر آئے۔",
+        "ہیرنگ بون، شیورون، بارڈر، میڈلین اور مختلف سائز کے لے آؤٹ کا دارومدار اس پر ہے کہ وہ کہاں سے شروع ہوں۔ غلط دیوار سے شروع کیا جائے تو ہیرنگ بون کمرے میں ٹیڑھا ہوتا جاتا ہے اور میڈلین مرکز سے ہٹ جاتا ہے۔",
+        "ہم کمرے کی اصل مرکزی لائنیں اور وہ جگہ دیکھتے ہیں جس پر سب سے پہلے نظر پڑتی ہے، عموماً داخلی دروازہ، پھر طے کرتے ہیں کہ پیٹرن کہاں سے شروع ہو، دروازوں اور دیواروں سے کیسے ملے اور ہر طرف کٹی ٹائلوں کا توازن کیسے رہے۔",
       ],
     },
     includes: {
@@ -303,7 +303,7 @@ export const services = [
     image: "bathroomMarbleWalls",
     title: { en: "Wall Cladding & Feature Walls", ur: "دیواری کلیڈنگ اور نمایاں دیواریں" },
     summary: {
-      en: "Marble and tile cladding for feature walls, TV walls, receptions and bathrooms, with careful book-matching and edges.",
+      en: "Marble and tile cladding for feature walls, TV walls, receptions and bathrooms, with veining matched across panels and clean, finished edges.",
       ur: "نمایاں دیواروں، ٹی وی وال، استقبالیہ اور باتھ روم کے لیے ماربل اور ٹائل کلیڈنگ، احتیاط سے ملائی گئی دھاریوں اور کناروں کے ساتھ۔",
     },
     body: {
