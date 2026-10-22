@@ -2,6 +2,7 @@
 
 import { useSyncExternalStore } from "react";
 import { ArrowDown, ArrowUp } from "lucide-react";
+import { getLenis } from "@/lib/smoothScroll";
 
 // WhatsApp logo path from Simple Icons (CC0), https://simpleicons.org
 const WHATSAPP_PATH =
@@ -29,11 +30,14 @@ export function FloatingActions({ whatsappHref, labels }) {
   const scrolledDown = useSyncExternalStore(subscribeToScroll, isScrolledDown, notScrolledOnServer);
 
   function handleScroll() {
+    const top = scrolledDown ? 0 : document.documentElement.scrollHeight;
+    const lenis = getLenis();
+    if (lenis) {
+      lenis.scrollTo(top);
+      return;
+    }
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    window.scrollTo({
-      top: scrolledDown ? 0 : document.documentElement.scrollHeight,
-      behavior: reduceMotion ? "auto" : "smooth",
-    });
+    window.scrollTo({ top, behavior: reduceMotion ? "auto" : "smooth" });
   }
 
   const ScrollIcon = scrolledDown ? ArrowUp : ArrowDown;

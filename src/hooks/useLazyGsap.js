@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useEffectEvent } from "react";
+import { registerScrollTrigger } from "@/lib/smoothScroll";
 
 /**
  * Runs a GSAP setup function after GSAP (and ScrollTrigger, if requested) has
@@ -26,6 +27,7 @@ export function useLazyGsap(scopeRef, setup, { scrollTrigger = false } = {}) {
       if (scrollTrigger) {
         ({ ScrollTrigger } = await import("gsap/ScrollTrigger"));
         gsap.registerPlugin(ScrollTrigger);
+        registerScrollTrigger(ScrollTrigger);
       }
       if (cancelled || !scopeRef.current) return;
       context = gsap.context(() => runSetup({ gsap, ScrollTrigger }), scopeRef);

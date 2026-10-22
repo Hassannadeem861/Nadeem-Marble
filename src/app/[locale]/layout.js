@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { FloatingActions } from "@/components/layout/FloatingActions";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
+import { SmoothScroll } from "@/components/layout/SmoothScroll";
 import { site, whatsappHref } from "@/data/site";
 import { getDictionary } from "@/lib/dictionaries";
 import { fontVariables } from "@/lib/fonts";
@@ -48,6 +49,7 @@ export default async function LocaleLayout({ children, params }) {
   return (
     <html lang={locale} dir={getDirection(locale)} className={fontVariables}>
       <body className="flex min-h-dvh flex-col">
+        <SmoothScroll />
         <a
           href="#main"
           className="sr-only z-50 rounded-sm bg-charcoal px-4 py-3 text-sm font-semibold text-ivory focus:not-sr-only focus:fixed focus:top-3 focus:start-3"
