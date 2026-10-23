@@ -41,7 +41,20 @@ export async function generateMetadata({ params }) {
   });
 }
 
-function ArticleBlock({ block, calculatorLabels }) {
+// Article text may contain internal links written as [label](/path); paths get the page's locale prefix.
+function renderInline(text, locale) {
+  return text.split(/(\[[^\]]+\]\(\/[^)\s]*\))/g).map((part, index) => {
+    const link = part.match(/^\[([^\]]+)\]\((\/[^)\s]*)\)$/);
+    if (!link) return part;
+    return (
+      <Link key={index} href={localizePath(locale, link[2])} className="font-semibold text-charcoal underline decoration-gold underline-offset-4 hover:decoration-2">
+        {link[1]}
+      </Link>
+    );
+  });
+}
+
+function ArticleBlock({ block, calculatorLabels, locale }) {
   if (block.h2) return <h2>{block.h2}</h2>;
   if (block.calculator) return <QuantityCalculator labels={calculatorLabels} />;
   if (block.table)
@@ -81,11 +94,11 @@ function ArticleBlock({ block, calculatorLabels }) {
     return (
       <ul>
         {block.ul.map((item) => (
-          <li key={item}>{item}</li>
+          <li key={item}>{renderInline(item, locale)}</li>
         ))}
       </ul>
     );
-  return <p>{block.p}</p>;
+  return <p>{renderInline(block.p, locale)}</p>;
 }
 
 export default async function ArticlePage({ params }) {
@@ -137,7 +150,7 @@ export default async function ArticlePage({ params }) {
         <div className="container-page py-14 md:py-20">
           <div className="prose-article mx-auto text-charcoal/90">
             {pick(post.content, locale).map((block, index) => (
-              <ArticleBlock key={index} block={block} calculatorLabels={dict.blog.calculator} />
+              <ArticleBlock key={index} block={block} calculatorLabels={dict.blog.calculator} locale={locale} />
             ))}
             {relatedServices.length ? (
               <nav aria-labelledby="related-services-heading" className="mt-12 rounded-sm border border-border bg-white p-6">
@@ -172,7 +185,7 @@ export default async function ArticlePage({ params }) {
         </div>
       </article>
 
-      <FaqSection locale={locale} dict={dict} page="blog" />
+      <FaqSection locale={locale} dict={dict} page="blog" items={post.faqs} />
       <CtaBand locale={locale} dict={dict} />
 
       <nav aria-labelledby="category-guides-heading" className="bg-stone/60 py-16 md:py-24">

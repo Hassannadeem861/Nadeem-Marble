@@ -91,15 +91,15 @@ const starterPosts = [
     slug: "marble-vs-porcelain-tiles",
     category: "choosing",
     published: "2026-10-14",
-    updated: "2026-10-15",
-    readingMinutes: 6,
+    updated: "2026-10-23",
+    readingMinutes: 8,
     cover: "floorPolishedMarble",
-    title: { en: "Tiles vs Marble: Which Is Better for Your Floors?", ur: "ٹائلز بمقابلہ ماربل: آپ کے فرش کے لیے کون سا بہتر ہے؟" },
+    title: { en: "Marble vs Tiles in Pakistan: Which Is Better for Your Home?", ur: "پاکستان میں ماربل بمقابلہ ٹائلز: آپ کے گھر کے لیے کون سا بہتر ہے؟" },
     excerpt: {
-      en: "Porcelain, ceramic, marble or granite? How tiles and natural stone compare on looks, durability, maintenance and installation, and where each one works best.",
-      ur: "پورسلین، سیرامک، ماربل یا گرینائٹ؟ ٹائلز اور قدرتی پتھر کا موازنہ: شکل، پائیداری، دیکھ بھال اور تنصیب، اور ہر ایک کہاں بہتر ہے۔",
+      en: "Marble or porcelain tiles for a Pakistani home? A room-by-room comparison of looks, durability, maintenance, installation and long-term cost.",
+      ur: "پاکستانی گھر کے لیے ماربل یا پورسلین ٹائلز؟ کمرہ بہ کمرہ موازنہ: شکل، پائیداری، دیکھ بھال، تنصیب اور طویل مدتی لاگت۔",
     },
-    relatedServices: ["marble-flooring", "tile-installation"],
+    relatedServices: ["marble-flooring", "tile-installation", "marble-polishing-and-restoration"],
     content: {
       en: [
         { p: "Modern porcelain tiles can look remarkably like marble, so many people wonder whether natural stone is worth it. Neither is simply better. They suit different priorities." },
@@ -121,6 +121,25 @@ const starterPosts = [
         },
         { h2: "Installation" },
         { p: "Both need a flat, sound base and the correct adhesive. Natural stone requires extra care to match tone and veining between pieces and to avoid chipping edges. Large-format porcelain is thin and heavy for its size, so it needs careful handling and a very flat surface to avoid uneven edges." },
+        { h2: "Room by room in a Pakistani home" },
+        {
+          table: {
+            head: ["Room", "Marble", "Porcelain tiles", "What to check"],
+            rows: [
+              ["Lounge and drawing room", "A good fit where the floor is meant to be seen; polished or honed", "A good fit; large formats give fewer joints", "Felt pads under furniture protect both"],
+              ["Bedrooms", "Suits well; light foot traffic", "Suits well", "Choose by look and budget"],
+              ["Kitchen", "Possible, but lemon, vinegar and spills leave dull marks; a honed finish hides them better", "Usually the more practical floor", "Grease and daily mopping"],
+              ["Bathroom", "Best on a feature wall; on the floor only with a honed or textured finish, sealed", "Matt or textured porcelain is the safer floor", "Grip and the slope to the drain matter most"],
+              ["Stairs", "Widely used; a honed finish or anti-slip grooves near the edge add grip", "Possible with step tiles or nosing trims; edges can chip", "The nosing profile and grip"],
+              ["Outdoor, porch and roof", "Polished marble is slippery when wet; use a honed or textured finish if any", "Textured porcelain rated for outdoor use", "Rain, sun and dust; check the grip"],
+            ],
+          },
+        },
+        { h2: "Long-term cost: re-polishing or replacing" },
+        { p: "The floor that costs less on the day it is laid is not always the cheaper one over many years, so it helps to think about how each material ages." },
+        { p: "Marble wears at the surface. Scratches and dull patches can usually be removed by grinding and re-polishing, which brings back an even finish without lifting the floor. Deep cracks, broken pieces and some stains are different: those pieces may need replacing, and finding stone that matches an older floor can be difficult." },
+        { p: "Porcelain resists everyday wear well, but a cracked or chipped tile cannot be polished out; it has to be replaced. Tile designs are often discontinued after some time, so keep a few spare tiles from the same batch after installation. The same advice applies to marble." },
+        { p: "To compare costs fairly, include the material, the fixing and, for marble, the grinding and polishing. Our guide to [marble flooring cost in Karachi](/blog/marble-flooring-cost-karachi) explains each item in a quotation, and the [tile and marble calculator](/blog/calculate-tiles-and-marble-quantity) works out quantities and a total at your own rate. If you already have a dull marble floor, see [marble polishing and restoration](/services/marble-polishing-and-restoration)." },
         { h2: "Which should you choose?" },
         {
           ul: [
@@ -151,6 +170,25 @@ const starterPosts = [
         },
         { h2: "تنصیب" },
         { p: "دونوں کے لیے ہموار اور مضبوط بنیاد اور درست مسالہ ضروری ہے۔ قدرتی پتھر میں ٹکڑوں کے درمیان رنگ اور دھاریاں ملانے اور کناروں کو ٹوٹنے سے بچانے کے لیے زیادہ احتیاط چاہیے۔ بڑے سائز کی پورسلین اپنے سائز کے لحاظ سے پتلی اور بھاری ہوتی ہے، اس لیے اسے احتیاط سے اٹھانا اور بالکل ہموار سطح پر لگانا ضروری ہے۔" },
+        { h2: "پاکستانی گھر میں کمرہ بہ کمرہ" },
+        {
+          table: {
+            head: ["کمرہ", "ماربل", "پورسلین ٹائلز", "کیا دیکھیں"],
+            rows: [
+              ["لاؤنج اور ڈرائنگ روم", "جہاں فرش نمایاں ہو وہاں اچھا انتخاب؛ پالش یا ہونڈ", "اچھا انتخاب؛ بڑے سائز میں جوڑ کم", "فرنیچر کے نیچے فیلٹ پیڈ دونوں کو بچاتے ہیں"],
+              ["بیڈ روم", "مناسب؛ آمد و رفت کم", "مناسب", "شکل اور بجٹ دیکھ کر چنیں"],
+              ["کچن", "ممکن، مگر لیموں، سرکہ اور گری چیزیں مدھم نشان چھوڑتی ہیں؛ ہونڈ فنش انہیں بہتر چھپاتا ہے", "عموماً زیادہ عملی فرش", "چکنائی اور روزانہ پوچا"],
+              ["باتھ روم", "نمایاں دیوار پر بہتر؛ فرش پر صرف ہونڈ یا کھردرے فنش اور سیلنگ کے ساتھ", "میٹ یا کھردری پورسلین زیادہ محفوظ فرش", "گرفت اور نالی کی طرف ڈھلوان سب سے اہم"],
+              ["سیڑھیاں", "عام استعمال؛ ہونڈ فنش یا کنارے کے قریب پھسلن روکنے والی لکیریں گرفت بڑھاتی ہیں", "اسٹیپ ٹائلز یا کنارے کی ٹرم کے ساتھ ممکن؛ کنارے چِپ ہو سکتے ہیں", "کنارے کی پروفائل اور گرفت"],
+              ["باہر، پورچ اور چھت", "پالش شدہ ماربل گیلا ہو کر پھسلتا ہے؛ اگر لگائیں تو ہونڈ یا کھردرا فنش", "باہر کے لیے بنی کھردری پورسلین", "بارش، دھوپ اور مٹی؛ گرفت چیک کریں"],
+            ],
+          },
+        },
+        { h2: "طویل مدتی لاگت: دوبارہ پالش یا تبدیلی" },
+        { p: "جو فرش لگتے وقت سستا پڑتا ہے، ضروری نہیں کہ برسوں بعد بھی سستا رہے، اس لیے یہ سوچنا مفید ہے کہ ہر مٹیریل وقت کے ساتھ کیسا رہتا ہے۔" },
+        { p: "ماربل سطح پر گھستا ہے۔ خراشیں اور مدھم حصے عموماً گرائنڈنگ اور دوبارہ پالش سے ختم ہو جاتے ہیں، جس سے فرش اکھاڑے بغیر یکساں فنش واپس آ جاتا ہے۔ گہری دراڑیں، ٹوٹے ٹکڑے اور کچھ داغ مختلف ہیں: ان ٹکڑوں کو بدلنا پڑ سکتا ہے، اور پرانے فرش سے ملتا پتھر ڈھونڈنا مشکل ہو سکتا ہے۔" },
+        { p: "پورسلین روزمرہ گھساؤ اچھی طرح برداشت کرتی ہے، مگر ٹوٹی یا چِپ ہوئی ٹائل پالش سے ٹھیک نہیں ہوتی؛ اسے بدلنا پڑتا ہے۔ ٹائلوں کے ڈیزائن کچھ عرصے بعد اکثر بند ہو جاتے ہیں، اس لیے لگوانے کے بعد اسی بیچ کی چند اضافی ٹائلیں رکھ لیں۔ یہی مشورہ ماربل کے لیے بھی ہے۔" },
+        { p: "لاگت کا منصفانہ موازنہ کرنے کے لیے مٹیریل، فکسنگ اور ماربل کی صورت میں گرائنڈنگ اور پالش بھی شامل کریں۔ [کراچی میں ماربل فرش کی لاگت](/blog/marble-flooring-cost-karachi) والی ہماری گائیڈ کوٹیشن کی ہر چیز سمجھاتی ہے، اور [ٹائل اور ماربل کیلکولیٹر](/blog/calculate-tiles-and-marble-quantity) مقدار اور آپ کے اپنے ریٹ پر کل رقم نکالتا ہے۔ اگر آپ کا ماربل فرش پہلے سے مدھم ہے تو [ماربل پالشنگ اور بحالی](/services/marble-polishing-and-restoration) دیکھیں۔" },
         { h2: "آپ کو کیا چننا چاہیے؟" },
         {
           ul: [
@@ -162,6 +200,36 @@ const starterPosts = [
         { p: "ندیم ماربلز ٹائلز اور ماربل دونوں کے ساتھ کام کرتا ہے اور آپ کو یہ فیصلہ کرنے میں مدد دے سکتا ہے کہ آپ کے منصوبے میں کون سا مٹیریل کہاں لگے۔" },
       ],
     },
+    faqs: [
+      {
+        q: { en: "Is marble or tile cheaper in Pakistan?", ur: "پاکستان میں ماربل سستا ہے یا ٹائل؟" },
+        a: {
+          en: "It depends on the exact marble and tile being compared; prices for the two overlap. Compare complete quotations that include fixing and, for marble, grinding and polishing.",
+          ur: "یہ اس پر منحصر ہے کہ کون سا ماربل اور کون سی ٹائل موازنہ کی جا رہی ہے؛ دونوں کی قیمتیں ایک دوسرے سے ملتی جلتی رہتی ہیں۔ مکمل کوٹیشنز کا موازنہ کریں جن میں فکسنگ اور ماربل کی صورت میں گرائنڈنگ اور پالش شامل ہو۔",
+        },
+      },
+      {
+        q: { en: "Which is better for a bathroom floor?", ur: "باتھ روم کے فرش کے لیے کون سا بہتر ہے؟" },
+        a: {
+          en: "Matt or textured porcelain is usually the safer choice, because it grips better and absorbs very little water. Marble can be used with a honed or textured finish and sealing; many people use marble on a feature wall instead.",
+          ur: "میٹ یا کھردری پورسلین عموماً زیادہ محفوظ انتخاب ہے کیونکہ یہ بہتر گرفت دیتی ہے اور بہت کم پانی جذب کرتی ہے۔ ماربل ہونڈ یا کھردرے فنش اور سیلنگ کے ساتھ استعمال ہو سکتا ہے؛ بہت سے لوگ اس کے بجائے نمایاں دیوار پر ماربل لگاتے ہیں۔",
+        },
+      },
+      {
+        q: { en: "Can marble be used on stairs?", ur: "کیا سیڑھیوں پر ماربل لگایا جا سکتا ہے؟" },
+        a: {
+          en: "Yes, it is common in Pakistani homes. Choose a honed finish or anti-slip grooves near the edge for grip, especially on outdoor or often wet steps.",
+          ur: "جی ہاں، پاکستانی گھروں میں یہ عام ہے۔ گرفت کے لیے ہونڈ فنش یا کنارے کے قریب پھسلن روکنے والی لکیریں رکھیں، خاص طور پر باہر یا اکثر گیلی رہنے والی سیڑھیوں پر۔",
+        },
+      },
+      {
+        q: { en: "Does a marble floor need sealing?", ur: "کیا ماربل فرش کو سیلنگ کی ضرورت ہوتی ہے؟" },
+        a: {
+          en: "Many marbles benefit from a penetrating sealer, especially in kitchens and bathrooms. Sealing slows down staining, but it does not stop acids from leaving dull marks on the surface.",
+          ur: "بہت سے ماربل کے لیے اندر جذب ہونے والا سیلر فائدہ مند ہے، خاص طور پر کچن اور باتھ روم میں۔ سیلنگ داغ لگنے کی رفتار کم کرتی ہے مگر تیزاب کو سطح پر مدھم نشان چھوڑنے سے نہیں روکتی۔",
+        },
+      },
+    ],
   },
   {
     slug: "how-to-maintain-marble-flooring",
