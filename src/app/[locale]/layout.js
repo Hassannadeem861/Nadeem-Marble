@@ -1,5 +1,6 @@
 import "../globals.css";
 import { notFound } from "next/navigation";
+import NextTopLoader from "nextjs-toploader";
 import { FloatingActions } from "@/components/layout/FloatingActions";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
@@ -49,6 +50,7 @@ export default async function LocaleLayout({ children, params }) {
   return (
     <html lang={locale} dir={getDirection(locale)} className={fontVariables}>
       <body className="flex min-h-dvh flex-col">
+        <NextTopLoader color="#c5a052" height={3} showSpinner={false} shadow={false} zIndex={1600} />
         <SmoothScroll />
         <a
           href="#main"
