@@ -11,7 +11,7 @@ export const mainNavigation = [
 ];
 
 // Static routes included in the sitemap (detail routes are added from data).
-export const staticRoutes = ["/", "/about", "/services", "/portfolio", "/industries", "/blog", "/contact"];
+export const staticRoutes = ["/", "/about", "/services", "/service-areas", "/portfolio", "/industries", "/blog", "/contact", "/privacy-policy", "/terms"];
 
 // Services dropdown: services grouped the way customers think about them,
 // each with a one-line description written for non-technical visitors.

@@ -56,6 +56,25 @@ const timeline = {
 
 export const faqs = {
   home: [quote, modelling, price, areas],
+  serviceAreas: [
+    areas,
+    {
+      q: { en: "How do I check whether you can work in my area?", ur: "میں کیسے معلوم کروں کہ آپ میرے علاقے میں کام کر سکتے ہیں؟" },
+      a: {
+        en: "Send us your area, what you need and, if you can, a few photos on WhatsApp or by phone. We will reply to confirm and to arrange a visit to measure.",
+        ur: "واٹس ایپ یا فون پر اپنا علاقہ، کام کی تفصیل اور ہو سکے تو چند تصاویر بھیجیں۔ ہم تصدیق کے لیے اور پیمائش کی وزٹ طے کرنے کے لیے جواب دیں گے۔",
+      },
+    },
+    {
+      q: { en: "Is my area missing from the list?", ur: "کیا میرا علاقہ فہرست میں نہیں ہے؟" },
+      a: {
+        en: "The list shows common areas to help you find yours; it is not complete. We work across all of Karachi, so please ask even if your area is not shown.",
+        ur: "یہ فہرست صرف عام علاقے دکھاتی ہے تاکہ آپ اپنا علاقہ ڈھونڈ سکیں؛ یہ مکمل نہیں۔ ہم پورے کراچی میں کام کرتے ہیں، اس لیے آپ کا علاقہ نظر نہ آئے تب بھی پوچھ لیں۔",
+      },
+    },
+    quote,
+    price,
+  ],
   about: [
     {
       q: { en: "What does Nadeem Marbles do?", ur: "ندیم ماربلز کیا کرتا ہے؟" },

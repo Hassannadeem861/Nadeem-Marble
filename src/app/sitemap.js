@@ -1,3 +1,4 @@
+import { areaPages } from "@/data/areaPages";
 import { blogPosts } from "@/data/blogPosts";
 import { staticRoutes } from "@/data/navigation";
 import { isProjectIndexable, projects } from "@/data/projects";
@@ -14,6 +15,7 @@ export default function sitemap() {
     ...services.filter(isServiceIndexable).map((service) => ({ path: `/services/${service.slug}` })),
     ...projects.filter(isProjectIndexable).map((project) => ({ path: `/portfolio/${project.slug}` })),
     ...blogPosts.map((post) => ({ path: `/blog/${post.slug}`, lastModified: post.updated ?? post.published })),
+    ...areaPages.map((page) => ({ path: `/service-areas/${page.slug}` })),
   ];
 
   return paths.flatMap(({ path, lastModified }) =>

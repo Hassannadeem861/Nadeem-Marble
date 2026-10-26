@@ -29,7 +29,7 @@ export function Footer({ locale, dict }) {
         <div className="lg:col-span-2">
           <FooterHeading>{dict.footer.company}</FooterHeading>
           <ul className="mt-5 space-y-3 text-sm">
-            {mainNavigation.map((item) => (
+            {[...mainNavigation, { key: "serviceAreas", href: "/service-areas" }].map((item) => (
               <li key={item.href}>
                 <Link href={localizePath(locale, item.href)} className={linkClass}>
                   {dict.nav[item.key]}
@@ -120,10 +120,18 @@ export function Footer({ locale, dict }) {
           <p>
             © {COPYRIGHT_YEAR} <span lang="en">{site.name}</span>. {dict.footer.rights}
           </p>
-          {/* Kept because two photos are CC BY licensed, which requires attribution. */}
-          <Link href={localizePath(locale, "/image-credits")} className={linkClass}>
-            {dict.common.photoCredits}
-          </Link>
+          <nav aria-label={dict.legal.navLabel} className="flex flex-wrap gap-x-5 gap-y-2">
+            <Link href={localizePath(locale, "/privacy-policy")} className={linkClass}>
+              {dict.legal.privacyTitle}
+            </Link>
+            <Link href={localizePath(locale, "/terms")} className={linkClass}>
+              {dict.legal.termsTitle}
+            </Link>
+            {/* Kept because two photos are CC BY licensed, which requires attribution. */}
+            <Link href={localizePath(locale, "/image-credits")} className={linkClass}>
+              {dict.common.photoCredits}
+            </Link>
+          </nav>
         </div>
       </div>
     </footer>

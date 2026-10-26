@@ -21,8 +21,8 @@ export function StatsSection({ locale, dict }) {
               className="flex flex-col-reverse items-center gap-2 px-4 text-center lg:border-e lg:border-border lg:last:border-e-0"
             >
               <dt className="text-sm text-muted-foreground md:text-base">{pick(stat.label, locale)}</dt>
-              <dd className="font-display text-5xl leading-none text-charcoal md:text-6xl">
-                <CountUp value={stat.value} suffix={stat.suffix} />
+              <dd lang="en" dir="ltr" className="font-display text-5xl leading-none text-charcoal md:text-6xl">
+                {stat.text ?? <CountUp value={stat.value} suffix={stat.suffix} />}
               </dd>
             </div>
           ))}
