@@ -31,6 +31,12 @@ export const site = {
   ],
   foundingYear: null,
   socialProfiles: [],
+  // Google Business Profile (owner-supplied link) and its map pin, as Google Maps shows it.
+  googleBusiness: {
+    shareUrl: "https://maps.app.goo.gl/sVjQrGdRx7nybseh7",
+    cid: "11104969176550638531",
+    geo: { latitude: 24.877503, longitude: 67.154444 },
+  },
 };
 
 export const telHref = `tel:${site.phone}`;
@@ -41,11 +47,10 @@ export function whatsappHref(message) {
   return message ? `${base}?text=${encodeURIComponent(message)}` : base;
 }
 
-// Stable Google Maps search links built from the business name and address,
-// rather than a share.google short link (those can expire or be revoked).
-// Including the name lets Maps open the Google Business listing when it exists.
-const mapsQuery = site.address ? encodeURIComponent(`${site.name}, ${site.address}`) : null;
-export const mapsHref = mapsQuery ? `https://www.google.com/maps/search/?api=1&query=${mapsQuery}` : null;
+// The CID link opens the Google Business listing itself (directions, call,
+// reviews) and does not expire the way short share links can.
+export const mapsHref = `https://maps.google.com/?cid=${site.googleBusiness.cid}`;
 
-// No-API-key embed URL for the <iframe> map on the Contact page.
-export const mapsEmbedHref = mapsQuery ? `https://www.google.com/maps?q=${mapsQuery}&output=embed` : null;
+// No-API-key embed for the Contact page, centred on the listing's own pin.
+const { latitude, longitude } = site.googleBusiness.geo;
+export const mapsEmbedHref = `https://www.google.com/maps?q=${latitude},${longitude}&z=17&output=embed`;

@@ -25,6 +25,8 @@ export function organizationSchema(locale) {
     // one confirmed line of text, not separately confirmed street/city/postal fields.
     ...(site.address ? { address: site.address } : {}),
     ...(site.serviceAreas ? { areaServed: site.serviceAreas } : {}),
+    geo: { "@type": "GeoCoordinates", ...site.googleBusiness.geo },
+    hasMap: `https://maps.google.com/?cid=${site.googleBusiness.cid}`,
     ...(site.owner.name ? { founder: { "@type": "Person", name: site.owner.name, jobTitle: site.owner.role.en } } : {}),
     ...(site.openingHours
       ? {
@@ -45,7 +47,7 @@ export function organizationSchema(locale) {
         availableLanguage: ["English", "Urdu"],
       },
     ],
-    ...(site.socialProfiles.length ? { sameAs: site.socialProfiles } : {}),
+    sameAs: [site.googleBusiness.shareUrl, ...site.socialProfiles],
   };
 }
 
