@@ -501,6 +501,14 @@ const en = {
       titleTop: "Why",
       titleAccent: "Nadeem Marbles",
     },
+    mockup: {
+      aria: "Two phones: the Nadeem Marbles area search on the website, and an enquiry sent on WhatsApp",
+      findArea: "Find your area",
+      chatName: "Nadeem Marbles",
+      online: "online",
+      reply: "Yes, we work across all of Karachi. Please share a few photos and your address.",
+      typing: "Message",
+    },
     noArea: {
       titleTop: "Don't see your area?",
       titleAccent: "We still work there.",

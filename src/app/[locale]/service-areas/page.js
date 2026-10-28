@@ -7,6 +7,7 @@ import { AreaDirectory } from "@/components/serviceAreas/AreaDirectory";
 import { ServiceGrid } from "@/components/serviceAreas/ServiceGrid";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { ButtonLink } from "@/components/shared/ButtonLink";
+import { PhoneMockups } from "@/components/shared/PhoneMockups";
 import { SplitHeading } from "@/components/shared/SplitHeading";
 import { areaPageSlug } from "@/data/areaPages";
 import { serviceAreas } from "@/data/serviceAreas";
@@ -123,11 +124,18 @@ export default async function ServiceAreasPage({ params }) {
 
       <FaqSection locale={locale} dict={dict} page="serviceAreas" />
 
-      <section aria-labelledby="no-area-heading" className="border-t border-border py-16 md:py-24">
-        <div className="container-page mx-auto max-w-2xl text-center">
-          <SplitHeading id="no-area-heading" top={copy.noArea.titleTop} accent={copy.noArea.titleAccent} />
-          <p className="mt-4 leading-relaxed text-muted-foreground">{copy.noArea.text}</p>
-          <div className="mt-8">{contactButtons}</div>
+      <section aria-labelledby="no-area-heading" className="overflow-hidden border-t border-border py-16 md:py-24">
+        <div className="container-page grid items-center gap-10 lg:grid-cols-2">
+          <div className="text-center lg:text-start">
+            <SplitHeading id="no-area-heading" top={copy.noArea.titleTop} accent={copy.noArea.titleAccent} />
+            <p className="mt-4 leading-relaxed text-muted-foreground">{copy.noArea.text}</p>
+            <div className="mt-8 [&>div]:lg:justify-start">{contactButtons}</div>
+          </div>
+          <PhoneMockups
+            labels={{ ...copy.mockup, question: copy.directory.askMessage }}
+            area={pick(serviceAreas.find((item) => item.en === "Clifton"), locale)}
+            areas={["Shah Faisal Town", "Gulshan-e-Iqbal", "Clifton", "North Nazimabad"].map((en) => pick(serviceAreas.find((item) => item.en === en), locale))}
+          />
         </div>
       </section>
     </>

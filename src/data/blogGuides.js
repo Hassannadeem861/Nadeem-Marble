@@ -653,4 +653,652 @@ export const guidePosts = [
       },
     ],
   },
+  {
+    slug: "how-to-fix-marble-and-tiles",
+    category: "planning",
+    published: "2026-10-28",
+    readingMinutes: 6,
+    cover: "tileLaying",
+    relatedServices: ["tile-installation", "marble-installation", "pattern-and-layout-planning"],
+    title: { en: "How Marble and Tiles Are Fixed: The Right Way, Step by Step", ur: "ماربل اور ٹائلیں لگانے کا صحیح طریقہ: مرحلہ وار" },
+    excerpt: {
+      en: "The steps of fixing marble and floor tiles properly, from preparing the base to grouting and polishing, and the shortcuts that lead to hollow, uneven floors.",
+      ur: "ماربل اور فرش کی ٹائلیں صحیح طریقے سے لگانے کے مراحل، بنیاد کی تیاری سے گراؤٹنگ اور پالش تک، اور وہ شارٹ کٹ جن سے فرش کھوکھلا اور ناہموار ہو جاتا ہے۔",
+    },
+    content: {
+      en: [
+        { p: "A floor only stays good for years when every step underneath it is done properly. Most problems that appear later, such as hollow-sounding tiles, edges that catch the foot and cracked pieces, start with a rushed step during fixing. These are the steps that matter." },
+        { h2: "1. Check and prepare the base" },
+        { p: "The surface must be sound, clean and reasonably level. Loose plaster, old adhesive and dust are removed, and low spots are filled before fixing starts. In bathrooms and wudu areas, waterproofing and a slope towards the drain come first." },
+        { h2: "2. Plan the layout before the first piece goes down" },
+        { p: "Measure the room and decide where the first row starts, so cut pieces at the walls are balanced and patterns line up with doors. This is the work of [pattern and layout planning](/services/pattern-and-layout-planning), and [2D/3D modelling](/services/2d-3d-surface-modelling) lets you see it before anything is cut." },
+        { h2: "3. Lay marble out dry first" },
+        { p: "Natural marble varies from piece to piece. Laying the pieces out dry lets you decide where the strongest veins and shades go before they are fixed for good." },
+        { h2: "4. Bed every piece fully" },
+        { p: "Marble is commonly fixed on a sand and cement mortar bed, and tiles, especially large porcelain, are often fixed with tile adhesive spread with a notched trowel. Whatever the method, the back of each piece must be fully supported. Gaps underneath are what later make a tile sound hollow and crack." },
+        { h2: "5. Keep it flat, level and evenly spaced" },
+        { p: "Each piece is tapped down with a rubber mallet and checked with a level across the joints, and spacers keep the joints even. Light-coloured marble needs a fixing material that will not stain it." },
+        { h2: "6. Let it set, then grout" },
+        { p: "The floor should not be walked on or grouted until the fixing material has set, following its instructions. The joints are then filled with a suitable grout and the surface is cleaned." },
+        { h2: "7. Grind and polish marble floors" },
+        { p: "Once set, marble floors are usually ground to bring the joints level and then polished to the finish you want. See [marble polishing and restoration](/services/marble-polishing-and-restoration)." },
+        { h2: "Shortcuts to avoid" },
+        {
+          ul: [
+            "Fixing floor tiles on a few dabs of mortar instead of a full bed",
+            "Skipping base levelling and making up the difference with extra mortar",
+            "No movement gap at the walls on large floors",
+            "Walking on the floor or moving heavy furniture before it has set",
+            "Mixing tiles or marble from different batches in one room",
+          ],
+        },
+        { p: "Nadeem Marbles fixes tile and marble across Karachi, from measuring the site to the final clean. [Contact us](/contact) to arrange a visit." },
+      ],
+      ur: [
+        { p: "فرش برسوں تک تبھی اچھا رہتا ہے جب اس کے نیچے ہر مرحلہ درست طریقے سے کیا جائے۔ بعد میں نظر آنے والے زیادہ تر مسائل، جیسے کھوکھلی آواز والی ٹائلیں، پاؤں میں اٹکنے والے کنارے اور ٹوٹے ٹکڑے، فکسنگ کے دوران جلد بازی سے شروع ہوتے ہیں۔ یہ وہ مراحل ہیں جو اہم ہیں۔" },
+        { h2: "1. بنیاد کی جانچ اور تیاری" },
+        { p: "سطح مضبوط، صاف اور کافی حد تک ہموار ہونی چاہیے۔ فکسنگ سے پہلے ڈھیلا پلستر، پرانا مسالہ اور مٹی ہٹائی جاتی ہے اور نیچی جگہیں بھری جاتی ہیں۔ باتھ روم اور وضو کی جگہ میں پہلے واٹر پروفنگ اور نالی کی طرف ڈھلوان بنتی ہے۔" },
+        { h2: "2. پہلا ٹکڑا لگانے سے پہلے لے آؤٹ طے کریں" },
+        { p: "کمرہ ناپ کر طے کیا جاتا ہے کہ پہلی قطار کہاں سے شروع ہو، تاکہ دیواروں پر کٹے ٹکڑے متوازن رہیں اور پیٹرن دروازوں کی سیدھ میں ہو۔ یہ [پیٹرن اور لے آؤٹ کی منصوبہ بندی](/services/pattern-and-layout-planning) کا کام ہے، اور [2D/3D ماڈلنگ](/services/2d-3d-surface-modelling) سے کٹنگ سے پہلے یہ دیکھا جا سکتا ہے۔" },
+        { h2: "3. ماربل پہلے خشک بچھا کر دیکھیں" },
+        { p: "قدرتی ماربل ہر ٹکڑے میں مختلف ہوتا ہے۔ ٹکڑوں کو پہلے خشک بچھانے سے پکی فکسنگ سے پہلے طے ہو جاتا ہے کہ نمایاں دھاریاں اور رنگ کہاں آئیں گے۔" },
+        { h2: "4. ہر ٹکڑے کے نیچے پورا مسالہ" },
+        { p: "ماربل عموماً ریت اور سیمنٹ کے مسالے کی تہہ پر لگایا جاتا ہے، اور ٹائلیں، خاص طور پر بڑی پورسلین، اکثر ٹائل ایڈہیسو سے لگائی جاتی ہیں جو دندانے دار کرنی سے پھیلایا جاتا ہے۔ طریقہ جو بھی ہو، ہر ٹکڑے کی پشت کو پورا سہارا ملنا چاہیے۔ نیچے رہ جانے والی خالی جگہ ہی بعد میں ٹائل کو کھوکھلا اور کمزور کرتی ہے۔" },
+        { h2: "5. ہموار، لیول اور یکساں فاصلے کے ساتھ" },
+        { p: "ہر ٹکڑا ربڑ کے ہتھوڑے سے بٹھایا جاتا ہے اور جوڑوں پر لیول سے جانچا جاتا ہے، اور اسپیسرز جوڑوں کو یکساں رکھتے ہیں۔ ہلکے رنگ کے ماربل کے لیے ایسا مسالہ چاہیے جو اس پر داغ نہ ڈالے۔" },
+        { h2: "6. جمنے دیں، پھر گراؤٹ" },
+        { p: "مسالہ جمنے تک، اس کی ہدایات کے مطابق، فرش پر نہ چلیں اور گراؤٹ نہ کریں۔ پھر جوڑ موزوں گراؤٹ سے بھرے جاتے ہیں اور سطح صاف کی جاتی ہے۔" },
+        { h2: "7. ماربل فرش کی گرائنڈنگ اور پالش" },
+        { p: "جمنے کے بعد ماربل فرش کی عموماً گرائنڈنگ کی جاتی ہے تاکہ جوڑ برابر ہوں، پھر مطلوبہ فنش تک پالش کی جاتی ہے۔ [ماربل پالشنگ اور بحالی](/services/marble-polishing-and-restoration) دیکھیں۔" },
+        { h2: "ان شارٹ کٹ سے بچیں" },
+        {
+          ul: [
+            "پوری تہہ کے بجائے مسالے کے چند ٹکڑوں پر فرش کی ٹائلیں لگانا",
+            "بنیاد ہموار کیے بغیر اضافی مسالے سے فرق پورا کرنا",
+            "بڑے فرش پر دیواروں کے ساتھ حرکت کی گنجائش نہ چھوڑنا",
+            "جمنے سے پہلے فرش پر چلنا یا بھاری فرنیچر رکھنا",
+            "ایک کمرے میں مختلف بیچ کی ٹائلیں یا ماربل ملانا",
+          ],
+        },
+        { p: "ندیم ماربلز پورے کراچی میں سائٹ کی پیمائش سے آخری صفائی تک ٹائل اور ماربل لگاتا ہے۔ وزٹ طے کرنے کے لیے [ہم سے رابطہ کریں](/contact)۔" },
+      ],
+    },
+    faqs: [
+      {
+        q: { en: "Should marble be fixed with cement mortar or tile adhesive?", ur: "ماربل سیمنٹ کے مسالے سے لگے یا ٹائل ایڈہیسو سے؟" },
+        a: {
+          en: "Both are used. What matters most is that each piece is fully supported and that the material suits the stone, because some materials can stain light marble. The right choice depends on the stone, its thickness and the base.",
+          ur: "دونوں استعمال ہوتے ہیں۔ سب سے اہم یہ ہے کہ ہر ٹکڑے کو پورا سہارا ملے اور مسالہ پتھر کے مطابق ہو، کیونکہ کچھ مسالے ہلکے ماربل پر داغ ڈال سکتے ہیں۔ درست انتخاب پتھر، اس کی موٹائی اور بنیاد پر منحصر ہے۔",
+        },
+      },
+      {
+        q: { en: "When can I walk on a newly fixed floor?", ur: "نئے لگے فرش پر کب چل سکتے ہیں؟" },
+        a: {
+          en: "Only after the fixing material has set, as its instructions state. Heavy furniture and traffic should wait longer than light foot traffic.",
+          ur: "صرف مسالہ جمنے کے بعد، جیسا اس کی ہدایات میں لکھا ہو۔ بھاری فرنیچر اور زیادہ آمد و رفت کے لیے ہلکی آمد و رفت سے زیادہ انتظار کریں۔",
+        },
+      },
+      {
+        q: { en: "Can new tiles be fixed over old tiles?", ur: "کیا پرانی ٹائلوں کے اوپر نئی ٹائلیں لگ سکتی ہیں؟" },
+        a: {
+          en: "Sometimes, if the old tiles are firmly bonded and level, and the extra height works with doors and drains. It should be checked on site first.",
+          ur: "کبھی کبھار، اگر پرانی ٹائلیں مضبوطی سے جڑی اور ہموار ہوں، اور اضافی اونچائی دروازوں اور نالیوں کے ساتھ مسئلہ نہ بنے۔ پہلے سائٹ پر جانچ ضروری ہے۔",
+        },
+      },
+    ],
+  },
+  {
+    slug: "hollow-tiles-causes-and-repair",
+    category: "care",
+    published: "2026-10-28",
+    readingMinutes: 5,
+    cover: "tilingTools",
+    relatedServices: ["tile-installation", "bathroom-tile-and-marble-installation"],
+    title: { en: "Hollow-Sounding Tiles: Why It Happens and How It Is Fixed", ur: "کھوکھلی آواز والی ٹائلیں: وجہ اور مرمت" },
+    excerpt: {
+      en: "Why some floor tiles sound hollow when tapped, when it becomes a problem, and how hollow tiles are repaired or re-fixed.",
+      ur: "فرش کی کچھ ٹائلیں ٹھوکنے پر کھوکھلی آواز کیوں دیتی ہیں، یہ کب مسئلہ بنتا ہے، اور کھوکھلی ٹائلوں کی مرمت یا دوبارہ فکسنگ کیسے ہوتی ہے۔",
+    },
+    content: {
+      en: [
+        { p: "Tap a tile with a coin or the handle of a screwdriver. A solid tile gives a sharp, firm sound; a hollow one gives a dull, drum-like sound. That sound means there is an air gap under the tile and it is not fully bonded to the floor." },
+        { h2: "Why tiles go hollow" },
+        {
+          ul: [
+            "The tile was fixed on a few dabs of mortar instead of a full bed",
+            "The adhesive started to dry before the tile was pressed into it",
+            "The base was dusty, weak or uneven",
+            "No movement gaps at the walls, so the floor has nowhere to expand in summer heat",
+            "Water getting under the tiles over time, often in bathrooms",
+          ],
+        },
+        { h2: "Is it serious?" },
+        { p: "One or two hollow tiles in a quiet corner may last a while, but they are worth watching. Hollow tiles crack more easily under heavy weight, their edges chip, and in some cases tiles lift or pop up, especially in hot weather. A whole area that sounds hollow usually points to a fixing problem across the floor." },
+        { h2: "How hollow tiles are repaired" },
+        {
+          ul: [
+            "Removing the hollow tiles and re-fixing them on a full bed. This is the most reliable repair, but it needs spare tiles from the same batch in case some break when lifted.",
+            "Injecting adhesive or resin under the tile through the joints or small drilled holes. This can work for small areas, depending on the tile and the gap.",
+            "Relaying the whole area when most of the floor is hollow, so the cause is fixed rather than patched.",
+          ],
+        },
+        { h2: "Preventing it next time" },
+        { p: "Full support under every tile, a clean and level base and movement gaps at the walls prevent most hollow tiles. Our guide on [how marble and tiles are fixed](/blog/how-to-fix-marble-and-tiles) explains each step. If you have hollow tiles in Karachi, [send us photos on WhatsApp or contact us](/contact) and we will check them on site." },
+      ],
+      ur: [
+        { p: "ٹائل کو سکے یا پیچ کس کے دستے سے ٹھوکیں۔ ٹھوس ٹائل تیز اور مضبوط آواز دیتی ہے؛ کھوکھلی ٹائل ڈھول جیسی مدھم آواز دیتی ہے۔ اس آواز کا مطلب ہے کہ ٹائل کے نیچے ہوا کی جگہ ہے اور وہ فرش سے پوری طرح جڑی نہیں۔" },
+        { h2: "ٹائلیں کھوکھلی کیوں ہوتی ہیں" },
+        {
+          ul: [
+            "ٹائل پوری تہہ کے بجائے مسالے کے چند ٹکڑوں پر لگائی گئی",
+            "ٹائل دبانے سے پہلے ایڈہیسو سوکھنا شروع ہو گیا",
+            "بنیاد میں مٹی تھی، کمزور یا ناہموار تھی",
+            "دیواروں کے ساتھ حرکت کی گنجائش نہیں، اس لیے گرمیوں میں فرش کو پھیلنے کی جگہ نہیں ملتی",
+            "وقت کے ساتھ ٹائلوں کے نیچے پانی جانا، اکثر باتھ روم میں",
+          ],
+        },
+        { h2: "کیا یہ سنجیدہ مسئلہ ہے؟" },
+        { p: "کسی کونے میں ایک دو کھوکھلی ٹائلیں کچھ عرصہ چل سکتی ہیں، مگر ان پر نظر رکھنی چاہیے۔ کھوکھلی ٹائلیں بھاری وزن سے جلد ٹوٹتی ہیں، ان کے کنارے چِپ ہوتے ہیں، اور بعض اوقات خاص طور پر گرمی میں ٹائلیں اٹھ جاتی ہیں۔ اگر پورا حصہ کھوکھلا لگے تو عموماً یہ پورے فرش کی فکسنگ کا مسئلہ ہوتا ہے۔" },
+        { h2: "کھوکھلی ٹائلوں کی مرمت کیسے ہوتی ہے" },
+        {
+          ul: [
+            "کھوکھلی ٹائلیں نکال کر پوری تہہ پر دوبارہ لگانا۔ یہ سب سے قابلِ اعتماد مرمت ہے، مگر اسی بیچ کی اضافی ٹائلیں چاہییں کیونکہ نکالتے وقت کچھ ٹوٹ سکتی ہیں۔",
+            "جوڑوں یا چھوٹے سوراخوں کے ذریعے ٹائل کے نیچے ایڈہیسو یا ریزن بھرنا۔ ٹائل اور خلا کے مطابق یہ چھوٹی جگہوں پر کارآمد ہو سکتا ہے۔",
+            "جب زیادہ تر فرش کھوکھلا ہو تو پورا حصہ دوبارہ بچھانا، تاکہ پیوند کے بجائے اصل وجہ ٹھیک ہو۔",
+          ],
+        },
+        { h2: "آئندہ اس سے کیسے بچیں" },
+        { p: "ہر ٹائل کے نیچے پورا سہارا، صاف اور ہموار بنیاد، اور دیواروں کے ساتھ حرکت کی گنجائش سے زیادہ تر کھوکھلی ٹائلوں سے بچا جا سکتا ہے۔ [ماربل اور ٹائلیں لگانے کا صحیح طریقہ](/blog/how-to-fix-marble-and-tiles) والی ہماری گائیڈ ہر مرحلہ سمجھاتی ہے۔ اگر کراچی میں آپ کی ٹائلیں کھوکھلی ہیں تو [واٹس ایپ پر تصاویر بھیجیں یا رابطہ کریں](/contact)، ہم سائٹ پر جانچ کریں گے۔" },
+      ],
+    },
+    faqs: [
+      {
+        q: { en: "How do I check for hollow tiles?", ur: "کھوکھلی ٹائلیں کیسے چیک کریں؟" },
+        a: {
+          en: "Tap each tile, especially the corners, with a coin or a screwdriver handle. A dull, drum-like sound means hollow; a sharp, firm sound means well bonded.",
+          ur: "ہر ٹائل کو، خاص طور پر کونوں پر، سکے یا پیچ کس کے دستے سے ٹھوکیں۔ ڈھول جیسی مدھم آواز کا مطلب کھوکھلی، اور تیز مضبوط آواز کا مطلب اچھی طرح جڑی ہوئی۔",
+        },
+      },
+      {
+        q: { en: "Will hollow tiles get worse?", ur: "کیا کھوکھلی ٹائلیں مزید خراب ہوں گی؟" },
+        a: {
+          en: "Often, yes, especially where people walk most or heavy furniture stands. Getting them checked early can stop a few tiles turning into a larger repair.",
+          ur: "اکثر ہاں، خاص طور پر جہاں زیادہ چلا جاتا ہے یا بھاری فرنیچر رکھا ہو۔ جلد جانچ کروانے سے چند ٹائلوں کا مسئلہ بڑی مرمت بننے سے رک سکتا ہے۔",
+        },
+      },
+      {
+        q: { en: "What if I have no spare tiles from the same batch?", ur: "اگر اسی بیچ کی اضافی ٹائلیں نہ ہوں تو؟" },
+        a: {
+          en: "Then the tiles are lifted with extra care, or the closest available match is used where it shows least. This is why keeping a few spare tiles after any job is worthwhile.",
+          ur: "تب ٹائلیں زیادہ احتیاط سے نکالی جاتی ہیں، یا قریب ترین دستیاب ٹائل وہاں لگائی جاتی ہے جہاں کم نظر آئے۔ اسی لیے ہر کام کے بعد چند اضافی ٹائلیں رکھنا فائدہ مند ہے۔",
+        },
+      },
+    ],
+  },
+  {
+    slug: "marble-stains-cracks-and-yellowing",
+    category: "care",
+    published: "2026-10-28",
+    readingMinutes: 6,
+    cover: "marbleVeinsDark",
+    relatedServices: ["marble-polishing-and-restoration", "marble-flooring"],
+    title: { en: "Marble Stains, Cracks and Yellowing: What Can Be Fixed", ur: "ماربل پر داغ، دراڑیں اور پیلاپن: کیا ٹھیک ہو سکتا ہے" },
+    excerpt: {
+      en: "How to tell etch marks, stains, yellowing and cracks apart on a marble floor, how each is usually treated, and what to avoid doing at home.",
+      ur: "ماربل فرش پر مدھم نشان، داغ، پیلاپن اور دراڑوں میں فرق کیسے پہچانیں، ہر ایک کا عموماً علاج کیسے ہوتا ہے، اور گھر پر کن چیزوں سے بچیں۔",
+    },
+    content: {
+      en: [
+        { p: "Marble marks in different ways, and each kind of damage needs a different fix. Knowing which one you have saves money and stops a home remedy from making it worse." },
+        { h2: "What it is and how it is usually treated" },
+        {
+          table: {
+            head: ["Problem", "What it looks like", "Usual treatment"],
+            rows: [
+              ["Etch mark", "A dull patch where something acidic spilled, such as lemon or vinegar", "Honing and re-polishing the area"],
+              ["Oil or tea stain", "A darker patch soaked into the stone", "A poultice that draws it out; it may lighten rather than disappear"],
+              ["Rust stain", "Orange-brown marks near metal", "A rust remover suited to stone, case by case"],
+              ["Yellowing", "White marble slowly turning yellow", "Depends on the cause: removing old coatings, deep cleaning or grinding; not always fully reversible"],
+              ["Hairline crack", "A thin line with the surface still even", "Filled with colour-matched resin and polished"],
+              ["Crack with movement", "Pieces rock, sound hollow or sit uneven", "The piece is re-fixed or replaced"],
+            ],
+          },
+        },
+        { h2: "Why white marble turns yellow" },
+        { p: "Common causes include old wax or coatings yellowing with age, dirt trapped in the surface, unsuitable cleaners, and iron in some stones reacting with water. The cause decides the fix, so it needs to be looked at on site." },
+        { h2: "What to avoid at home" },
+        {
+          ul: [
+            "Vinegar, lemon and acidic cleaners: they etch marble",
+            "Bleach and strong chemicals on coloured stains",
+            "Scouring powders and hard brushes that scratch polished marble",
+            "Crack fillers that do not match the stone's colour",
+          ],
+        },
+        { h2: "When to call a professional" },
+        { p: "Wide etching, yellowing across a whole floor and any crack where pieces move need professional work. [Marble polishing and restoration](/services/marble-polishing-and-restoration) covers grinding, honing, crystallisation and sealing, and our [marble care guide](/blog/how-to-maintain-marble-flooring) helps keep a restored floor looking good." },
+      ],
+      ur: [
+        { p: "ماربل مختلف طریقوں سے خراب ہوتا ہے، اور ہر قسم کے نقصان کا علاج الگ ہے۔ یہ پہچاننا کہ آپ کے فرش پر کیا ہے پیسے بچاتا ہے اور گھریلو ٹوٹکے کو مسئلہ بڑھانے سے روکتا ہے۔" },
+        { h2: "یہ کیا ہے اور عموماً علاج کیسے ہوتا ہے" },
+        {
+          table: {
+            head: ["مسئلہ", "کیسا دکھتا ہے", "عام علاج"],
+            rows: [
+              ["مدھم نشان (ایچ)", "جہاں لیموں یا سرکے جیسی تیزابی چیز گری وہاں مدھم دھبہ", "اس حصے کی ہوننگ اور دوبارہ پالش"],
+              ["تیل یا چائے کا داغ", "پتھر میں جذب گہرا دھبہ", "پولٹس جو داغ کھینچتا ہے؛ داغ مکمل ختم ہونے کے بجائے ہلکا ہو سکتا ہے"],
+              ["زنگ کا داغ", "دھات کے قریب نارنجی بھورے نشان", "پتھر کے لیے موزوں زنگ ریموور، حالات کے مطابق"],
+              ["پیلاپن", "سفید ماربل آہستہ آہستہ پیلا ہونا", "وجہ پر منحصر: پرانی کوٹنگ ہٹانا، گہری صفائی یا گرائنڈنگ؛ ہمیشہ مکمل واپس نہیں ہوتا"],
+              ["باریک دراڑ", "پتلی لکیر جبکہ سطح ہموار ہو", "ہم رنگ ریزن سے بھر کر پالش"],
+              ["حرکت والی دراڑ", "ٹکڑے ہلتے، کھوکھلی آواز دیتے یا ناہموار ہوں", "ٹکڑا دوبارہ لگایا یا بدلا جاتا ہے"],
+            ],
+          },
+        },
+        { h2: "سفید ماربل پیلا کیوں ہوتا ہے" },
+        { p: "عام وجوہات میں پرانی ویکس یا کوٹنگ کا وقت کے ساتھ پیلا ہونا، سطح میں پھنسی میل، غیر موزوں کلینر، اور کچھ پتھروں میں موجود لوہے کا پانی سے ردِعمل شامل ہیں۔ وجہ ہی علاج طے کرتی ہے، اس لیے سائٹ پر دیکھنا ضروری ہے۔" },
+        { h2: "گھر پر کن چیزوں سے بچیں" },
+        {
+          ul: [
+            "سرکہ، لیموں اور تیزابی کلینر: یہ ماربل پر مدھم نشان ڈالتے ہیں",
+            "رنگین داغوں پر بلیچ اور سخت کیمیکل",
+            "رگڑنے والے پاؤڈر اور سخت برش جو پالش شدہ ماربل پر خراشیں ڈالتے ہیں",
+            "دراڑ بھرنے والا مسالہ جو پتھر کے رنگ سے نہ ملے",
+          ],
+        },
+        { h2: "ماہر کو کب بلائیں" },
+        { p: "وسیع مدھم نشان، پورے فرش کا پیلاپن اور ایسی ہر دراڑ جس میں ٹکڑے ہلیں، ماہر کا کام ہے۔ [ماربل پالشنگ اور بحالی](/services/marble-polishing-and-restoration) میں گرائنڈنگ، ہوننگ، کرسٹلائزیشن اور سیلنگ شامل ہیں، اور ہماری [ماربل کی دیکھ بھال کی گائیڈ](/blog/how-to-maintain-marble-flooring) بحال شدہ فرش کو اچھا رکھنے میں مدد دیتی ہے۔" },
+      ],
+    },
+    faqs: [
+      {
+        q: { en: "Can every stain be removed from marble?", ur: "کیا ماربل سے ہر داغ نکل سکتا ہے؟" },
+        a: {
+          en: "Not always. Many stains can be removed or lightened, but some that have soaked deep into the stone can only be reduced. We tell you what to expect after seeing the floor.",
+          ur: "ہمیشہ نہیں۔ بہت سے داغ نکل سکتے ہیں یا ہلکے ہو سکتے ہیں، مگر پتھر میں گہرائی تک جذب کچھ داغ صرف کم کیے جا سکتے ہیں۔ فرش دیکھنے کے بعد ہم بتا دیتے ہیں کہ کیا توقع رکھیں۔",
+        },
+      },
+      {
+        q: { en: "Can cracked marble be repaired without replacing it?", ur: "کیا ٹوٹا ماربل بدلے بغیر ٹھیک ہو سکتا ہے؟" },
+        a: {
+          en: "Hairline cracks with an even surface can usually be filled with colour-matched resin and polished. If the piece moves or sounds hollow, it needs re-fixing or replacing.",
+          ur: "ہموار سطح والی باریک دراڑیں عموماً ہم رنگ ریزن سے بھر کر پالش کی جا سکتی ہیں۔ اگر ٹکڑا ہلتا ہو یا کھوکھلی آواز دے تو اسے دوبارہ لگانا یا بدلنا پڑتا ہے۔",
+        },
+      },
+      {
+        q: { en: "Does polishing remove yellowing?", ur: "کیا پالش سے پیلاپن ختم ہوتا ہے؟" },
+        a: {
+          en: "It can when the yellowing is in old coatings or surface dirt. When it comes from inside the stone, polishing may only improve it.",
+          ur: "جب پیلاپن پرانی کوٹنگ یا سطحی میل میں ہو تو ختم ہو سکتا ہے۔ جب یہ پتھر کے اندر سے ہو تو پالش صرف اسے بہتر کر سکتی ہے۔",
+        },
+      },
+    ],
+  },
+  {
+    slug: "anti-slip-tiles-guide",
+    category: "choosing",
+    published: "2026-10-28",
+    readingMinutes: 5,
+    cover: "wetShowerFloor",
+    relatedServices: ["bathroom-tile-and-marble-installation", "staircases-and-custom-marble-work", "tile-and-marble-supply"],
+    title: { en: "Anti-Slip Tiles for Bathrooms, Stairs and Porches", ur: "باتھ روم، سیڑھیوں اور پورچ کے لیے اینٹی سلپ ٹائلیں" },
+    excerpt: {
+      en: "How slip resistance is rated, and which tile or marble finish to choose for bathrooms, wudu areas, stairs and porches where wet floors get slippery.",
+      ur: "گھر میں پھسلنے والے فرش کہاں اصل خطرہ ہیں، پھسلن سے بچاؤ کیسے بیان ہوتا ہے، اور باتھ روم، وضو کی جگہ، سیڑھیوں اور پورچ کے لیے کون سا ٹائل یا ماربل فنش چنیں۔",
+    },
+    content: {
+      en: [
+        { p: "Glossy tiles and polished marble look smart, but they become slippery when wet. In a home that matters most in bathrooms, wudu areas, on stairs and on porches and car porches when it rains." },
+        { h2: "How slip resistance is described" },
+        { p: "Anti-slip tiles have a matt or textured surface that gives the foot more grip. Some manufacturers state a slip rating, such as an R rating from R9 to R13, where a higher number means more grip, or a wet pendulum value. Ask the supplier for the tile's rating rather than judging by touch alone." },
+        { h2: "What to choose where" },
+        {
+          table: {
+            head: ["Area", "Good choice", "Also consider"],
+            rows: [
+              ["Bathroom floor", "Matt or textured porcelain", "Small tiles in the shower add grip through extra joints"],
+              ["Wudu area", "Textured tiles that stay grippy when wet", "A proper slope to the drain so water does not stand"],
+              ["Stairs", "Honed or textured treads", "Anti-slip grooves cut near the edge of each step"],
+              ["Porch and car porch", "Textured tiles rated for outdoor use", "Avoid polished marble outdoors"],
+              ["Kitchen", "Matt finish", "Easy-clean texture, as spills and grease are common"],
+            ],
+          },
+        },
+        { h2: "Marble that grips better" },
+        { p: "Marble does not have to be polished. A honed finish is smooth but less slippery, and textured finishes give more grip again. On steps, grooves near the nosing make a big difference." },
+        { h2: "The trade-off" },
+        { p: "Rougher textures hold more dirt and need a scrubbing brush rather than just a mop. For most homes, a matt finish in wet areas and a polished one in dry living rooms balances safety and cleaning." },
+        { p: "For the full picture, see our guides on [selecting tiles for kitchens and bathrooms](/blog/select-tiles-for-kitchens-and-bathrooms) and [marble vs tiles in Pakistan](/blog/marble-vs-porcelain-tiles), or [ask us](/contact) about your bathroom or stairs in Karachi." },
+      ],
+      ur: [
+        { p: "چمکدار ٹائلیں اور پالش شدہ ماربل خوبصورت لگتے ہیں، مگر گیلے ہو کر پھسلنے لگتے ہیں۔ گھر میں یہ سب سے زیادہ باتھ روم، وضو کی جگہ، سیڑھیوں اور بارش میں پورچ اور کار پورچ پر اہم ہے۔" },
+        { h2: "پھسلن سے بچاؤ کیسے بیان ہوتا ہے" },
+        { p: "اینٹی سلپ ٹائلوں کی سطح میٹ یا کھردری ہوتی ہے جو پاؤں کو بہتر گرفت دیتی ہے۔ کچھ کمپنیاں سلپ ریٹنگ بتاتی ہیں، جیسے R9 سے R13 تک کی R ریٹنگ، جس میں بڑا نمبر زیادہ گرفت کا مطلب ہے، یا ویٹ پینڈولم ویلیو۔ صرف ہاتھ لگا کر اندازہ لگانے کے بجائے سپلائر سے ٹائل کی ریٹنگ پوچھیں۔" },
+        { h2: "کہاں کیا چنیں" },
+        {
+          table: {
+            head: ["جگہ", "اچھا انتخاب", "یہ بھی دیکھیں"],
+            rows: [
+              ["باتھ روم کا فرش", "میٹ یا کھردری پورسلین", "شاور میں چھوٹی ٹائلیں اضافی جوڑوں سے گرفت بڑھاتی ہیں"],
+              ["وضو کی جگہ", "کھردری ٹائلیں جو گیلی ہو کر بھی گرفت رکھیں", "نالی کی طرف درست ڈھلوان تاکہ پانی کھڑا نہ ہو"],
+              ["سیڑھیاں", "ہونڈ یا کھردرے پائیدان", "ہر سیڑھی کے کنارے کے قریب پھسلن روکنے والی لکیریں"],
+              ["پورچ اور کار پورچ", "باہر کے لیے بنی کھردری ٹائلیں", "باہر پالش شدہ ماربل سے بچیں"],
+              ["کچن", "میٹ فنش", "آسانی سے صاف ہونے والی سطح، کیونکہ چیزیں گرنا اور چکنائی عام ہے"],
+            ],
+          },
+        },
+        { h2: "ماربل جو بہتر گرفت دے" },
+        { p: "ماربل کا پالش ہونا ضروری نہیں۔ ہونڈ فنش ہموار مگر کم پھسلنے والا ہوتا ہے، اور کھردرے فنش اس سے بھی زیادہ گرفت دیتے ہیں۔ سیڑھیوں پر کنارے کے قریب لکیریں بڑا فرق ڈالتی ہیں۔" },
+        { h2: "ایک سمجھوتہ" },
+        { p: "زیادہ کھردری سطح میں میل زیادہ رکتی ہے اور صرف پوچے کے بجائے برش سے صفائی چاہیے۔ زیادہ تر گھروں میں گیلی جگہوں پر میٹ اور خشک کمروں میں پالش فنش حفاظت اور صفائی میں توازن رکھتا ہے۔" },
+        { p: "پوری تفصیل کے لیے [کچن اور باتھ روم کے لیے ٹائلوں کا انتخاب](/blog/select-tiles-for-kitchens-and-bathrooms) اور [پاکستان میں ماربل بمقابلہ ٹائلز](/blog/marble-vs-porcelain-tiles) والی ہماری گائیڈز دیکھیں، یا کراچی میں اپنے باتھ روم یا سیڑھیوں کے بارے میں [ہم سے پوچھیں](/contact)۔" },
+      ],
+    },
+    faqs: [
+      {
+        q: { en: "Are all matt tiles anti-slip?", ur: "کیا ہر میٹ ٹائل اینٹی سلپ ہوتی ہے؟" },
+        a: {
+          en: "Not necessarily. Matt usually grips better than glossy, but the stated slip rating is the reliable guide, so ask the supplier for it.",
+          ur: "ضروری نہیں۔ میٹ عموماً چمکدار سے بہتر گرفت دیتی ہے، مگر قابلِ اعتماد رہنمائی بتائی گئی سلپ ریٹنگ ہے، اس لیے سپلائر سے پوچھیں۔",
+        },
+      },
+      {
+        q: { en: "Can my existing slippery tiles be made anti-slip?", ur: "کیا موجودہ پھسلنے والی ٹائلیں اینٹی سلپ بن سکتی ہیں؟" },
+        a: {
+          en: "Anti-slip treatments exist, but results vary with the tile and they may wear off. Replacing the tiles in the risky area is the permanent solution; we can advise after seeing the floor.",
+          ur: "اینٹی سلپ ٹریٹمنٹ موجود ہیں، مگر نتائج ٹائل کے مطابق مختلف ہوتے ہیں اور وقت کے ساتھ ختم ہو سکتے ہیں۔ خطرے والی جگہ کی ٹائلیں بدلنا مستقل حل ہے؛ فرش دیکھ کر ہم مشورہ دے سکتے ہیں۔",
+        },
+      },
+      {
+        q: { en: "Is marble a good choice for a car porch?", ur: "کیا کار پورچ کے لیے ماربل اچھا انتخاب ہے؟" },
+        a: {
+          en: "Polished marble is not, because it is slippery when wet and marks under tyres. A textured outdoor tile is usually more practical; if you want stone, choose a textured finish.",
+          ur: "پالش شدہ ماربل نہیں، کیونکہ یہ گیلا ہو کر پھسلتا ہے اور ٹائروں سے نشان پڑتے ہیں۔ عموماً باہر کی کھردری ٹائل زیادہ عملی ہے؛ اگر پتھر چاہیے تو کھردرا فنش چنیں۔",
+        },
+      },
+    ],
+  },
+  {
+    slug: "porch-terrace-roof-tiles",
+    category: "choosing",
+    published: "2026-10-28",
+    readingMinutes: 6,
+    cover: "housePorch",
+    relatedServices: ["tile-installation", "marble-flooring", "tile-and-marble-supply"],
+    title: { en: "Best Tiles and Marble for Car Porches, Terraces and Rooftops", ur: "کار پورچ، ٹیرس اور چھت کے لیے بہترین ٹائلیں اور ماربل" },
+    excerpt: {
+      en: "What outdoor floors in Karachi have to cope with, and how to choose tiles or stone for a car porch, terrace, balcony or rooftop that stay safe and last.",
+      ur: "کراچی میں باہر کے فرش کو کن چیزوں کا سامنا ہوتا ہے، اور کار پورچ، ٹیرس، بالکونی یا چھت کے لیے ایسی ٹائلیں یا پتھر کیسے چنیں جو محفوظ اور پائیدار رہیں۔",
+    },
+    content: {
+      en: [
+        { p: "Outdoor floors in Karachi face strong sun, heat, dust, salty air near the coast and heavy rain in the monsoon. A floor that works well indoors can crack, fade or turn slippery outside, so outdoor areas need their own choices." },
+        { h2: "What an outdoor floor has to cope with" },
+        {
+          ul: [
+            "Grip when it rains or is washed",
+            "Heat: dark tiles in direct sun get very hot underfoot",
+            "Weight, especially the weight of a car on a porch",
+            "Expansion and contraction as temperatures change",
+            "Water that must run off rather than stand",
+          ],
+        },
+        { h2: "Car porch" },
+        { p: "Choose thick, strong tiles made for outdoor or vehicle use, with a textured finish. Thin wall tiles and polished marble are not suitable. Every tile needs a full bed underneath, because a car's weight quickly cracks a tile with a hollow gap under it; see [hollow-sounding tiles](/blog/hollow-tiles-causes-and-repair). The floor also needs a slope so water runs off." },
+        { h2: "Terrace and balcony" },
+        { p: "Matt or textured outdoor tiles keep their grip when wet, and lighter colours stay cooler in the sun. If there are rooms below, the waterproofing under the tiles matters as much as the tiles themselves. Leave movement gaps around the edges of larger areas." },
+        { h2: "Rooftop" },
+        { p: "A roof faces direct sun all day. Waterproofing and a proper slope come first, and the roof's condition should be checked before any tiles go down. Light-coloured tiles suited to outdoor heat reflect more of the sun than dark ones." },
+        { h2: "Can marble be used outside?" },
+        { p: "Polished marble is slippery when wet and can stain and etch outdoors. Marble with a honed or textured finish, sealed, can work in covered areas such as a front porch. For open terraces and car porches, many people choose outdoor porcelain or stone with a rough finish instead. Our [anti-slip tiles guide](/blog/anti-slip-tiles-guide) explains finishes and grip." },
+        { p: "Planning an outdoor floor in Karachi? [Send us photos and the size of the area](/contact) and we can advise on site." },
+      ],
+      ur: [
+        { p: "کراچی میں باہر کے فرش کو تیز دھوپ، گرمی، مٹی، ساحل کے قریب نمکین ہوا اور مون سون میں تیز بارش کا سامنا ہوتا ہے۔ جو فرش اندر اچھا رہتا ہے وہ باہر ٹوٹ سکتا ہے، رنگ چھوڑ سکتا ہے یا پھسلنے لگتا ہے، اس لیے باہر کی جگہوں کے لیے الگ انتخاب چاہیے۔" },
+        { h2: "باہر کے فرش کو کن چیزوں کا سامنا ہوتا ہے" },
+        {
+          ul: [
+            "بارش یا دھلائی کے وقت گرفت",
+            "گرمی: دھوپ میں گہرے رنگ کی ٹائلیں پاؤں تلے بہت گرم ہو جاتی ہیں",
+            "وزن، خاص طور پر پورچ پر گاڑی کا وزن",
+            "درجہ حرارت بدلنے سے پھیلنا اور سکڑنا",
+            "پانی جو کھڑا رہنے کے بجائے بہہ جانا چاہیے",
+          ],
+        },
+        { h2: "کار پورچ" },
+        { p: "باہر یا گاڑیوں کے لیے بنی موٹی اور مضبوط ٹائلیں کھردرے فنش کے ساتھ چنیں۔ پتلی دیواری ٹائلیں اور پالش شدہ ماربل موزوں نہیں۔ ہر ٹائل کے نیچے پورا مسالہ ضروری ہے، کیونکہ گاڑی کا وزن نیچے سے کھوکھلی ٹائل کو جلد توڑ دیتا ہے؛ [کھوکھلی آواز والی ٹائلیں](/blog/hollow-tiles-causes-and-repair) دیکھیں۔ فرش میں ڈھلوان بھی ضروری ہے تاکہ پانی بہہ جائے۔" },
+        { h2: "ٹیرس اور بالکونی" },
+        { p: "باہر کی میٹ یا کھردری ٹائلیں گیلی ہو کر بھی گرفت رکھتی ہیں، اور ہلکے رنگ دھوپ میں ٹھنڈے رہتے ہیں۔ اگر نیچے کمرے ہوں تو ٹائلوں کے نیچے واٹر پروفنگ اتنی ہی اہم ہے جتنی خود ٹائلیں۔ بڑی جگہوں کے کناروں پر حرکت کی گنجائش چھوڑیں۔" },
+        { h2: "چھت" },
+        { p: "چھت پر سارا دن سیدھی دھوپ پڑتی ہے۔ پہلے واٹر پروفنگ اور درست ڈھلوان، اور ٹائلیں لگانے سے پہلے چھت کی حالت کی جانچ ضروری ہے۔ باہر کی گرمی کے لیے بنی ہلکے رنگ کی ٹائلیں گہرے رنگ سے زیادہ دھوپ واپس پھینکتی ہیں۔" },
+        { h2: "کیا ماربل باہر لگ سکتا ہے؟" },
+        { p: "پالش شدہ ماربل گیلا ہو کر پھسلتا ہے اور باہر داغدار اور مدھم ہو سکتا ہے۔ ہونڈ یا کھردرے فنش والا، سیل کیا ہوا ماربل سامنے کے پورچ جیسی ڈھکی جگہوں پر چل سکتا ہے۔ کھلے ٹیرس اور کار پورچ کے لیے بہت سے لوگ باہر کی پورسلین یا کھردرے فنش والا پتھر چنتے ہیں۔ ہماری [اینٹی سلپ ٹائلوں کی گائیڈ](/blog/anti-slip-tiles-guide) فنش اور گرفت سمجھاتی ہے۔" },
+        { p: "کراچی میں باہر کا فرش بنوا رہے ہیں؟ [جگہ کی تصاویر اور سائز بھیجیں](/contact)، ہم سائٹ پر مشورہ دے سکتے ہیں۔" },
+      ],
+    },
+    faqs: [
+      {
+        q: { en: "Which tiles are best for a car porch?", ur: "کار پورچ کے لیے کون سی ٹائلیں بہتر ہیں؟" },
+        a: {
+          en: "Thick, strong tiles made for outdoor or vehicle use, with a textured finish, fixed on a full bed and laid with a slope for water.",
+          ur: "باہر یا گاڑیوں کے لیے بنی موٹی، مضبوط اور کھردرے فنش والی ٹائلیں، جو پورے مسالے پر اور پانی کی ڈھلوان کے ساتھ لگائی جائیں۔",
+        },
+      },
+      {
+        q: { en: "Do dark outdoor tiles get too hot?", ur: "کیا باہر گہرے رنگ کی ٹائلیں بہت گرم ہو جاتی ہیں؟" },
+        a: {
+          en: "In direct Karachi sun, yes, they can become uncomfortable to walk on barefoot. Lighter colours stay cooler.",
+          ur: "کراچی کی سیدھی دھوپ میں، ہاں، ان پر ننگے پاؤں چلنا مشکل ہو سکتا ہے۔ ہلکے رنگ ٹھنڈے رہتے ہیں۔",
+        },
+      },
+      {
+        q: { en: "Is waterproofing needed under terrace tiles?", ur: "کیا ٹیرس کی ٹائلوں کے نیچے واٹر پروفنگ ضروری ہے؟" },
+        a: {
+          en: "Yes, especially where there are rooms below. Tiles and grout alone do not stop water seeping through over time.",
+          ur: "جی ہاں، خاص طور پر جہاں نیچے کمرے ہوں۔ صرف ٹائلیں اور گراؤٹ وقت کے ساتھ پانی کو رسنے سے نہیں روکتے۔",
+        },
+      },
+    ],
+  },
+  {
+    slug: "best-marble-for-stairs-pakistan",
+    category: "choosing",
+    published: "2026-10-28",
+    readingMinutes: 5,
+    cover: "marbleStaircase",
+    relatedServices: ["staircases-and-custom-marble-work", "marble-installation"],
+    title: { en: "Best Marble for Stairs in Pakistan: Choosing Stone and Design", ur: "پاکستان میں سیڑھیوں کے لیے بہترین ماربل: پتھر اور ڈیزائن کا انتخاب" },
+    excerpt: {
+      en: "How to choose marble for stairs in a Pakistani home: what makes a good stair stone, common choices, design ideas and how to keep steps safe.",
+      ur: "پاکستانی گھر کی سیڑھیوں کے لیے ماربل کیسے چنیں: سیڑھیوں کے لیے اچھا پتھر کیسا ہو، عام انتخاب، ڈیزائن آئیڈیاز اور سیڑھیوں کو محفوظ کیسے رکھیں۔",
+    },
+    content: {
+      en: [
+        { p: "Stairs take more wear than almost any other floor. Every step is used daily in the same spot, the edges get knocked, and feet bring in water from bathrooms or outside. The right stone and finish keep stairs looking good and safe for years." },
+        { h2: "What makes a good stair marble" },
+        {
+          ul: [
+            "A dense stone with few pits, so edges chip less",
+            "Consistent colour from piece to piece, so every step matches",
+            "Enough thickness for treads, which are usually thicker than floor pieces; ask for the thickness when comparing",
+            "A finish that gives grip, especially on busy or outdoor stairs",
+          ],
+        },
+        { h2: "Common choices" },
+        { p: "Grey stones such as Sunny Grey and Badal hide everyday dirt well, warm beige Botticino suits wood and warm lighting, and bright Ziarat White looks clean but shows marks sooner. Black stone such as Jet Black is often used for borders or edge strips. Our guide to [types of marble in Pakistan](/blog/types-of-marble-in-pakistan) describes each one." },
+        { h2: "Design ideas" },
+        {
+          ul: [
+            "A contrasting strip at the front edge of each step, which also makes the edge easier to see",
+            "Risers in the same stone for a calm look, or a contrasting stone to show the steps",
+            "One-piece treads rather than joined pieces, so no joint runs across the step",
+            "The landing and stair skirting in the same marble, so the staircase reads as one",
+          ],
+        },
+        { h2: "Keeping stairs safe" },
+        { p: "A honed finish, or anti-slip grooves cut near the edge of each step, gives much better grip than a high polish. This matters most on outdoor steps and stairs that get wet. See our [anti-slip tiles guide](/blog/anti-slip-tiles-guide)." },
+        { h2: "Measured step by step" },
+        { p: "Steps on site are rarely exactly the same size, so each one is measured separately before the stone is cut. That is part of our [staircases and custom marble work](/services/staircases-and-custom-marble-work) in Karachi." },
+      ],
+      ur: [
+        { p: "سیڑھیاں تقریباً ہر دوسرے فرش سے زیادہ گھستی ہیں۔ ہر سیڑھی روز ایک ہی جگہ سے استعمال ہوتی ہے، کناروں پر چوٹ لگتی ہے، اور پاؤں باتھ روم یا باہر سے پانی لاتے ہیں۔ صحیح پتھر اور فنش سیڑھیوں کو برسوں تک خوبصورت اور محفوظ رکھتے ہیں۔" },
+        { h2: "سیڑھیوں کے لیے اچھا ماربل کیسا ہو" },
+        {
+          ul: [
+            "گھنا پتھر جس میں کم گڑھے ہوں، تاکہ کنارے کم ٹوٹیں",
+            "ہر ٹکڑے میں یکساں رنگ، تاکہ ہر سیڑھی میل کھائے",
+            "پائیدان کے لیے کافی موٹائی، جو عموماً فرش کے ٹکڑوں سے زیادہ ہوتی ہے؛ موازنہ کرتے وقت موٹائی پوچھیں",
+            "ایسا فنش جو گرفت دے، خاص طور پر مصروف یا باہر کی سیڑھیوں پر",
+          ],
+        },
+        { h2: "عام انتخاب" },
+        { p: "سنی گرے اور بادل جیسے سرمئی پتھر روزمرہ کی میل اچھی طرح چھپاتے ہیں، گرم بیج بوٹیچینو لکڑی اور گرم روشنی کے ساتھ اچھا لگتا ہے، اور چمکدار زیارت وائٹ صاف دکھتا ہے مگر نشان جلد دکھاتا ہے۔ جیٹ بلیک جیسا سیاہ پتھر اکثر بارڈر یا کناروں کی پٹی کے لیے استعمال ہوتا ہے۔ ہماری [پاکستان میں ماربل کی اقسام](/blog/types-of-marble-in-pakistan) والی گائیڈ ہر ایک بیان کرتی ہے۔" },
+        { h2: "ڈیزائن آئیڈیاز" },
+        {
+          ul: [
+            "ہر سیڑھی کے سامنے کے کنارے پر متضاد رنگ کی پٹی، جس سے کنارہ دیکھنا بھی آسان ہوتا ہے",
+            "پُرسکون تاثر کے لیے رائزر اسی پتھر کے، یا سیڑھیاں نمایاں کرنے کے لیے متضاد پتھر",
+            "جوڑے ہوئے ٹکڑوں کے بجائے ایک ٹکڑے کے پائیدان، تاکہ سیڑھی پر کوئی جوڑ نہ آئے",
+            "لینڈنگ اور سیڑھی کی اسکرٹنگ اسی ماربل کی، تاکہ پوری سیڑھی ایک لگے",
+          ],
+        },
+        { h2: "سیڑھیوں کو محفوظ رکھنا" },
+        { p: "ہونڈ فنش، یا ہر سیڑھی کے کنارے کے قریب پھسلن روکنے والی لکیریں، تیز پالش سے کہیں بہتر گرفت دیتی ہیں۔ یہ سب سے زیادہ باہر کی اور گیلی ہونے والی سیڑھیوں پر اہم ہے۔ ہماری [اینٹی سلپ ٹائلوں کی گائیڈ](/blog/anti-slip-tiles-guide) دیکھیں۔" },
+        { h2: "ہر سیڑھی کی الگ پیمائش" },
+        { p: "سائٹ پر سیڑھیاں شاذ و نادر ہی بالکل ایک سائز کی ہوتی ہیں، اس لیے پتھر کاٹنے سے پہلے ہر ایک الگ ناپی جاتی ہے۔ یہ کراچی میں ہمارے [سیڑھیوں اور خصوصی ماربل کے کام](/services/staircases-and-custom-marble-work) کا حصہ ہے۔" },
+      ],
+    },
+    faqs: [
+      {
+        q: { en: "Which marble is best for stairs?", ur: "سیڑھیوں کے لیے کون سا ماربل بہترین ہے؟" },
+        a: {
+          en: "There is no single best stone. It depends on how busy the stairs are, the look you want and how much grip you need. Grey and beige tones hide wear better than bright white; see samples in person before choosing.",
+          ur: "کوئی ایک بہترین پتھر نہیں۔ یہ سیڑھیوں کے استعمال، مطلوبہ تاثر اور درکار گرفت پر منحصر ہے۔ سرمئی اور بیج رنگ چمکدار سفید سے بہتر گھساؤ چھپاتے ہیں؛ انتخاب سے پہلے نمونے خود دیکھیں۔",
+        },
+      },
+      {
+        q: { en: "Should stair marble be polished or honed?", ur: "سیڑھیوں کا ماربل پالش ہو یا ہونڈ؟" },
+        a: {
+          en: "Honed, or polished with anti-slip grooves near the edge, is safer, especially on busy, wet or outdoor stairs.",
+          ur: "ہونڈ، یا کنارے کے قریب پھسلن روکنے والی لکیروں کے ساتھ پالش، زیادہ محفوظ ہے، خاص طور پر مصروف، گیلی یا باہر کی سیڑھیوں پر۔",
+        },
+      },
+      {
+        q: { en: "Can old stairs be covered with new marble?", ur: "کیا پرانی سیڑھیوں پر نیا ماربل لگ سکتا ہے؟" },
+        a: {
+          en: "Often, yes, if the structure is sound and the step heights stay comfortable after the extra thickness. This is checked on site first.",
+          ur: "اکثر ہاں، اگر ڈھانچہ مضبوط ہو اور اضافی موٹائی کے بعد بھی سیڑھیوں کی اونچائی آرام دہ رہے۔ یہ پہلے سائٹ پر جانچا جاتا ہے۔",
+        },
+      },
+    ],
+  },
+  {
+    slug: "tile-grouting-guide",
+    category: "planning",
+    published: "2026-10-28",
+    readingMinutes: 5,
+    cover: "whiteTilesGrout",
+    relatedServices: ["tile-installation", "bathroom-tile-and-marble-installation", "kitchen-tile-and-marble-installation"],
+    title: { en: "Tile Grouting: Types, Colours and Epoxy Grout Explained", ur: "ٹائلوں کی گراؤٹنگ: اقسام، رنگ اور ایپوکسی گراؤٹ" },
+    excerpt: {
+      en: "What grout does, the difference between cement and epoxy grout, how to choose a grout colour, and how to deal with cracked or dirty grout.",
+      ur: "گراؤٹ کیا کرتا ہے، سیمنٹ اور ایپوکسی گراؤٹ میں فرق، گراؤٹ کا رنگ کیسے چنیں، اور ٹوٹے یا گندے گراؤٹ کا کیا کریں۔",
+    },
+    content: {
+      en: [
+        { p: "Grout fills the joints between tiles. It keeps dirt and water out of the joints, protects the tile edges and gives the surface a finished look. Many floors that look dirty really have dirty grout." },
+        { h2: "Types of grout" },
+        {
+          table: {
+            head: ["Type", "Good for", "Keep in mind"],
+            rows: [
+              ["Fine cement grout", "Narrow joints and walls", "Absorbs water and stains unless sealed"],
+              ["Sanded cement grout", "Wider floor joints", "Stronger in wide joints; also benefits from sealing"],
+              ["Epoxy grout", "Showers, kitchens, wudu areas and floors cleaned often", "Resists water and stains very well, but costs more and needs skill to apply"],
+            ],
+          },
+        },
+        { h2: "Choosing a grout colour" },
+        {
+          ul: [
+            "A colour close to the tile hides the joints for a calm look",
+            "A contrasting colour shows off the pattern, but also every crooked line",
+            "On floors, a mid-grey hides dirt better than bright white",
+            "For marble, choose a colour close to the stone's base colour",
+          ],
+        },
+        { h2: "Joint width" },
+        { p: "The right joint width depends on the tile size and its edges. Tiles with straight, machine-cut edges allow narrow joints; handmade or uneven tiles need wider ones. Spacers keep the joints the same width across the floor." },
+        { h2: "Common grout problems" },
+        {
+          ul: [
+            "Cracking or crumbling: often a sign of movement or hollow tiles underneath",
+            "Dark or mouldy joints in bathrooms: sealing, epoxy grout and better ventilation help",
+            "A dull haze on the tiles: grout residue that was not cleaned off in time",
+          ],
+        },
+        { p: "If grout keeps cracking, check for [hollow-sounding tiles](/blog/hollow-tiles-causes-and-repair) first." },
+        { h2: "Re-grouting" },
+        { p: "Old grout can be raked out and replaced, which refreshes a floor or wall without retiling. If tiles are hollow underneath, they should be fixed first. [Ask us](/contact) about re-grouting or tile repairs in Karachi." },
+      ],
+      ur: [
+        { p: "گراؤٹ ٹائلوں کے درمیان جوڑ بھرتا ہے۔ یہ جوڑوں میں میل اور پانی جانے سے روکتا ہے، ٹائل کے کناروں کو بچاتا ہے اور سطح کو مکمل تاثر دیتا ہے۔ بہت سے فرش جو گندے لگتے ہیں ان کا اصل مسئلہ گندا گراؤٹ ہوتا ہے۔" },
+        { h2: "گراؤٹ کی اقسام" },
+        {
+          table: {
+            head: ["قسم", "کس کے لیے اچھا", "دھیان رکھیں"],
+            rows: [
+              ["باریک سیمنٹ گراؤٹ", "تنگ جوڑ اور دیواریں", "سیل نہ ہو تو پانی اور داغ جذب کرتا ہے"],
+              ["ریت والا سیمنٹ گراؤٹ", "فرش کے چوڑے جوڑ", "چوڑے جوڑوں میں زیادہ مضبوط؛ سیلنگ سے فائدہ ہوتا ہے"],
+              ["ایپوکسی گراؤٹ", "شاور، کچن، وضو کی جگہ اور بار بار دھلنے والے فرش", "پانی اور داغ کے خلاف بہت مضبوط، مگر مہنگا اور لگانے میں مہارت چاہیے"],
+            ],
+          },
+        },
+        { h2: "گراؤٹ کا رنگ کیسے چنیں" },
+        {
+          ul: [
+            "ٹائل سے ملتا رنگ جوڑ چھپا کر پُرسکون تاثر دیتا ہے",
+            "متضاد رنگ پیٹرن نمایاں کرتا ہے، مگر ہر ٹیڑھی لائن بھی",
+            "فرش پر درمیانہ سرمئی رنگ چمکدار سفید سے بہتر میل چھپاتا ہے",
+            "ماربل کے لیے پتھر کے بنیادی رنگ سے ملتا رنگ چنیں",
+          ],
+        },
+        { h2: "جوڑ کی چوڑائی" },
+        { p: "جوڑ کی درست چوڑائی ٹائل کے سائز اور کناروں پر منحصر ہے۔ سیدھے، مشین سے کٹے کناروں والی ٹائلوں میں تنگ جوڑ ممکن ہیں؛ ہاتھ سے بنی یا ناہموار ٹائلوں کو چوڑے جوڑ چاہییں۔ اسپیسرز پورے فرش میں جوڑ یکساں رکھتے ہیں۔" },
+        { h2: "گراؤٹ کے عام مسائل" },
+        {
+          ul: [
+            "ٹوٹنا یا بھربھرا ہونا: اکثر نیچے حرکت یا کھوکھلی ٹائلوں کی علامت",
+            "باتھ روم میں کالے یا پھپھوندی والے جوڑ: سیلنگ، ایپوکسی گراؤٹ اور بہتر ہوا کی آمد و رفت مدد کرتی ہے",
+            "ٹائلوں پر مدھم تہہ: گراؤٹ کی باقیات جو وقت پر صاف نہیں ہوئیں",
+          ],
+        },
+        { p: "اگر گراؤٹ بار بار ٹوٹے تو پہلے [کھوکھلی آواز والی ٹائلیں](/blog/hollow-tiles-causes-and-repair) چیک کریں۔" },
+        { h2: "دوبارہ گراؤٹنگ" },
+        { p: "پرانا گراؤٹ کھرچ کر نیا لگایا جا سکتا ہے، جس سے ٹائلیں بدلے بغیر فرش یا دیوار تازہ ہو جاتی ہے۔ اگر نیچے ٹائلیں کھوکھلی ہوں تو پہلے انہیں ٹھیک کرنا چاہیے۔ کراچی میں دوبارہ گراؤٹنگ یا ٹائلوں کی مرمت کے بارے میں [ہم سے پوچھیں](/contact)۔" },
+      ],
+    },
+    faqs: [
+      {
+        q: { en: "How often should grout be sealed?", ur: "گراؤٹ کو کتنے عرصے بعد سیل کرنا چاہیے؟" },
+        a: {
+          en: "Cement grout benefits from sealing, and how often depends on the sealer and how much the area is used and washed. Follow the sealer's instructions; epoxy grout does not need sealing.",
+          ur: "سیمنٹ گراؤٹ کو سیلنگ سے فائدہ ہوتا ہے، اور کتنی بار، یہ سیلر اور جگہ کے استعمال اور دھلائی پر منحصر ہے۔ سیلر کی ہدایات پر عمل کریں؛ ایپوکسی گراؤٹ کو سیلنگ کی ضرورت نہیں ہوتی۔",
+        },
+      },
+      {
+        q: { en: "Is epoxy grout worth it?", ur: "کیا ایپوکسی گراؤٹ فائدہ مند ہے؟" },
+        a: {
+          en: "In wet areas and kitchens it usually is, because it resists water and stains far better. It costs more and must be applied carefully.",
+          ur: "گیلی جگہوں اور کچن میں عموماً ہاں، کیونکہ یہ پانی اور داغ کے خلاف کہیں بہتر ہے۔ یہ مہنگا ہے اور احتیاط سے لگانا پڑتا ہے۔",
+        },
+      },
+      {
+        q: { en: "Can I change the grout colour without retiling?", ur: "کیا ٹائلیں بدلے بغیر گراؤٹ کا رنگ بدل سکتے ہیں؟" },
+        a: {
+          en: "Yes. The old grout can be raked out and replaced in a new colour, as long as the tiles themselves are sound.",
+          ur: "جی ہاں۔ پرانا گراؤٹ کھرچ کر نئے رنگ میں لگایا جا سکتا ہے، بشرطیکہ ٹائلیں خود مضبوط ہوں۔",
+        },
+      },
+    ],
+  },
 ];

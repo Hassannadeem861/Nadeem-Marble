@@ -48,6 +48,7 @@ export default async function ContactPage({ params }) {
         eyebrow={copy.hero.eyebrow}
         title={copy.hero.title}
         text={copy.hero.text}
+        imageKey="phoneMockup"
       >
         <div className="mt-8 flex flex-col gap-3 sm:flex-row">
           <ButtonLink href={telHref} variant="default">
