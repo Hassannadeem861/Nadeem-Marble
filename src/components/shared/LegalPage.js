@@ -1,3 +1,4 @@
+import { CtaBand } from "@/components/shared/CtaBand";
 import { PageHeader } from "@/components/shared/PageHeader";
 import { formatDate } from "@/lib/format";
 import { pick } from "@/lib/i18n";
@@ -33,6 +34,7 @@ export function LegalPage({ locale, dict, path, title, document }) {
           </div>
         </div>
       </section>
+      <CtaBand locale={locale} dict={dict} />
     </>
   );
 }

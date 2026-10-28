@@ -13,6 +13,14 @@ const unsplash = (photographer, id) => ({
   url: `https://unsplash.com/photos/${id}`,
 });
 
+const pexels = (photographer, path) => ({
+  source: "Pexels",
+  license: "Pexels License",
+  licenseUrl: "https://www.pexels.com/license/",
+  photographer,
+  url: `https://www.pexels.com/photo/${path}/`,
+});
+
 const commons = (photographer, file, license, licenseUrl) => ({
   source: "Wikimedia Commons",
   license,
@@ -31,6 +39,66 @@ export const images = {
       ur: "ندیم ماربلز کے بانی کی تصویر، کریم رنگ کی جیکٹ اور برانڈڈ سیاہ پولو شرٹ میں",
     },
     credit: null,
+  },
+  tileLaying: {
+    src: "/images/stock/tile-installation-adhesive.webp",
+    width: 1600,
+    height: 1067,
+    alt: { en: "Tiler laying floor tiles on a fresh adhesive bed with spacers", ur: "کاریگر تازہ مسالے پر اسپیسرز کے ساتھ فرش کی ٹائلیں بچھا رہا ہے" },
+    credit: pexels("Sergei Starostin", "construction-worker-laying-tile-in-renovation-project-29181494"),
+  },
+  tilingTools: {
+    src: "/images/stock/tiling-tools-mallet.webp",
+    width: 1600,
+    height: 1067,
+    alt: { en: "Rubber mallet, level and tiling tools on patterned floor tiles", ur: "ڈیزائن والی فرش ٹائلوں پر ربڑ کا ہتھوڑا، لیول اور ٹائلنگ کے اوزار" },
+    credit: pexels("Bimbim Sindu", "tiling-equipment-laid-out-on-a-job-18861859"),
+  },
+  marbleVeinsDark: {
+    src: "/images/stock/black-marble-veins.webp",
+    width: 1600,
+    height: 1067,
+    alt: { en: "Close-up of black marble with fine white veins", ur: "باریک سفید دھاریوں والے سیاہ ماربل کا قریبی منظر" },
+    credit: pexels("Karola G", "black-marble-surface-texture-6634140"),
+  },
+  wetShowerFloor: {
+    src: "/images/stock/wet-shower-floor-tiles.webp",
+    width: 1600,
+    height: 1067,
+    alt: { en: "Bare feet on a wet, patterned shower floor", ur: "گیلے، ڈیزائن والے شاور فرش پر ننگے پاؤں" },
+    credit: pexels("cottonbro studio", "a-man-in-a-shower-9376098"),
+  },
+  housePorch: {
+    src: "/images/stock/house-porch-terrace.webp",
+    width: 1600,
+    height: 1068,
+    alt: { en: "Covered porch and tiled terrace of a modern house beside a lawn", ur: "جدید گھر کا ڈھکا ہوا پورچ اور لان کے ساتھ ٹائل والا ٹیرس" },
+    credit: pexels("Max Vakhtbovych", "porch-of-a-house-with-furniture-7546776"),
+  },
+  marbleStaircase: {
+    src: "/images/stock/marble-staircase-grand.webp",
+    width: 1600,
+    height: 1067,
+    alt: { en: "Grand staircase with marble steps and contrasting stone treads", ur: "ماربل کی سیڑھیوں اور مختلف رنگ کے پتھر کے پائیدانوں والا شاندار زینہ" },
+    credit: pexels("Quang Nguyen Vinh", "staircase-in-a-luxurious-palace-14012693"),
+  },
+  whiteTilesGrout: {
+    src: "/images/stock/white-tiles-grout-lines.webp",
+    width: 1600,
+    height: 1067,
+    alt: { en: "White rectangular wall tiles with neat grout lines beside a shower", ur: "شاور کے ساتھ صاف گراؤٹ لائنوں والی سفید مستطیل دیواری ٹائلیں" },
+    credit: pexels("Karola G", "bathroom-with-white-tiles-4194867"),
+  },
+  // Illustration: two phone screens (area search and a WhatsApp enquiry) placed on the gold-veined marble photo below.
+  phoneMockup: {
+    src: "/images/stock/phone-mockup.webp",
+    width: 1600,
+    height: 900,
+    alt: {
+      en: "Two phones on gold-veined marble: the Nadeem Marbles area search and a WhatsApp enquiry",
+      ur: "سنہری دھاریوں والے ماربل پر دو فون: ندیم ماربلز کے علاقے کی تلاش اور واٹس ایپ پر انکوائری",
+    },
+    credit: unsplash("Martin Leitgeb", "eqOxVR2xMrQ"),
   },
   heroLobby: {
     src: "/images/stock/hero-marble-lobby.webp",
