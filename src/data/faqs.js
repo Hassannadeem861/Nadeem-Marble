@@ -9,8 +9,8 @@
 const quote = {
   q: { en: "How do I get a quote?", ur: "کوٹیشن کیسے حاصل کروں؟" },
   a: {
-    en: "Call +92 315 1283438, WhatsApp +92 316 4593747, email m.hassan.nadeem987@gmail.com, or use the enquiry form on the Contact page. Photos of your space and approximate measurements help us respond more accurately.",
-    ur: "\u2066+92 315 1283438\u2069 پر کال کریں، \u2066+92 316 4593747\u2069 پر واٹس ایپ کریں، \u2066m.hassan.nadeem987@gmail.com\u2069 پر ای میل کریں، یا رابطہ صفحے پر انکوائری فارم استعمال کریں۔ اپنی جگہ کی تصاویر اور اندازاً پیمائش سے ہم زیادہ درست جواب دے سکتے ہیں۔",
+    en: "Call +92 315 1283438, WhatsApp +92 316 4593747, email marblesnadeem@gmail.com, or use the enquiry form on the Contact page. Photos of your space and approximate measurements help us respond more accurately.",
+    ur: "\u2066+92 315 1283438\u2069 پر کال کریں، \u2066+92 316 4593747\u2069 پر واٹس ایپ کریں، \u2066marblesnadeem@gmail.com\u2069 پر ای میل کریں، یا رابطہ صفحے پر انکوائری فارم استعمال کریں۔ اپنی جگہ کی تصاویر اور اندازاً پیمائش سے ہم زیادہ درست جواب دے سکتے ہیں۔",
   },
 };
 
