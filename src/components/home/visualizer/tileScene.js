@@ -13,6 +13,12 @@ const ROUGHNESS = { polished: 0.1, honed: 0.55 };
 const VARIANTS = 6; // random slab crops per texture, shared between tiles
 const VIEW = { radius: 7.6, height: 4.6, yaw: 0.35 };
 const LIMITS = { radius: [3.5, 11], height: [1.2, 9] };
+// Typical Karachi room light: daylight, warm yellow bulbs, white tube lights.
+const LIGHTING = {
+  day: { sun: "#fff6e8", sunIntensity: 1.1, sky: "#ffffff", skyIntensity: 0.35, exposure: 1.05 },
+  warm: { sun: "#ffc890", sunIntensity: 0.95, sky: "#ffe0b8", skyIntensity: 0.3, exposure: 0.95 },
+  cool: { sun: "#eef3ff", sunIntensity: 1, sky: "#f0f5ff", skyIntensity: 0.45, exposure: 1 },
+};
 
 export function isWebGLAvailable() {
   try {
@@ -25,11 +31,11 @@ export function isWebGLAvailable() {
 
 /**
  * Creates the scene inside `container`.
- * options: { texture, contrastTexture, pattern, finish, tile, grout, reducedMotion }
+ * options: { texture, contrastTexture, pattern, finish, tile, grout, light, reducedMotion }
  *   texture: { url, natural } – natural textures show the whole image on every tile
  *   tile: { w, d } in scene units; grout: { gap, color }
- * Returns controls: setMaterial, setPattern, setFinish, setTile, setGrout,
- * setActive, mount, setInteractive, zoomBy, resetView, capture, dispose.
+ * Returns controls: setMaterial, setPattern, setFinish, setTile, setGrout, setLighting,
+ * setActive, mount, setInteractive, zoomBy, turnBy, resetView, capture, release, dispose.
  */
 export async function createTileScene(container, options) {
   const { reducedMotion } = options;
@@ -59,7 +65,18 @@ export async function createTileScene(container, options) {
   const sun = new THREE.DirectionalLight("#fff6e8", 1.1);
   sun.position.set(4, 8, 3);
   scene.add(sun);
-  scene.add(new THREE.HemisphereLight("#ffffff", "#b9b2a6", 0.35));
+  const sky = new THREE.HemisphereLight("#ffffff", "#b9b2a6", 0.35);
+  scene.add(sky);
+
+  function setLighting(mode) {
+    const next = LIGHTING[mode] ?? LIGHTING.day;
+    sun.color.set(next.sun);
+    sun.intensity = next.sunIntensity;
+    sky.color.set(next.sky);
+    sky.intensity = next.skyIntensity;
+    renderer.toneMappingExposure = next.exposure;
+  }
+  setLighting(options.light);
 
   const camera = new THREE.PerspectiveCamera(32, 1, 0.1, 60);
   const cameraRig = { ...VIEW };
@@ -356,6 +373,12 @@ export async function createTileScene(container, options) {
     else gsap.to(cameraRig, { radius, duration: 0.35, ease: "power2.out", overwrite: "auto" });
   }
 
+  /** Keyboard control in the popup: turn left/right and raise/lower the camera. */
+  function turnBy(yaw, height = 0) {
+    dragTarget += yaw;
+    cameraRig.height = clamp(cameraRig.height + height, ...LIMITS.height);
+  }
+
   function resetView() {
     dragTarget = 0;
     const view = { radius: VIEW.radius, height: VIEW.height };
@@ -398,5 +421,5 @@ export async function createTileScene(container, options) {
 
   if (!reducedMotion) gsap.from(cameraRig, { radius: cameraRig.radius + 4, height: 9, duration: 2.2, ease: "power3.out" });
   dropTiles();
-  return { setMaterial, setPattern, setFinish, setTile, setGrout, setActive, mount, setInteractive, zoomBy, resetView, capture, release, dispose };
+  return { setMaterial, setPattern, setFinish, setTile, setGrout, setLighting, setActive, mount, setInteractive, zoomBy, turnBy, resetView, capture, release, dispose };
 }

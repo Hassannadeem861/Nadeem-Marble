@@ -23,14 +23,14 @@ export function MaterialGallery({ locale, dict }) {
   });
 
   return (
-    <section aria-labelledby="materials-heading" className="py-20 md:py-28">
+    <section id="visualizer" aria-labelledby="materials-heading" className="scroll-mt-24 py-20 md:py-28">
       <div className="container-page">
         <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <SectionHeading id="materials-heading" eyebrow={copy.eyebrow} title={labels.title} text={labels.text} />
           <p className="max-w-xs text-sm text-muted-foreground">{copy.note}</p>
         </div>
         <div className="mt-12">
-          <TileVisualizer materials={materials} contrastIds={{ dark: "marbleBlack", light: "marbleGrey" }} labels={labels} />
+          <TileVisualizer locale={locale} materials={materials} contrastIds={{ dark: "marbleBlack", light: "marbleGrey" }} labels={labels} />
         </div>
       </div>
     </section>

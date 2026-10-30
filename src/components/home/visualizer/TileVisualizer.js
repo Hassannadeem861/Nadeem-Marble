@@ -1,10 +1,12 @@
 "use client";
 
-import { useEffect, useEffectEvent, useRef, useState } from "react";
+import { useEffect, useEffectEvent, useId, useRef, useState } from "react";
 import Image from "next/image";
-import { Download, Expand, Hand, ImagePlus, LoaderCircle, MessageCircle, RotateCcw, ZoomIn, ZoomOut } from "lucide-react";
+import Link from "next/link";
+import { ArrowRight, Download, Expand, Hand, ImagePlus, LoaderCircle, MessageCircle, RotateCcw, ZoomIn, ZoomOut } from "lucide-react";
 import { Dialog, DialogContent, DialogDescription, DialogTitle } from "@/components/ui/dialog";
 import { whatsappHref } from "@/data/site";
+import { localizePath } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
 
 const PATTERNS = ["straight", "diagonal", "checker"];
@@ -21,6 +23,26 @@ const GROUT_WIDTHS = { thin: 0.025, standard: 0.05, wide: 0.09 };
 const GROUT_COLOURS = { light: "#e6e0d4", grey: "#a59c8e", dark: "#3d3b38" };
 const UPLOAD_MAX_BYTES = 15 * 1024 * 1024;
 const UPLOAD_SIZE = 1024;
+// Picking a room applies a sensible starting size and finish, plus a tip and guide.
+const ROOMS = {
+  lounge: { size: "32x32", finish: "polished", guide: "/blog/bedroom-and-lounge-floor-tiles" },
+  bedroom: { size: "24x24", finish: "honed", guide: "/blog/bedroom-and-lounge-floor-tiles" },
+  kitchen: { size: "24x24", finish: "honed", guide: "/blog/select-tiles-for-kitchens-and-bathrooms" },
+  bathroom: { size: "12x24", finish: "honed", guide: "/blog/anti-slip-tiles-guide" },
+  porch: { size: "24x24", finish: "honed", guide: "/blog/porch-terrace-roof-tiles" },
+};
+const LIGHTS = ["day", "warm", "cool"];
+const WASTAGE = 0.1; // extra tiles for cutting and breakage, as in the quantity calculator
+const MAX_FEET = 500;
+
+/** Room area in sq ft and tiles needed (with wastage); zeros while the inputs are incomplete. */
+function estimate(lengthFt, widthFt, size) {
+  const length = Number.parseFloat(lengthFt);
+  const width = Number.parseFloat(widthFt);
+  if (!(length > 0 && width > 0 && length <= MAX_FEET && width <= MAX_FEET)) return { area: 0, tiles: 0 };
+  const area = length * width;
+  return { area: Math.round(area * 10) / 10, tiles: Math.ceil((area / ((size.w * size.d) / 144)) * (1 + WASTAGE)) };
+}
 
 const sceneTile = (size) => ({ w: size.w / 24, d: size.d / 24 });
 
@@ -87,7 +109,8 @@ function OptionGroup({ legend, children }) {
  * materials: [{ id, label, finish, src, textureUrl }]; the first material
  * whose id matches `contrastId` is used for the alternate checkerboard tiles.
  */
-export function TileVisualizer({ materials, contrastIds, labels }) {
+export function TileVisualizer({ locale, materials, contrastIds, labels }) {
+  const id = useId();
   const host = useRef(null);
   const sceneRef = useRef(null);
   const fileInput = useRef(null);
@@ -102,6 +125,10 @@ export function TileVisualizer({ materials, contrastIds, labels }) {
   const [status, setStatus] = useState("idle"); // idle | loading | ready | unsupported
   const [uploadError, setUploadError] = useState(false);
   const [open, setOpen] = useState(false);
+  const [room, setRoom] = useState(null);
+  const [light, setLight] = useState("day");
+  const [roomLength, setRoomLength] = useState("");
+  const [roomWidth, setRoomWidth] = useState("");
 
   const usingCustom = materialId === "custom" && custom;
   const material = materials.find((item) => item.id === materialId) ?? materials[0];
@@ -131,6 +158,7 @@ export function TileVisualizer({ materials, contrastIds, labels }) {
         finish,
         tile: sceneTile(size),
         grout,
+        light,
         reducedMotion: window.matchMedia("(prefers-reduced-motion: reduce)").matches,
       });
       if (isDisposed()) {
@@ -215,10 +243,37 @@ export function TileVisualizer({ materials, contrastIds, labels }) {
     setGroutColour(colour);
     sceneRef.current?.setGrout({ gap: GROUT_WIDTHS[width], color: GROUT_COLOURS[colour] });
   }
+  function chooseRoom(value) {
+    setRoom(value);
+    if (ROOMS[value].size !== sizeId) chooseSize(ROOMS[value].size);
+    chooseFinish(ROOMS[value].finish);
+  }
+  function chooseLight(value) {
+    setLight(value);
+    sceneRef.current?.setLighting(value);
+  }
+
+  // Arrow keys turn and tilt, + and - zoom, while the full-screen preview has focus.
+  function handlePopupKey(event) {
+    const scene = sceneRef.current;
+    const actions = {
+      ArrowLeft: () => scene.turnBy(-0.15),
+      ArrowRight: () => scene.turnBy(0.15),
+      ArrowUp: () => scene.turnBy(0, 0.4),
+      ArrowDown: () => scene.turnBy(0, -0.4),
+      "+": () => scene.zoomBy(1 / 1.2),
+      "=": () => scene.zoomBy(1 / 1.2),
+      "-": () => scene.zoomBy(1.2),
+    };
+    if (!scene || !actions[event.key]) return;
+    event.preventDefault();
+    actions[event.key]();
+  }
 
   // The same canvas moves into the popup and back, so only one WebGL scene exists.
+  // While the popup animates out the ref runs again; skip it so the canvas stays inline.
   const popupHost = (node) => {
-    if (!node || !sceneRef.current) return;
+    if (!node || !open || !sceneRef.current) return;
     sceneRef.current.mount(node);
     sceneRef.current.setInteractive(true);
   };
@@ -236,12 +291,21 @@ export function TileVisualizer({ materials, contrastIds, labels }) {
     changeOpen(true);
   }
 
+  const quantity = estimate(roomLength, roomWidth, size);
   const summary = labels.shareText
     .replace("{material}", materialName)
     .replace("{size}", sizeName)
     .replace("{pattern}", labels.patterns[pattern])
     .replace("{finish}", labels.finishes[finish])
-    .replace("{grout}", `${labels.groutWidths[groutWidth]}, ${labels.groutColours[groutColour]}`);
+    .replace("{grout}", `${labels.groutWidths[groutWidth]}, ${labels.groutColours[groutColour]}`) +
+    (room ? labels.shareRoom.replace("{room}", labels.rooms[room]) : "") +
+    (quantity.tiles
+      ? labels.shareSize
+          .replace("{length}", roomLength)
+          .replace("{width}", roomWidth)
+          .replace("{area}", quantity.area)
+          .replace("{tiles}", quantity.tiles)
+      : "");
 
   async function download() {
     const blob = await sceneRef.current?.capture();
@@ -294,7 +358,16 @@ export function TileVisualizer({ materials, contrastIds, labels }) {
           ) : null}
         </div>
         <div className="mt-3 flex flex-wrap items-center justify-between gap-3 text-xs text-muted-foreground">
-          <span>{labels.note}</span>
+          <span>
+            {labels.note}{" "}
+            <Link href={localizePath(locale, "/blog/how-to-use-3d-floor-preview")} className="font-semibold text-charcoal underline underline-offset-2">
+              {labels.howTo}
+            </Link>
+            {" · "}
+            <Link href={localizePath(locale, "/room-visualizer")} className="font-semibold text-charcoal underline underline-offset-2">
+              {labels.roomLink}
+            </Link>
+          </span>
           {status === "ready" ? (
             <span className="flex items-center gap-4">
               <span className="inline-flex items-center gap-1.5">
@@ -315,6 +388,24 @@ export function TileVisualizer({ materials, contrastIds, labels }) {
       </div>
 
       <div className="flex flex-col gap-7 lg:col-span-4">
+        <OptionGroup legend={labels.roomLabel}>
+          {Object.keys(ROOMS).map((value) => (
+            <OptionButton key={value} pressed={room === value} onClick={() => chooseRoom(value)}>
+              {labels.rooms[value]}
+            </OptionButton>
+          ))}
+          {room ? (
+            <p aria-live="polite" className="basis-full rounded-sm border-s-2 border-gold bg-gold/10 px-3 py-2 text-xs leading-relaxed text-charcoal">
+              {labels.roomTips[room]}{" "}
+              <Link href={localizePath(locale, ROOMS[room].guide)} className="inline-flex items-center gap-1 font-semibold underline underline-offset-2">
+                {labels.roomGuide}
+                <ArrowRight aria-hidden="true" className="size-3 rtl:rotate-180" />
+              </Link>
+              <span className="mt-1 block text-muted-foreground">{labels.roomNote}</span>
+            </p>
+          ) : null}
+        </OptionGroup>
+
         <fieldset>
           <legend className="text-sm font-semibold text-charcoal">{labels.materialLabel}</legend>
           <div className="mt-4 grid grid-cols-3 gap-3">
@@ -425,6 +516,44 @@ export function TileVisualizer({ materials, contrastIds, labels }) {
           </span>
         </OptionGroup>
 
+        <OptionGroup legend={labels.lightLabel}>
+          {LIGHTS.map((value) => (
+            <OptionButton key={value} pressed={light === value} onClick={() => chooseLight(value)}>
+              {labels.lights[value]}
+            </OptionButton>
+          ))}
+        </OptionGroup>
+
+        <fieldset>
+          <legend className="text-sm font-semibold text-charcoal">{labels.estimateLabel}</legend>
+          <div className="mt-3 grid grid-cols-2 gap-3">
+            {[
+              [`${id}-length`, labels.lengthLabel, roomLength, setRoomLength],
+              [`${id}-width`, labels.widthLabel, roomWidth, setRoomWidth],
+            ].map(([inputId, label, value, setValue]) => (
+              <label key={inputId} htmlFor={inputId} className="text-xs font-medium text-muted-foreground">
+                {label}
+                <input
+                  id={inputId}
+                  type="number"
+                  inputMode="decimal"
+                  min="1"
+                  max={MAX_FEET}
+                  step="0.5"
+                  dir="ltr"
+                  value={value}
+                  onChange={(event) => setValue(event.target.value)}
+                  className="mt-1 block h-10 w-full rounded-sm border border-charcoal/20 bg-white px-3 text-sm text-charcoal focus-visible:border-charcoal focus-visible:outline-none"
+                />
+              </label>
+            ))}
+          </div>
+          <p aria-live="polite" className="mt-3 text-sm font-semibold text-charcoal">
+            {quantity.tiles ? labels.estimateResult.replace("{area}", quantity.area).replace("{tiles}", quantity.tiles) : null}
+          </p>
+          <p className="mt-1 text-xs leading-relaxed text-muted-foreground">{labels.estimateNote}</p>
+        </fieldset>
+
         {status === "ready" ? (
           <div className="flex flex-wrap gap-2">
             <button
@@ -450,7 +579,14 @@ export function TileVisualizer({ materials, contrastIds, labels }) {
       <Dialog open={open} onOpenChange={changeOpen}>
         <DialogContent className="flex h-[100dvh] max-h-none w-screen flex-col max-w-none gap-0 rounded-none border-0 bg-charcoal p-0 text-ivory ring-0 sm:h-[min(92dvh,56rem)] sm:w-[min(94vw,90rem)] sm:max-w-none sm:rounded-sm [&_[data-slot=dialog-close]]:z-10 [&_[data-slot=dialog-close]]:size-11 [&_[data-slot=dialog-close]]:bg-charcoal/80 [&_[data-slot=dialog-close]]:text-ivory">
           <DialogTitle className="sr-only">{labels.popupTitle}</DialogTitle>
-          <div ref={popupHost} role="img" aria-label={description} className="relative min-h-0 flex-1 bg-[#e7e1d6]" />
+          <div
+            ref={popupHost}
+            role="img"
+            tabIndex={0}
+            aria-label={description}
+            onKeyDown={handlePopupKey}
+            className="relative min-h-0 flex-1 bg-[#e7e1d6] focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-gold"
+          />
           <div className="flex flex-wrap items-center justify-between gap-3 p-3 md:px-5">
             <DialogDescription className="text-xs text-mist sm:text-sm">{labels.popupHint}</DialogDescription>
             <div className="flex items-center gap-2">

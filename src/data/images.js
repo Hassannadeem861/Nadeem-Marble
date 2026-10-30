@@ -89,6 +89,13 @@ export const images = {
     alt: { en: "White rectangular wall tiles with neat grout lines beside a shower", ur: "شاور کے ساتھ صاف گراؤٹ لائنوں والی سفید مستطیل دیواری ٹائلیں" },
     credit: pexels("Karola G", "bathroom-with-white-tiles-4194867"),
   },
+  roomSampleBath: {
+    src: "/images/stock/sample-bathroom-plain.webp",
+    width: 1600,
+    height: 1068,
+    alt: { en: "Modern bathroom with plain white walls, a bathtub and wooden floor, ready for tiles", ur: "سادہ سفید دیواروں، باتھ ٹب اور لکڑی کے فرش والا جدید باتھ روم، ٹائلوں کے لیے تیار" },
+    credit: pexels("Max Vakhtbovych", "modern-bathroom-interior-with-white-walls-and-furniture-7031565"),
+  },
   // Illustration: two phone screens (area search and a WhatsApp enquiry) placed on the gold-veined marble photo below.
   phoneMockup: {
     src: "/images/stock/phone-mockup.webp",

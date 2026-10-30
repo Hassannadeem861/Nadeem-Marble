@@ -19,7 +19,7 @@
 
 ## Calculations
 - `QuantityCalculator` (blog): `tiles = ceil(area / tileArea × (1 + wastage/100))`, wastage default 10% (`src/components/blog/QuantityCalculator.js` line 36).
-- `TileVisualizer`: 3D floor preview with selectable materials, sizes, grout; visitor can upload their own tile photo (client-side only, not uploaded to a server).
+- `TileVisualizer`: 3D floor preview with selectable materials, sizes, pattern, finish, grout and lighting (day / warm bulbs / tube light); room presets set a suggested size + finish and show a tip with a guide link; room length × width (ft) gives area and tiles needed with the same 10% wastage; visitor can upload their own tile photo (client-side only, not uploaded). Settings, room and estimate go into the WhatsApp message.
 
 ## Writing rules (owner)
 Helpful-first, Karachi-first, natural Urdu, no invented facts, no keyword stuffing, honest claims. Owner prefers replies in Roman Urdu and minimal changes.

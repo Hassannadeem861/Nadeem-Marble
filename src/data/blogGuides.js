@@ -1507,4 +1507,212 @@ export const guidePosts = [
       },
     ],
   },
+  {
+    slug: "how-to-use-3d-floor-preview",
+    category: "planning",
+    published: "2026-10-30",
+    readingMinutes: 4,
+    cover: "tilePattern",
+    relatedServices: ["2d-3d-surface-modelling", "pattern-and-layout-planning", "tile-installation"],
+    title: { en: "How to Use Our 3D Floor Preview, Step by Step", ur: "ہمارا 3D فرش منظر کیسے استعمال کریں: قدم بہ قدم" },
+    excerpt: {
+      en: "A simple guide to our free 3D floor preview: choose your room, stone, tile size, pattern and lighting, estimate tiles, and send the design on WhatsApp.",
+      ur: "ہمارے مفت 3D فرش منظر کی آسان گائیڈ: کمرہ، پتھر، ٹائل کا سائز، انداز اور روشنی چنیں، ٹائلوں کا اندازہ لگائیں اور ڈیزائن واٹس ایپ پر بھیجیں۔",
+    },
+    content: {
+      en: [
+        { p: "Choosing a floor from a small sample is hard. Our free 3D floor preview shows how a stone or tile looks across a whole floor, in different sizes, patterns and lighting, before anything is bought or laid. It works on phones and computers, and nothing needs to be installed. [Open the 3D preview](/#visualizer) and follow the steps below." },
+        { h2: "Step 1: Choose where it will go" },
+        { p: "Tap Lounge, Bedroom, Kitchen, Bathroom or Porch / terrace. The preview sets a suggested tile size and finish for that room and shows a short tip, with a link to a detailed guide. You can still change everything afterwards." },
+        { h2: "Step 2: Pick a stone, or use your own tile" },
+        { p: "Tap any material to see it on the floor. If you have already seen a tile in a shop, tap Upload your tile and take a photo of one tile straight from above in good light. The photo stays on your phone or computer and is not sent to us." },
+        { h2: "Step 3: Set the size, pattern and finish" },
+        {
+          table: {
+            head: ["Option", "What it changes", "Tip"],
+            rows: [
+              ["Tile size", "12×12 up to 24×48 inches", "Larger tiles mean fewer joints"],
+              ["Laying pattern", "Straight, diagonal or checkerboard", "Diagonal makes a room feel wider but needs more cutting"],
+              ["Finish", "Polished (shiny) or honed (matt)", "Matt is safer in wet areas"],
+              ["Grout joints", "Thin, standard or wide, in three colours", "A grout close to the tile colour looks calmer"],
+              ["Lighting", "Daylight, warm bulbs or tube light", "Check the floor in the light your room really has"],
+            ],
+          },
+        },
+        { h2: "Step 4: Look around in full screen" },
+        { p: "Drag the preview to turn it. Tap Full screen to see it larger: there you can also tilt the view, zoom with two fingers or the mouse wheel, and use the arrow keys and + / − on a computer. Reset view brings it back to the start." },
+        { h2: "Step 5: Estimate how many tiles you need" },
+        { p: "Enter the room's length and width in feet. The preview shows the area in square feet and about how many tiles of the chosen size you need, including 10% extra for cutting. It is a rough guide; we confirm the exact quantity after measuring on site. For more detail, see [how to calculate tiles and marble](/blog/calculate-tiles-and-marble-quantity)." },
+        { h2: "Step 6: Save it or send it to us" },
+        { p: "Download image saves the picture to show your family. Send on WhatsApp sends us the picture (on phones that allow it) with your choices, room and estimate, so we can reply with real advice for your home in Karachi." },
+        { h2: "Good to know" },
+        {
+          ul: [
+            "Natural stone varies from piece to piece, so always see real samples before buying",
+            "Colours can look slightly different on different screens",
+            "The preview shows the floor only, not walls or furniture",
+          ],
+        },
+      ],
+      ur: [
+        { p: "چھوٹے نمونے سے فرش چننا مشکل ہوتا ہے۔ ہمارا مفت 3D فرش منظر دکھاتا ہے کہ کوئی پتھر یا ٹائل پورے فرش پر مختلف سائز، انداز اور روشنی میں کیسی لگے گی، خریدنے یا لگانے سے پہلے۔ یہ فون اور کمپیوٹر دونوں پر چلتا ہے اور کچھ انسٹال نہیں کرنا پڑتا۔ [3D منظر کھولیں](/#visualizer) اور نیچے دیے گئے قدم اپنائیں۔" },
+        { h2: "قدم 1: جگہ چنیں" },
+        { p: "لاؤنج، بیڈروم، کچن، باتھ روم یا پورچ / ٹیرس دبائیں۔ منظر اس کمرے کے لیے تجویز کردہ ٹائل سائز اور فنش لگا دیتا ہے اور ایک مختصر مشورہ دکھاتا ہے، ساتھ تفصیلی گائیڈ کا لنک بھی۔ بعد میں آپ سب کچھ بدل سکتے ہیں۔" },
+        { h2: "قدم 2: پتھر چنیں یا اپنی ٹائل لگائیں" },
+        { p: "کوئی بھی مٹیریل دبائیں اور اسے فرش پر دیکھیں۔ اگر آپ نے دکان میں کوئی ٹائل دیکھی ہے تو \"اپنی ٹائل اپ لوڈ کریں\" دبائیں اور ایک ٹائل کی تصویر اچھی روشنی میں بالکل اوپر سے کھینچیں۔ تصویر آپ کے فون یا کمپیوٹر پر ہی رہتی ہے، ہمیں نہیں بھیجی جاتی۔" },
+        { h2: "قدم 3: سائز، انداز اور فنش چنیں" },
+        {
+          table: {
+            head: ["آپشن", "کیا بدلتا ہے", "مشورہ"],
+            rows: [
+              ["ٹائل کا سائز", "12×12 سے 24×48 انچ تک", "بڑی ٹائلوں میں جوڑ کم ہوتے ہیں"],
+              ["بچھانے کا انداز", "سیدھا، ترچھا یا شطرنجی", "ترچھا انداز کمرہ چوڑا دکھاتا ہے مگر کٹائی زیادہ ہوتی ہے"],
+              ["فنش", "پالش (چمکدار) یا ہونڈ (میٹ)", "گیلی جگہوں پر میٹ زیادہ محفوظ ہے"],
+              ["گراؤٹ کے جوڑ", "باریک، عام یا چوڑا، تین رنگوں میں", "ٹائل سے ملتا گراؤٹ پُرسکون لگتا ہے"],
+              ["روشنی", "دن کی روشنی، پیلے بلب یا ٹیوب لائٹ", "فرش اسی روشنی میں دیکھیں جو آپ کے کمرے میں ہے"],
+            ],
+          },
+        },
+        { h2: "قدم 4: پوری اسکرین پر گھما کر دیکھیں" },
+        { p: "منظر کو انگلی یا ماؤس سے کھینچ کر گھمائیں۔ بڑا دیکھنے کے لیے \"پوری اسکرین\" دبائیں: وہاں آپ منظر جھکا بھی سکتے ہیں، دو انگلیوں یا ماؤس کے پہیے سے زوم کر سکتے ہیں، اور کمپیوٹر پر تیر والی کیز اور + / − بھی استعمال کر سکتے ہیں۔ \"منظر دوبارہ ترتیب دیں\" اسے شروع کی حالت میں لے آتا ہے۔" },
+        { h2: "قدم 5: ٹائلوں کی تعداد کا اندازہ لگائیں" },
+        { p: "کمرے کی لمبائی اور چوڑائی فٹ میں لکھیں۔ منظر مربع فٹ میں رقبہ اور چنے ہوئے سائز کی تقریباً کتنی ٹائلیں چاہییں دکھاتا ہے، کٹائی کے لیے 10٪ اضافی کے ساتھ۔ یہ صرف اندازہ ہے؛ درست تعداد ہم سائٹ پر پیمائش کے بعد بتاتے ہیں۔ مزید تفصیل کے لیے [ٹائلوں اور ماربل کا حساب](/blog/calculate-tiles-and-marble-quantity) دیکھیں۔" },
+        { h2: "قدم 6: محفوظ کریں یا ہمیں بھیجیں" },
+        { p: "\"تصویر ڈاؤن لوڈ کریں\" سے تصویر گھر والوں کو دکھانے کے لیے محفوظ ہو جاتی ہے۔ \"واٹس ایپ پر بھیجیں\" سے تصویر (جن فونز میں ممکن ہو) آپ کی پسند، کمرے اور اندازے کے ساتھ ہمیں پہنچ جاتی ہے، تاکہ ہم کراچی میں آپ کے گھر کے لیے صحیح مشورہ دے سکیں۔" },
+        { h2: "یہ بھی جان لیں" },
+        {
+          ul: [
+            "قدرتی پتھر ہر ٹکڑے میں مختلف ہوتا ہے، اس لیے خریدنے سے پہلے اصل نمونے ضرور دیکھیں",
+            "مختلف اسکرینوں پر رنگ تھوڑے مختلف لگ سکتے ہیں",
+            "منظر صرف فرش دکھاتا ہے، دیواریں یا فرنیچر نہیں",
+          ],
+        },
+      ],
+    },
+    faqs: [
+      {
+        q: { en: "Is the 3D floor preview free?", ur: "کیا 3D فرش منظر مفت ہے؟" },
+        a: {
+          en: "Yes. It runs in your browser, with no sign-up and nothing to install.",
+          ur: "جی ہاں۔ یہ آپ کے براؤزر میں چلتا ہے، نہ رجسٹریشن، نہ کچھ انسٹال کرنا۔",
+        },
+      },
+      {
+        q: { en: "Is my tile photo sent to you?", ur: "کیا میری ٹائل کی تصویر آپ کو بھیجی جاتی ہے؟" },
+        a: {
+          en: "No. The photo is processed on your own device. It reaches us only if you choose to send the picture on WhatsApp.",
+          ur: "نہیں۔ تصویر آپ کے اپنے فون یا کمپیوٹر پر ہی پروسیس ہوتی ہے۔ یہ ہمیں تبھی پہنچتی ہے جب آپ خود واٹس ایپ پر بھیجیں۔",
+        },
+      },
+      {
+        q: { en: "Why does the 3D preview not load on my phone?", ur: "میرے فون پر 3D منظر کیوں نہیں کھلتا؟" },
+        a: {
+          en: "It needs a browser with WebGL 2. On older phones a still photo of the material is shown instead. Updating the browser usually helps.",
+          ur: "اس کے لیے WebGL 2 والا براؤزر چاہیے۔ پرانے فونز پر اس کی جگہ مٹیریل کی تصویر دکھائی جاتی ہے۔ براؤزر اپ ڈیٹ کرنے سے عموماً مسئلہ حل ہو جاتا ہے۔",
+        },
+      },
+    ],
+  },
+  {
+    slug: "how-to-use-room-visualizer",
+    category: "planning",
+    published: "2026-10-30",
+    readingMinutes: 5,
+    cover: "roomSampleBath",
+    relatedServices: ["2d-3d-surface-modelling", "bathroom-tile-and-marble-installation", "tile-installation"],
+    title: { en: "How to Try Tiles on Your Own Room Photo, Step by Step", ur: "اپنے کمرے کی تصویر پر ٹائلیں کیسے آزمائیں: قدم بہ قدم" },
+    excerpt: {
+      en: "A simple guide to our free room visualizer: use the sample washroom or your own photo, choose floor or walls, try tiles and send the design on WhatsApp.",
+      ur: "ہمارے مفت روم ویژولائزر کی آسان گائیڈ: نمونہ واش روم یا اپنی تصویر لیں، فرش یا دیواریں چنیں، ٹائلیں آزمائیں اور ڈیزائن واٹس ایپ پر بھیجیں۔",
+    },
+    content: {
+      en: [
+        { p: "It is hard to imagine a whole washroom or room from one tile in a shop. Our free room visualizer puts tiles and marble on a real room photo, on the floor and on each wall, so you can compare options before you buy. It works on phones and computers. [Open the room visualizer](/room-visualizer) and follow these steps." },
+        { h2: "Step 1: Start with the sample washroom" },
+        { p: "The page opens with a sample master washroom that has plain walls and no tiles yet. The corners are already set, so you can start choosing tiles straight away. The mirror, window, bathtub, WC and vanity stay in front of the tiles, just as in a real room." },
+        { h2: "Step 2: Choose where you want tiles" },
+        { p: "Under Where do you want tiles?, tap Floor, Back wall, Left wall, Right wall or Ceiling. A gold dot means that surface has tiles. Use the tick box to switch tiles on or off for the chosen surface, for example tiles on the walls but not on the ceiling." },
+        { h2: "Step 3: Pick a material and tile size" },
+        { p: "Tap a stone or tile to put it on the chosen surface, then pick a size such as 12×24 or 24×24 inches. Each surface can have its own material, so you can try a light wall with a darker floor. On a wall, Use this on all walls copies the choice to all three walls in one tap." },
+        { h2: "Step 4: Try your own tile" },
+        { p: "Seen a tile in a shop? Tap the empty square with the photo icon and take a photo of one tile straight from above in good light. It is placed on the chosen surface like the other materials." },
+        { h2: "Step 5: Use a photo of your own room" },
+        { p: "Tap Upload room photo. For the best result, stand at the door and take a straight photo facing the far wall, with the floor and both side walls in view. Then tap Adjust corners:" },
+        {
+          ul: [
+            "Drag the four gold dots to the four corners of the far wall",
+            "Drag the dark dots to where the side walls meet the floor and ceiling near you",
+            "Tap Done, then choose surfaces and tiles as before",
+          ],
+        },
+        { p: "Enter the room's rough width, height and depth in feet so the tiles appear at the right size." },
+        { h2: "Step 6: Compare, save and send" },
+        { p: "Tap Before to see the room without tiles, and After to bring them back. Download image saves the picture for your family, and Send on WhatsApp sends us the picture (on phones that allow it) with a list of each surface, material and size, so we can advise on your project in Karachi." },
+        { h2: "Good to know" },
+        {
+          ul: [
+            "Your photos are processed on your own device and are not uploaded to us",
+            "In your own photo, items in front of a wall, such as a WC or cabinet, get covered by the tiles; the sample washroom handles this for you",
+            "Colours vary between screens, and natural stone varies from piece to piece, so see real samples before buying",
+          ],
+        },
+        { p: "Want to check one floor in 3D instead? See [how to use the 3D floor preview](/blog/how-to-use-3d-floor-preview). For choosing washroom tiles, read our [anti-slip tiles guide](/blog/anti-slip-tiles-guide)." },
+      ],
+      ur: [
+        { p: "دکان میں ایک ٹائل دیکھ کر پورے واش روم یا کمرے کا تصور کرنا مشکل ہے۔ ہمارا مفت روم ویژولائزر اصل کمرے کی تصویر میں فرش اور ہر دیوار پر ٹائلیں اور ماربل لگا کر دکھاتا ہے، تاکہ آپ خریدنے سے پہلے موازنہ کر سکیں۔ یہ فون اور کمپیوٹر دونوں پر چلتا ہے۔ [روم ویژولائزر کھولیں](/room-visualizer) اور یہ قدم اپنائیں۔" },
+        { h2: "قدم 1: نمونہ واش روم سے شروع کریں" },
+        { p: "صفحہ ایک نمونہ ماسٹر واش روم کے ساتھ کھلتا ہے جس کی دیواریں سادہ ہیں اور ابھی ٹائلیں نہیں لگیں۔ کونے پہلے سے سیٹ ہیں، اس لیے آپ فوراً ٹائلیں چن سکتے ہیں۔ آئینہ، کھڑکی، باتھ ٹب، کموڈ اور وینٹی ٹائلوں کے آگے ہی رہتے ہیں، بالکل اصل کمرے کی طرح۔" },
+        { h2: "قدم 2: چنیں کہ ٹائلیں کہاں لگانی ہیں" },
+        { p: "\"ٹائلیں کہاں لگانی ہیں؟\" کے نیچے فرش، پیچھے کی دیوار، بائیں دیوار، دائیں دیوار یا چھت دبائیں۔ سنہری نقطے کا مطلب ہے کہ اس جگہ ٹائلیں لگی ہیں۔ چنی ہوئی جگہ پر ٹائلیں لگانے یا ہٹانے کے لیے ٹک والا خانہ استعمال کریں، مثلاً دیواروں پر ٹائلیں مگر چھت پر نہیں۔" },
+        { h2: "قدم 3: مٹیریل اور ٹائل کا سائز چنیں" },
+        { p: "کوئی پتھر یا ٹائل دبائیں تاکہ وہ چنی ہوئی جگہ پر لگ جائے، پھر 12×24 یا 24×24 انچ جیسا سائز چنیں۔ ہر جگہ کا اپنا مٹیریل ہو سکتا ہے، اس لیے آپ ہلکی دیوار کے ساتھ گہرا فرش آزما سکتے ہیں۔ دیوار پر \"یہی تمام دیواروں پر لگائیں\" ایک ہی بار میں تینوں دیواروں پر وہی انتخاب لگا دیتا ہے۔" },
+        { h2: "قدم 4: اپنی ٹائل آزمائیں" },
+        { p: "دکان میں کوئی ٹائل پسند آئی؟ تصویر کے نشان والا خالی خانہ دبائیں اور ایک ٹائل کی تصویر اچھی روشنی میں بالکل اوپر سے کھینچیں۔ یہ باقی مٹیریلز کی طرح چنی ہوئی جگہ پر لگ جاتی ہے۔" },
+        { h2: "قدم 5: اپنے کمرے کی تصویر استعمال کریں" },
+        { p: "\"کمرے کی تصویر لگائیں\" دبائیں۔ بہترین نتیجے کے لیے دروازے پر کھڑے ہو کر سامنے والی دیوار کی طرف سیدھی تصویر لیں، جس میں فرش اور دونوں سائیڈ کی دیواریں نظر آئیں۔ پھر \"کونے سیٹ کریں\" دبائیں:" },
+        {
+          ul: [
+            "چاروں سنہری نقطے سامنے والی دیوار کے چاروں کونوں پر کھینچیں",
+            "گہرے نقطے وہاں کھینچیں جہاں آپ کے قریب سائیڈ کی دیواریں فرش اور چھت سے ملتی ہیں",
+            "\"ہو گیا\" دبائیں، پھر پہلے کی طرح جگہ اور ٹائلیں چنیں",
+          ],
+        },
+        { p: "کمرے کی اندازاً چوڑائی، اونچائی اور گہرائی فٹ میں لکھیں تاکہ ٹائلیں صحیح سائز میں نظر آئیں۔" },
+        { h2: "قدم 6: موازنہ کریں، محفوظ کریں اور بھیجیں" },
+        { p: "ٹائلوں کے بغیر کمرہ دیکھنے کے لیے \"پہلے\" اور واپس لانے کے لیے \"بعد میں\" دبائیں۔ \"تصویر ڈاؤن لوڈ کریں\" سے تصویر گھر والوں کے لیے محفوظ ہو جاتی ہے، اور \"واٹس ایپ پر بھیجیں\" سے تصویر (جن فونز میں ممکن ہو) ہر جگہ، مٹیریل اور سائز کی فہرست کے ساتھ ہمیں پہنچ جاتی ہے، تاکہ ہم کراچی میں آپ کے کام کے لیے مشورہ دے سکیں۔" },
+        { h2: "یہ بھی جان لیں" },
+        {
+          ul: [
+            "آپ کی تصاویر آپ کے اپنے فون یا کمپیوٹر پر ہی پروسیس ہوتی ہیں، ہمیں اپ لوڈ نہیں ہوتیں",
+            "اپنی تصویر میں دیوار کے سامنے رکھی چیزیں، جیسے کموڈ یا کیبنٹ، ٹائلوں کے نیچے چھپ جاتی ہیں؛ نمونہ واش روم میں یہ خود سنبھال لیا جاتا ہے",
+            "مختلف اسکرینوں پر رنگ مختلف لگتے ہیں اور قدرتی پتھر ہر ٹکڑے میں مختلف ہوتا ہے، اس لیے خریدنے سے پہلے اصل نمونے دیکھیں",
+          ],
+        },
+        { p: "صرف ایک فرش 3D میں دیکھنا ہے؟ [3D فرش منظر کیسے استعمال کریں](/blog/how-to-use-3d-floor-preview) دیکھیں۔ واش روم کی ٹائلیں چننے کے لیے ہماری [اینٹی سلپ ٹائلوں کی گائیڈ](/blog/anti-slip-tiles-guide) پڑھیں۔" },
+      ],
+    },
+    faqs: [
+      {
+        q: { en: "Is the room visualizer free?", ur: "کیا روم ویژولائزر مفت ہے؟" },
+        a: {
+          en: "Yes. It runs in your browser, with no sign-up and nothing to install.",
+          ur: "جی ہاں۔ یہ آپ کے براؤزر میں چلتا ہے، نہ رجسٹریشن، نہ کچھ انسٹال کرنا۔",
+        },
+      },
+      {
+        q: { en: "What kind of room photo works best?", ur: "کمرے کی کیسی تصویر بہتر رہتی ہے؟" },
+        a: {
+          en: "A straight, well-lit photo taken from the door, facing the far wall, with the floor and side walls visible and few items in front of the walls.",
+          ur: "دروازے سے سامنے والی دیوار کی طرف لی گئی سیدھی، روشن تصویر، جس میں فرش اور سائیڈ کی دیواریں نظر آئیں اور دیواروں کے سامنے کم چیزیں ہوں۔",
+        },
+      },
+      {
+        q: { en: "Why are the tiles on my WC or cabinet?", ur: "ٹائلیں میرے کموڈ یا کیبنٹ پر کیوں آ گئیں؟" },
+        a: {
+          en: "In your own photo the visualizer does not know where furniture is, so it tiles the whole wall. Use the result as a guide, or try the sample washroom, which keeps fixtures in front.",
+          ur: "آپ کی اپنی تصویر میں ویژولائزر کو فرنیچر کی جگہ معلوم نہیں ہوتی، اس لیے پوری دیوار پر ٹائلیں لگا دیتا ہے۔ نتیجے کو اندازے کے طور پر لیں، یا نمونہ واش روم آزمائیں جس میں چیزیں آگے رہتی ہیں۔",
+        },
+      },
+    ],
+  },
 ];

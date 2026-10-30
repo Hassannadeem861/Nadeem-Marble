@@ -47,7 +47,15 @@ FaqSection(locale, dict, page, items) — uses `faqs[page]` or `items`; visible 
 | portfolio/ProjectGallery (client) | images, title, dir, labels |
 | cards/ArticleCard, ProjectCard, ServiceCard | post/project/service, locale, dict, headingLevel |
 | home/* | locale, dict (HomeHero, MarbleFeature, MaterialGallery, SectorsSection); motion wrappers take children, className |
-| home/visualizer/TileVisualizer (client) | materials, contrastIds, labels — loads `tileScene.js` (three.js) on demand |
+| home/visualizer/TileVisualizer (client) | locale, materials, contrastIds, labels — loads `tileScene.js` (three.js) on demand; room presets (`ROOMS`), lighting, room-size tile estimate, keyboard control in full screen |
 | seo/JsonLd | data |
 
 `components/ui/*` are stock shadcn components (Base UI); change them only for global UI fixes.
+
+## Room visualizer (`components/roomVisualizer`, page `/room-visualizer`)
+| Component | Props | Notes |
+|---|---|---|
+| RoomVisualizer (client) | materials, samples, labels | Room photo (sample from `data/roomSamples.js` or visitor upload, processed locally) with tiles per surface (floor, back/left/right wall, ceiling). Room modelled as a box: `inner` far-wall corners + `outer` near frame; draggable corner handles. Before/after, grout, room size (ft) for tile scale, WhatsApp/download |
+| roomRenderer.js | – | Raw WebGL2, loaded with dynamic import. Homography per surface, grout, photo light preserved, `keep` polygons (fixtures) drawn over tiles |
+
+Uploaded photos have no `keep` mask, so fixtures in front of a wall get tiled over (known limitation).
