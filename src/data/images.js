@@ -30,6 +30,15 @@ const commons = (photographer, file, license, licenseUrl) => ({
 });
 
 export const images = {
+  developerPortrait: {
+    src: "/images/developer-portrait.webp",
+    width: 1000,
+    height: 1250,
+    alt: {
+      en: "Muhammad Hassan, Full Stack Developer of the Nadeem Marbles website, in a grey suit and sunglasses",
+      ur: "ندیم ماربلز ویب سائٹ کے فل اسٹیک ڈیولپر محمد حسن، سرمئی سوٹ اور دھوپ کے چشمے میں",
+    },
+  },
   ownerPortrait: {
     src: "/images/founder-portrait.webp",
     width: 1145,

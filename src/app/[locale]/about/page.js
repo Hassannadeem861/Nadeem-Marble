@@ -109,6 +109,34 @@ export default async function AboutPage({ params }) {
         </div>
       </section>
 
+      <section aria-labelledby="developer-heading" className="bg-charcoal py-20 text-ivory md:py-28">
+        <div className="container-page grid items-center gap-12 lg:grid-cols-12">
+          <Reveal className="lg:order-2 lg:col-span-5 lg:col-start-8">
+            <div className="relative mx-auto max-w-sm lg:max-w-none">
+              <div aria-hidden="true" className="absolute -inset-3 rounded-sm border border-gold/40" />
+              <div className="relative aspect-4/5 overflow-hidden rounded-sm bg-black">
+                <RegistryImage imageKey="developerPortrait" locale={locale} fill sizes="(min-width: 1024px) 35vw, 90vw" className="object-cover object-top" />
+              </div>
+            </div>
+          </Reveal>
+          <Reveal className="lg:order-1 lg:col-span-6">
+            <Eyebrow onDark>{about.developer.eyebrow}</Eyebrow>
+            <h2 id="developer-heading" className="mt-4 text-[2rem] leading-[1.1] md:text-[2.75rem]">
+              {about.developer.name}
+            </h2>
+            <p className="mt-2 text-sm font-semibold tracking-[0.2em] text-gold uppercase">{about.developer.role}</p>
+            <p className="mt-6 text-lg leading-relaxed text-ivory/80">{about.developer.text}</p>
+            <ul className="mt-8 grid gap-3 sm:grid-cols-3">
+              {about.developer.facts.map((fact) => (
+                <li key={fact} className="rounded-sm border border-gold/30 bg-ivory/5 px-4 py-3 text-sm text-ivory/90">
+                  {fact}
+                </li>
+              ))}
+            </ul>
+          </Reveal>
+        </div>
+      </section>
+
       <section aria-labelledby="pillars-heading" className="py-20 md:py-28">
         <div className="container-page">
           <SectionHeading id="pillars-heading" eyebrow={about.pillars.eyebrow} title={about.pillars.title} />
