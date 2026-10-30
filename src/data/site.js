@@ -9,7 +9,7 @@ export const site = {
 
   phone: "+923151283438",
   phoneDisplay: "+92 315 1283438",
-  email: "m.hassan.nadeem987@gmail.com",
+  email: "marblesnadeem@gmail.com",
   // wa.me requires the number without "+" or spaces.
   // TODO(client): confirm this number is registered on WhatsApp.
   whatsappNumber: "923164593747",
