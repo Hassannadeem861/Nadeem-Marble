@@ -258,6 +258,13 @@ const en = {
         "Every project is different, so we start by understanding the space and what you need from it. We then measure, model and plan the layout before any material is cut, so the finished surface is the one you agreed on.",
       ],
     },
+    developer: {
+      eyebrow: "Meet the developer",
+      name: "Muhammad Hassan",
+      role: "Full Stack Developer",
+      facts: ["2 years of development experience", "Designed and developed this website", "Son of founder Muhammad Nadeem"],
+      text: "Behind the Nadeem Marbles digital experience is Muhammad Hassan, a Full Stack Developer with 2 years of development experience. He designed and developed this website to bring Nadeem Marbles' services and craftsmanship to customers online. As the son of founder Muhammad Nadeem, he is proud to contribute his technical skills to the family business.",
+    },
     owner: {
       eyebrow: "Leadership",
       title: "Meet the founder",
