@@ -1301,4 +1301,210 @@ export const guidePosts = [
       },
     ],
   },
+  {
+    slug: "ceramic-vs-porcelain-tiles",
+    category: "choosing",
+    published: "2026-10-30",
+    readingMinutes: 5,
+    cover: "installLargeFormat",
+    relatedServices: ["tile-installation", "tile-and-marble-supply", "bathroom-tile-and-marble-installation"],
+    title: { en: "Ceramic vs Porcelain Tiles: Which Is Better for Your Home?", ur: "سیرامک بمقابلہ پورسلین ٹائلیں: آپ کے گھر کے لیے کون سی بہتر ہیں؟" },
+    excerpt: {
+      en: "The real difference between ceramic and porcelain tiles, where each one works best in a Pakistani home, and what to check before you buy.",
+      ur: "سیرامک اور پورسلین ٹائلوں میں اصل فرق، پاکستانی گھر میں کون سی کہاں بہتر ہے، اور خریدنے سے پہلے کیا دیکھیں۔",
+    },
+    content: {
+      en: [
+        { p: "In a tile shop, ceramic and porcelain tiles can look almost the same. The difference is in how they are made. Porcelain is made from finer clay and fired at a higher temperature, so it is denser and absorbs much less water. Ceramic is softer, lighter and easier to cut. In Pakistan, porcelain tiles are also often sold as vitrified tiles." },
+        { h2: "Side by side" },
+        {
+          table: {
+            head: ["", "Ceramic", "Porcelain"],
+            rows: [
+              ["Water absorption", "Higher", "Very low"],
+              ["Strength", "Good for walls and light-use floors", "Better for busy floors"],
+              ["Chips", "Body colour can show under the glaze", "Full-body porcelain hides chips better"],
+              ["Cutting and fixing", "Easier", "Needs good tools and the right adhesive"],
+              ["Cost", "Usually lower", "Usually higher"],
+            ],
+          },
+        },
+        { h2: "Where each one works best" },
+        {
+          ul: [
+            "Bathroom and kitchen walls: ceramic works well and is easy to cut around fittings",
+            "Lounge, bedroom and corridor floors: porcelain lasts better under daily use",
+            "Shower floors, wudu areas and outdoor spaces: porcelain with a matt or textured finish",
+            "Large-format tiles: almost always porcelain, because they need the strength",
+          ],
+        },
+        { h2: "What to check before buying" },
+        {
+          ul: [
+            "The label or box: it should say floor or wall use",
+            "The finish: glossy tiles look bright but are more slippery when wet",
+            "Rectified edges, if you want narrow grout joints",
+            "Enough extra boxes from the same batch, so the shade matches later",
+          ],
+        },
+        { p: "A good porcelain tile fixed badly will still crack or sound hollow, so fixing matters as much as the tile. See [how marble and tiles should be fixed](/blog/how-to-fix-marble-and-tiles) and, if you are also considering stone, [marble vs porcelain tiles](/blog/marble-vs-porcelain-tiles)." },
+        { p: "Not sure which tile suits your room? [Send us photos and measurements](/contact) and we can suggest options for your home in Karachi." },
+      ],
+      ur: [
+        { p: "دکان میں سیرامک اور پورسلین ٹائلیں تقریباً ایک جیسی لگ سکتی ہیں۔ فرق ان کے بننے میں ہے۔ پورسلین زیادہ باریک مٹی سے اور زیادہ درجہ حرارت پر پکائی جاتی ہے، اس لیے یہ زیادہ گھنی ہوتی ہے اور بہت کم پانی جذب کرتی ہے۔ سیرامک نرم، ہلکی اور کاٹنے میں آسان ہوتی ہے۔ پاکستان میں پورسلین ٹائلیں اکثر ویٹریفائیڈ ٹائلوں کے نام سے بھی بکتی ہیں۔" },
+        { h2: "آمنے سامنے موازنہ" },
+        {
+          table: {
+            head: ["", "سیرامک", "پورسلین"],
+            rows: [
+              ["پانی جذب کرنا", "زیادہ", "بہت کم"],
+              ["مضبوطی", "دیواروں اور کم استعمال والے فرش کے لیے ٹھیک", "مصروف فرش کے لیے بہتر"],
+              ["ٹوٹنا", "گلیز کے نیچے کا رنگ نظر آ سکتا ہے", "فل باڈی پورسلین ٹوٹ پھوٹ بہتر چھپاتی ہے"],
+              ["کٹائی اور فکسنگ", "آسان", "اچھے اوزار اور صحیح چپکنے والا مسالہ چاہیے"],
+              ["قیمت", "عموماً کم", "عموماً زیادہ"],
+            ],
+          },
+        },
+        { h2: "کون سی کہاں بہتر ہے" },
+        {
+          ul: [
+            "باتھ روم اور کچن کی دیواریں: سیرامک اچھی رہتی ہے اور فٹنگز کے گرد کاٹنا آسان ہے",
+            "لاؤنج، بیڈروم اور راہداری کے فرش: روزمرہ استعمال میں پورسلین زیادہ چلتی ہے",
+            "شاور کا فرش، وضو کی جگہ اور باہر کی جگہیں: میٹ یا کھردرے فنش والی پورسلین",
+            "بڑے سائز کی ٹائلیں: تقریباً ہمیشہ پورسلین، کیونکہ انہیں مضبوطی چاہیے",
+          ],
+        },
+        { h2: "خریدنے سے پہلے کیا دیکھیں" },
+        {
+          ul: [
+            "لیبل یا ڈبہ: اس پر فرش یا دیوار کا استعمال لکھا ہونا چاہیے",
+            "فنش: چمکدار ٹائلیں روشن لگتی ہیں مگر گیلی ہو کر زیادہ پھسلتی ہیں",
+            "اگر تنگ گراؤٹ جوڑ چاہییں تو ریکٹیفائیڈ کنارے",
+            "ایک ہی بیچ کے کچھ اضافی ڈبے، تاکہ بعد میں رنگ میل کھائے",
+          ],
+        },
+        { p: "اچھی پورسلین ٹائل بھی غلط لگائی جائے تو ٹوٹ سکتی ہے یا کھوکھلی آواز دے سکتی ہے، اس لیے فکسنگ بھی ٹائل جتنی اہم ہے۔ [ماربل اور ٹائلیں کیسے لگائی جائیں](/blog/how-to-fix-marble-and-tiles) دیکھیں، اور اگر پتھر بھی سوچ رہے ہیں تو [ماربل بمقابلہ پورسلین ٹائلیں](/blog/marble-vs-porcelain-tiles) پڑھیں۔" },
+        { p: "یقین نہیں کہ کون سی ٹائل آپ کے کمرے کے لیے ٹھیک ہے؟ [تصاویر اور پیمائش بھیجیں](/contact)، ہم کراچی میں آپ کے گھر کے لیے مشورہ دے سکتے ہیں۔" },
+      ],
+    },
+    faqs: [
+      {
+        q: { en: "Are vitrified tiles the same as porcelain?", ur: "کیا ویٹریفائیڈ ٹائلیں اور پورسلین ایک ہی ہیں؟" },
+        a: {
+          en: "In Pakistani shops the two names are often used for the same kind of dense, low-absorption tile. Check the box details rather than the name alone.",
+          ur: "پاکستانی دکانوں میں دونوں نام اکثر ایک ہی طرح کی گھنی اور کم پانی جذب کرنے والی ٹائل کے لیے استعمال ہوتے ہیں۔ صرف نام کے بجائے ڈبے کی تفصیل دیکھیں۔",
+        },
+      },
+      {
+        q: { en: "Can ceramic tiles be used on floors?", ur: "کیا سیرامک ٹائلیں فرش پر لگ سکتی ہیں؟" },
+        a: {
+          en: "Yes, if the tile is rated for floor use. For busy floors and wet areas, porcelain is usually the safer choice.",
+          ur: "جی ہاں، اگر ٹائل فرش کے لیے بنی ہو۔ مصروف فرش اور گیلی جگہوں کے لیے عموماً پورسلین زیادہ محفوظ انتخاب ہے۔",
+        },
+      },
+      {
+        q: { en: "Which is better for a bathroom?", ur: "باتھ روم کے لیے کون سی بہتر ہے؟" },
+        a: {
+          en: "Many bathrooms use ceramic on the walls and matt porcelain on the floor, which combines easy fixing with grip and low water absorption.",
+          ur: "بہت سے باتھ رومز میں دیواروں پر سیرامک اور فرش پر میٹ پورسلین لگتی ہے، جس سے آسان فکسنگ کے ساتھ گرفت اور کم پانی جذب ہونا دونوں ملتے ہیں۔",
+        },
+      },
+    ],
+  },
+  {
+    slug: "bedroom-and-lounge-floor-tiles",
+    category: "choosing",
+    published: "2026-10-30",
+    readingMinutes: 5,
+    cover: "livingRoom",
+    relatedServices: ["tile-installation", "marble-flooring", "pattern-and-layout-planning"],
+    title: { en: "Best Floor Tiles for Bedrooms and TV Lounges in Pakistan", ur: "پاکستان میں بیڈروم اور ٹی وی لاؤنج کے لیے بہترین فرش کی ٹائلیں" },
+    excerpt: {
+      en: "How to choose floor tiles for bedrooms and TV lounges in a Pakistani home: finish, colour, size, wood-look and marble-look options.",
+      ur: "پاکستانی گھر کے بیڈروم اور ٹی وی لاؤنج کے لیے فرش کی ٹائلیں کیسے چنیں: فنش، رنگ، سائز، لکڑی نما اور ماربل نما آپشنز۔",
+    },
+    content: {
+      en: [
+        { p: "Bedrooms and TV lounges are where the family spends most of its time, often barefoot. Tiles suit Karachi's heat because they stay cool and are easy to clean of dust. The right choice depends on the room's size, light and how it is used." },
+        { h2: "Matt or glossy?" },
+        { p: "Glossy tiles make a room look brighter and bigger, but they show dust and footprints and can reflect glare from windows onto a TV screen. Matt and satin tiles hide marks better and feel safer underfoot. Many homes use a soft satin finish in lounges and matt in bedrooms." },
+        { h2: "Colour" },
+        {
+          ul: [
+            "Light beige, cream and light grey make small rooms feel larger",
+            "Mid tones hide Karachi dust better than pure white",
+            "Darker floors look rich in large rooms but show dust and scratches sooner",
+            "Choose the floor first, then match walls and furniture to it",
+          ],
+        },
+        { h2: "Popular looks" },
+        {
+          table: {
+            head: ["Look", "Why people choose it", "Keep in mind"],
+            rows: [
+              ["Wood-look tiles", "Warm feel of wood without termite or moisture worries", "Long planks need a very level base"],
+              ["Marble-look tiles", "The style of marble with less upkeep", "Patterns repeat, so mix tiles while laying"],
+              ["Plain or concrete-look", "Calm, modern rooms", "Can feel cold without rugs or warm lighting"],
+            ],
+          },
+        },
+        { h2: "Size and layout" },
+        { p: "Larger tiles mean fewer joints and a calmer floor, but they need a flat base and careful fixing. Our [floor tile sizes guide](/blog/floor-tile-sizes-guide) and [tile layout patterns](/blog/tile-layout-patterns) explain the options, and you can [work out how many tiles you need](/blog/calculate-tiles-and-marble-quantity)." },
+        { h2: "Tiles or marble?" },
+        { p: "Some families prefer natural marble in the lounge for its depth and the option to polish it again later. Compare both in [marble vs porcelain tiles](/blog/marble-vs-porcelain-tiles), or [ask us](/contact) to visit and advise in Karachi." },
+      ],
+      ur: [
+        { p: "بیڈروم اور ٹی وی لاؤنج وہ جگہیں ہیں جہاں گھر والے سب سے زیادہ وقت گزارتے ہیں، اکثر ننگے پاؤں۔ ٹائلیں کراچی کی گرمی میں اچھی رہتی ہیں کیونکہ یہ ٹھنڈی رہتی ہیں اور مٹی آسانی سے صاف ہو جاتی ہے۔ صحیح انتخاب کمرے کے سائز، روشنی اور استعمال پر منحصر ہے۔" },
+        { h2: "میٹ یا چمکدار؟" },
+        { p: "چمکدار ٹائلیں کمرے کو روشن اور بڑا دکھاتی ہیں، مگر ان پر مٹی اور پاؤں کے نشان نظر آتے ہیں اور کھڑکی کی روشنی ٹی وی اسکرین پر چمک ڈال سکتی ہے۔ میٹ اور ساٹن ٹائلیں نشان بہتر چھپاتی ہیں اور پاؤں تلے زیادہ محفوظ لگتی ہیں۔ بہت سے گھروں میں لاؤنج میں ہلکا ساٹن اور بیڈروم میں میٹ فنش لگتا ہے۔" },
+        { h2: "رنگ" },
+        {
+          ul: [
+            "ہلکا بیج، کریم اور ہلکا سرمئی چھوٹے کمروں کو بڑا دکھاتے ہیں",
+            "درمیانے رنگ خالص سفید سے بہتر کراچی کی مٹی چھپاتے ہیں",
+            "گہرے رنگ کے فرش بڑے کمروں میں شاندار لگتے ہیں مگر مٹی اور خراشیں جلد دکھاتے ہیں",
+            "پہلے فرش چنیں، پھر دیواریں اور فرنیچر اس سے ملائیں",
+          ],
+        },
+        { h2: "مقبول انداز" },
+        {
+          table: {
+            head: ["انداز", "لوگ کیوں چنتے ہیں", "دھیان رکھیں"],
+            rows: [
+              ["لکڑی نما ٹائلیں", "دیمک یا نمی کی فکر کے بغیر لکڑی جیسا گرم تاثر", "لمبی پٹیوں کے لیے بالکل ہموار بنیاد چاہیے"],
+              ["ماربل نما ٹائلیں", "کم دیکھ بھال کے ساتھ ماربل کا انداز", "ڈیزائن دہرائے جاتے ہیں، اس لیے لگاتے وقت ٹائلیں ملا کر لگائیں"],
+              ["سادہ یا کنکریٹ نما", "پُرسکون، جدید کمرے", "قالین یا گرم روشنی کے بغیر ٹھنڈا لگ سکتا ہے"],
+            ],
+          },
+        },
+        { h2: "سائز اور ترتیب" },
+        { p: "بڑی ٹائلوں میں جوڑ کم ہوتے ہیں اور فرش پُرسکون لگتا ہے، مگر انہیں ہموار بنیاد اور احتیاط سے فکسنگ چاہیے۔ ہماری [فرش کی ٹائلوں کے سائز](/blog/floor-tile-sizes-guide) اور [ٹائل لے آؤٹ پیٹرن](/blog/tile-layout-patterns) والی گائیڈز آپشنز سمجھاتی ہیں، اور آپ [معلوم کر سکتے ہیں کتنی ٹائلیں چاہییں](/blog/calculate-tiles-and-marble-quantity)۔" },
+        { h2: "ٹائلیں یا ماربل؟" },
+        { p: "کچھ خاندان لاؤنج میں قدرتی ماربل پسند کرتے ہیں، اس کی گہرائی اور بعد میں دوبارہ پالش کی سہولت کی وجہ سے۔ دونوں کا موازنہ [ماربل بمقابلہ پورسلین ٹائلیں](/blog/marble-vs-porcelain-tiles) میں دیکھیں، یا کراچی میں سائٹ پر مشورے کے لیے [ہم سے پوچھیں](/contact)۔" },
+      ],
+    },
+    faqs: [
+      {
+        q: { en: "Which tiles are best for a bedroom floor?", ur: "بیڈروم کے فرش کے لیے کون سی ٹائلیں بہتر ہیں؟" },
+        a: {
+          en: "Matt or satin porcelain in a light or mid tone is a practical choice: comfortable underfoot, easy to clean and good at hiding dust.",
+          ur: "ہلکے یا درمیانے رنگ کی میٹ یا ساٹن پورسلین عملی انتخاب ہے: پاؤں تلے آرام دہ، صاف کرنے میں آسان اور مٹی چھپانے میں اچھی۔",
+        },
+      },
+      {
+        q: { en: "Are glossy tiles good for a TV lounge?", ur: "کیا ٹی وی لاؤنج کے لیے چمکدار ٹائلیں اچھی ہیں؟" },
+        a: {
+          en: "They brighten the room, but they show dust and can reflect window light onto the screen. A satin finish is often a better balance.",
+          ur: "یہ کمرہ روشن کرتی ہیں، مگر مٹی دکھاتی ہیں اور کھڑکی کی روشنی اسکرین پر ڈال سکتی ہیں۔ ساٹن فنش اکثر بہتر توازن ہے۔",
+        },
+      },
+      {
+        q: { en: "Are wood-look tiles a good idea in Karachi?", ur: "کیا کراچی میں لکڑی نما ٹائلیں اچھا خیال ہیں؟" },
+        a: {
+          en: "Yes, many homes use them for the look of wood without termite or humidity problems. They need a level base and careful fixing.",
+          ur: "جی ہاں، بہت سے گھر دیمک یا نمی کے مسئلے کے بغیر لکڑی جیسے تاثر کے لیے انہیں لگاتے ہیں۔ انہیں ہموار بنیاد اور احتیاط سے فکسنگ چاہیے۔",
+        },
+      },
+    ],
+  },
 ];
