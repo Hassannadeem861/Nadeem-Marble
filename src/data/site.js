@@ -30,7 +30,7 @@ export const site = {
     { "@type": "Country", name: "Pakistan" },
   ],
   foundingYear: null,
-  socialProfiles: [],
+  socialProfiles: ["https://www.facebook.com/profile.php?id=61595722965428"],
   // Google Business Profile (owner-supplied link) and its map pin, as Google Maps shows it.
   googleBusiness: {
     shareUrl: "https://maps.app.goo.gl/sVjQrGdRx7nybseh7",

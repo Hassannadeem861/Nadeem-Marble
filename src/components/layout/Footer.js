@@ -92,6 +92,16 @@ export function Footer({ locale, dict }) {
                 </a>
               </li>
             ) : null}
+            {site.socialProfiles.map((href) => (
+              <li key={href}>
+                <a href={href} target="_blank" rel="noopener noreferrer" className={`${linkClass} inline-flex items-center gap-3`}>
+                  <svg aria-hidden="true" viewBox="0 0 24 24" className="size-4 fill-gold">
+                    <path d="M14 8h3V4h-3c-2.8 0-5 2.2-5 5v2H6v4h3v9h4v-9h3l1-4h-4V9c0-.6.4-1 1-1z" />
+                  </svg>
+                  Facebook
+                </a>
+              </li>
+            ))}
           </ul>
 
           <div className="mt-8">
